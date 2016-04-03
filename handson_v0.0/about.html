@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Home page of Handson, a social entreprise devoted on connecting technology and social issue">
+		<meta name="author" content="Myles Ieong">
+		<meta name="robots" content="index, follow">
+		<title>Handson - 我們</title>
+		<!-- icons -->
+		<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+		<link rel="shortcut icon" href="media/favicon.ico">
+		
+		<!-- CSS file -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/carousel.css">
+		
+		<!-- CSS for google fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+		<!-- JQuery scripts and Bootstrap Core scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="js/webservice.js"></script>
+		
+		<!-- Story page js function -->
+		<script>
+		/**
+		 * Base on Ajax calls, these action is isolated with each other by body but connected
+		 * by callerDispatcher function in js/webservice.js. 
+		 * In this case, every page needs to register its process to callerDispatcher.
+		 * In story page(this page), the dispatching process follows:
+		 *  htmlonload
+		 *    ->getLatestCaller-------------------------->storyService (/story?op=get-latest)
+		 *                                                                             |
+		 *      getStories<-------(dispatched by callerDispatcher)---------------------/
+		 *        |
+		 *        \-------------------------------------->storyService (/story?op=get-story)
+		 *                                                                             |
+		 *      appendStory<------(dispatched by callerDispatcher)---------------------/
+		 */
+		function getLatestCaller(){
+			//alert("getLatestCaller");
+			storyService("story:getLatestCaller","get-latest",5,null);
+		}
+		
+		function getStories(data){
+			//alert("getStories");
+			var jsonObj=JSON.parse(data);
+			$.each(jsonObj, function(){
+				var id=this;
+				//alert("getStories: get story id:"+id);
+				storyService("story:getStoryCaller","get-story",id,null);
+			});
+		}
+		
+		function appendStory(data){
+			//alert("appendStory");
+			var jsonObj=JSON.parse(data);
+			var clone = $("#template").clone();
+			clone.find("img").prop("src",jsonObj.picture);
+			clone.find(".panel-header h4").text( jsonObj.title );
+			clone.find(".panel-body").text( jsonObj.content );
+			clone.prop("style"," ");
+			//clone.find('.score').text( playerObj.score );
+			//clone.find('.profile-pic img').prop( 'src', playerObj.pic );
+			$("#story-list").append(clone);
+		};
+		
+		</script>
+	</head>
+	<!-- disable onload activated temporaly
+	<body onload="getLatestCaller();">
+	-->
+	<body>
+	<header>
+		<div class="container">
+			<div class="page-header margin-t-5i ">
+				<h1 class="text-center font-lobster">Handson</h1>      
+			</div>
+		</div>
+	</header>
+	<nav>
+		<div class="container font-yahei">
+			<ul class="nav nav-pills nav-justified">
+				<li><a href="index.html">主页</a></li>
+				<li><a href="story.html">故事</a></li>
+				<li><a href="product.html">产品技术</a></li>
+				<li><a href="csr.html">CSR方案</a></li>
+				<li><a href="gethand.html">找一只手</a></li>
+				<li><a href="makehand.html">做一只手</a></li>
+				<li class="active"><a href="about.html">关于我们</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main class="margin-lr-1">
+	<div class="container">
+		<div class="row font-yahei">
+			<h3 class="margin-t-3 margin-b-2 font-bold ">团队成员</h3>
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<img src="media/gene.jpg" class="img-circle" width=100em />
+					<p>张延 Gene 团队总负责人/中山大学/南极远征/残障儿童群体关怀/AIESEC</p>
+				</div>
+				<div class="col-sm-4 text-center">
+					<img src="media/king.jpg" class="img-circle" width=100em />
+					<p>王宇翔 King 规划，BD，财务/清华大学/MiM2014/战略及咨询实习/AIESEC</p>
+				</div>
+				<div class="col-sm-4 text-center">
+					<img src="media/myles.jpg" class="img-circle" width=100em />
+					<p>杨世豪 Myles 众包平台负责人南京大学/软件工程师/信息管理从业经历/AIESEC</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<img src="media/lee.png" class="img-circle" width=100em />
+					<p>廖励志 Lee 机械手产品负责人/北京交通大学/产品经理从业经历/AIESEC</p>
+				</div>
+				<div class="col-sm-4 text-center">
+					<img src="media/ginny.jpg" class="img-circle" width=100em />
+					<p>谢琪 Ginny 线下工作坊负责人/上海外国语大学/移动互联网从业经历/AIESEC</p>
+				</div>
+				<div class="col-sm-4 text-center">
+					<img src="media/sandy.jpg" class="img-circle" width=100em />
+					<p>苏江舟 Jiangzhou 技术研发负责人/北京理工大学/Autodesk Panorama/机械设计类竞赛第一名/机械手设计师</p>
+				</div>
+			</div>
+		</div>
+		<div class="row font-yahei">
+			<h3 class="margin-t-3 margin-b-2 font-bold ">大事记</h3>
+			<div class="col-sm-3 text-center">
+				<p>
+					<span class="label label-warning">2015.11</span>
+					<span class="glyphicon glyphicon-play icon-char color-ct-2-1" aria-hidden="true"></span>
+				</p>
+				<div class="well">项目活动启动宣传</div>
+				<div class="well">微电影上线</div>
+			</div>
+			<div class="col-sm-3 text-center">
+				<p>
+					<span class="label label-primary">2015.12</span>
+					<span class="glyphicon glyphicon-play icon-char color-ct-2-1" aria-hidden="true"></span>
+				</p>
+				<div class="well">广州，上海，北京工作坊</div>
+			</div>
+			<div class="col-sm-3 text-center">
+				<p>
+					<span class="label label-success">2016.02</span>
+					<span class="glyphicon glyphicon-play icon-char color-ct-2-1" aria-hidden="true"></span>
+				</p>
+				<div class="well">第一批义手寄送</div>
+			</div>
+			<div class="col-sm-3 text-center">
+				<p>
+					<span class="label label-info">2016.03</span>
+				</p>
+				<div class="well">创始团队第一轮线下会议</div>
+				<div class="well">设计师招募启动</div>
+			</div>
+		</div>
+		<div class="row font-yahei">
+			<h3 class="margin-t-3 margin-b-2 font-bold ">项目使命</h3>
+			<blockquote class="margin-lr-2">
+				<p class="font-kaiti font-small">以普及性的创新科技来满足弱势群体的切身之需</p>
+				<ul>
+					<li>我们关注弱势群体的切身之需。我们认为社会的发展不应该遗忘或忽视弱势群体；</li>
+					<li>我们相信科技的发展是有温度的。我们认为前沿科技的应用能够给弱势群体带了新的解决方法；</li>
+					<li>我们坚持普及性的方式来解决问题。立足于科技创新，我们以普及性的方式来研发、引进和传播相关的技术方案，应用到弱势群体的具体问题上</li>
+				</ul>
+				<footer>展翼計劃團隊<cite title="Source Title">願景</cite></footer>
+			</blockquote>
+		</div>		
+		<div class="row font-yahei">
+			<h3 class="margin-t-3 margin-b-2 font-bold ">团队成员</h3>
+			<img class="img-responsive margin-b-3" src="media/team.jpg" align="middle" /> 
+		</div>
+	</div>
+	</main>
+	<footer class="color-bg-grey">	
+		<div class="container">
+			<div class="col-sm-3">
+				<h5>Please subscribe our wechat public account</h5>
+				<img src="media/qrcode.png" width="100" height="100" />
+			</div>
+			<div class="col-sm-3">
+				<h5>Share this page</h5>
+				<img src="media/wechat.svg" width="20" height="20" />
+				<p>Share with wechat</p>
+				<img src="media/weibo.png" width="20" height="20" />
+				<p>Share with weibo</p>
+				<img src="media/googleplus.jpg" width="20" height="20" />
+				<p>Share with google+</p>
+			</div>
+			<div class="col-sm-3">
+				<h5>Contact us</h5>
+				<p>Email: abc@handson.com</p>
+				<p>address: Beijing </p>
+			</div>
+			<div class="col-sm-3">
+				<h5>Partners</h5>
+				<a>x-lab website</a>
+				<a>kickstarter website</a>
+			</div>
+		</div>
+	</footer>
+	</body>
+</html>
