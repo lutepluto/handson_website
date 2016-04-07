@@ -23,11 +23,14 @@ body { padding-top: 70px; }
  * be used sparingly.
 */
 .margin-t-5i { margin-top: -5em; }
+.margin-t-1i { margin-top: -1em; }
 .margin-t-0 { margin-top: 0; }
 .margin-t-h { margin-top: .5em; }
 .margin-t-1 { margin-top: 1em; }
 .margin-t-2 { margin-top: 2em; }
 .margin-t-3 { margin-top: 3em; }
+.margin-t-4 { margin-top: 4em; }
+.margin-t-5 { margin-top: 5em; }
 .margin-b-0 { margin-bottom: 0; }
 .margin-b-h { margin-bottom: .5em; }
 .margin-b-1 { margin-bottom: 1em; }
@@ -87,3 +90,13 @@ body { padding-top: 70px; }
 .font-lobster{	font-family: 'Lobster', cursive;}
 .font-yahei{ font-family: 'Microsoft JhengHei', 'SimHei', 'MingLiU';}
 .font-kaiti { font-family: 'KaiTi';}
+
+.shadow-1-blue{    box-shadow: 0.1em 0.1em 0.3em lightblue;}
+.shadow-2-blue{    box-shadow: 0.2em 0.2em 0.6em lightblue;}
+.shadow-3-blue{    box-shadow: 0.3em 0.3em 0.9em lightblue;}
+.shadow-1-orange{    box-shadow: 0.1em 0.1em 0.3em orange;}
+.shadow-2-orange{    box-shadow: 0.2em 0.2em 0.6em orange;}
+.shadow-3-orange{    box-shadow: 0.3em 0.3em 0.9em orange;}
+.shadow-1-grey{    box-shadow: 0.1em 0.1em 0.3em grey;}
+.shadow-2-grey{    box-shadow: 0.2em 0.2em 0.6em grey;}
+.shadow-3-grey{    box-shadow: 0.3em 0.3em 0.9em grey;}
