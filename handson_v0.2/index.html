@@ -24,146 +24,172 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script src="js/webservice.js"></script>
-		
-		<!-- Story page js function -->
-		<script>
-		/**
-		 * Base on Ajax calls, these action is isolated with each other by body but connected
-		 * by callerDispatcher function in js/webservice.js. 
-		 * In this case, every page needs to register its process to callerDispatcher.
-		 * In story page(this page), the dispatching process follows:
-		 *  htmlonload
-		 *    ->getLatestCaller-------------------------->storyService (/story?op=get-latest)
-		 *                                                                             |
-		 *      getStories<-------(dispatched by callerDispatcher)---------------------/
-		 *        |
-		 *        \-------------------------------------->storyService (/story?op=get-story)
-		 *                                                                             |
-		 *      appendStory<------(dispatched by callerDispatcher)---------------------/
-		 */
-		function getLatestCaller(){
-			//alert("getLatestCaller");
-			storyService("story:getLatestCaller","get-latest",5,null);
-		}
-		
-		function getStories(data){
-			//alert("getStories");
-			var jsonObj=JSON.parse(data);
-			$.each(jsonObj, function(){
-				var id=this;
-				//alert("getStories: get story id:"+id);
-				storyService("story:getStoryCaller","get-story",id,null);
-			});
-		}
-		
-		function appendStory(data){
-			//alert("appendStory");
-			var jsonObj=JSON.parse(data);
-			var clone = $("#template").clone();
-			clone.find("img").prop("src",jsonObj.picture);
-			clone.find(".panel-header h4").text( jsonObj.title );
-			clone.find(".panel-body").text( jsonObj.content );
-			clone.prop("style"," ");
-			//clone.find('.score').text( playerObj.score );
-			//clone.find('.profile-pic img').prop( 'src', playerObj.pic );
-			$("#story-list").append(clone);
-		};
-		
-		</script>
 	</head>
 	<!-- disable onload activated temporaly
 	<body onload="getLatestCaller();">
 	-->
 	<body>
 
-<!-- root element of contents-->
-<div class="color-bg-gradient-blue">
-	
-	<!-- header: includes logo and menu -->
-	<div class="shadow-2-grey color-bg-white bottom-line-blue-2">
-		<div class="container text-center">
-			<img class="" src="media/handson-banner.jpg" width=250em />
-		</div>
-		<nav>
-			<div class="container font-yahei">
-				<ul class="nav nav-pills nav-justified margin-tb-3">
-					<li  class="active"><a href="index.html">主页</a></li>
-					<li><a href="story.html">故事</a></li>
-					<li><a href="product.html">产品技术</a></li>
-					<li><a href="csr.html">CSR方案</a></li>
-					<li><a href="gethand.html">找一只手</a></li>
-					<li><a href="makehand.html">做一只手</a></li>
-					<li><a href="about.html">关于我们</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<!-- /header: includes logo and menu -->
-	
-	<!-- decoration of three birdies -->
-	<div class="margin-birdie-up-2 margin-lr-2">
-		<img src="media/birda-blue.png" align="right" width=20em/>
-		<img src="media/birdb-blue.png" align="right" width=20em/>
-		<img src="media/birdc-blue.png" align="right" width=20em/>
-	</div>
-	<!-- /decoration of three birdies -->
-	
-	<!-- Story thumbnail sector -->
-	<div class="container margin-tb-3 margin-lr-3">
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="border-radius-3 bottom-line-orange-1 shadow-1-grey color-bg-white margin-tb-1">
-					<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-					<img src="media/birdc-orange.png" align="right" class="margin-birdie-up-1 margin-lr-1" width=20em/>
+<!-- header: includes logo and menu -->
+<header>
+	<div id="header-bg">
+		<div class="container font-yahei">
+			<div class="row color-bg-white">
+				<div id="logo" class="col-sm-3 text-center">
+					<img class="margin-tb-1" src="media/handson-logo.jpg" width=40em />
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+				</div>
+				<div id="menu" class="col-sm-9 ">
+					<ul class="nav nav-pills margin-tb-1">
+						<li class="active"><a href="index.html">主页</a></li>
+						<li><a href="story.html">故事</a></li>
+						<li><a href="tech.html">技术</a></li>
+						<li><a href="product.html">产品</a></li>
+						<li><a href="join.html">參與</a></li>
+						<li><a href="about.html">关于我们</a></li>
+					</ul>
 				</div>
 			</div>
-			<div class="col-sm-4">
-				<div class="border-radius-3 bottom-line-orange-1 shadow-1-grey color-bg-white margin-tb-1">
-					<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="border-radius-3 bottom-line-orange-1 shadow-1-grey color-bg-white margin-tb-1">
-					<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-				</div>
+			<div class="row text-center" >
+				<h1>Build hands</h1>
+				<h3>for kids who need it</h3>
+				<p>A lot of kids are born without hands, our mission is</p>
+				<p>to use 3D printing technology to help them.</p>
 			</div>
 		</div>
 	</div>
-	<!-- /Story thumbnail sector -->
-	
+</header>
+<!-- /header: includes logo and menu -->
+ 
+<!-- story thumbnail section -->
+<section class="color-bg-white">
+	<div class="container">
+		<div class="row text-center margin-tb-1">
+			<h1>故事</h1>
+			<p>這里展示我們幫助的小孩子的故事</p>
+		</div>
+		<div class="row margin-lr-3 margin-tb-1">
+			<div class="col-sm-4">
+				<img src="media/baby-h.jpg" width=100%/>
+				<label>Story</label><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><label>Beijing</label>
+				<h5>Story1</h5>
+				<p>Story content: should be about 140 words. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+			</div>
+			<div class="col-sm-4">
+				<img src="media/baby-l.jpg" width=100%/>
+				<label>Story</label><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><label>Beijing</label>
+				<h5>Story2</h5>
+				<p>Story content: should be about 140 words. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+			</div>
+			<div class="col-sm-4">
+				<img src="media/baby-s.jpg" width=100%/>
+				<label>Story</label><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><label>Beijing</label>
+				<h5>Story3</h5>
+				<p>Story content: should be about 140 words. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/story thumbnail section -->
 
-	<!-- footer of page sector -->
-	<div class="container color-bg-2-2 border-top-radius margin-b-5i shadow-2-grey">
-		<div class="col-sm-3">
-			<h5 class="margin-t-3">Please subscribe our wechat public account</h5>
-			<img src="media/qrcode.png" width="100" height="100" />
+<!-- Our solution section-->
+<section class="color-bg-2-1">
+	<div class="container">
+		<div class="row text-center margin-tb-1">
+			<h1>方案</h1>
+			<p>這里展示我們的解決方案</p>
 		</div>
-		<div class="col-sm-3">
-			<h5 class="margin-t-3">Share this page</h5>
-			<p class="small"><img src="media/wechat.svg" width="20" height="20" />
-			Share with wechat</p>
-			<p class="small"><img src="media/weibo.png" width="20" height="20" />
-			Share with weibo</p>
-			<p class="small"><img src="media/googleplus.jpg" width="20" height="20" />
-			Share with google+</p>
-		</div>
-		<div class="col-sm-3">
-			<h5 class="margin-t-3">Contact us</h5>
-			<p class="small">Email: abc@handson.com</p>
-			<p class="small">address: Beijing </p>
-		</div>
-		<div class="col-sm-3">
-			<h5 class="margin-t-3">Partners</h5>
-			<ul>
-				<li><a class="small">x-lab website</a></li>
-				<li><a class="small">kickstarter website</a></li>
-			</ul>
+		<div class="row margin-lr-3 text-center margin-tb-1">
+			<div class="col-sm-4">
+				<img src="media/baby-h.jpg" width=100%/>
+				<h5>Solution 1</h5>
+				<p class="margin-lr-2">Solution desciption</p>
+				<button type="button" class="btn btn-default">Check out</button>
+			</div>
+			<div class="col-sm-4">
+				<img src="media/baby-l.jpg" width=100%/>
+				<h5>Solution 2</h5>
+				<p class="margin-lr-2">Solution desciption</p>
+				<button type="button" class="btn btn-default">Check out</button>
+			</div>
+			<div class="col-sm-4">
+				<img src="media/baby-s.jpg" width=100%/>
+				<h5>Solution 3</h5>
+				<p class="margin-lr-2">Solution desciption</p>
+				<button type="button" class="btn btn-default">Check out</button>
+			</div>
 		</div>
 	</div>
-	<!-- /footer of page sector -->
-	
+</section>
+<!-- /Our solution section-->
+
+<!-- for kid to join section-->
+<section class="color-bg-white">
+	<div class="container">
+		<div class="row text-center margin-tb-1">
+			<h1>小孩子參與</h1>
+			<p>這里展示有需要的小孩子參加的方式</p>
+		</div>
+		<div class="row margin-lr-3 margin-tb-1">
+			<div class="col-sm-4">
+				<img src="media/baby-h.jpg" width=100%/>
+			</div>
+			<div class="col-sm-4">
+				<h5>標題</h5>
+				<p>簡單描述參與方式</p>
+			</div>
+			<div class="col-sm-4">
+				<a href=# ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /for kid to join section-->
+
+<!-- for designer to join section-->
+<section class="color-bg-2-2">
+	<div class="container">
+		<div class="row text-center margin-tb-1">
+			<h1>設計師參與</h1>
+			<p>這里展示設計師參與的方式</p>
+		</div>
+		<div class="row margin-lr-3 margin-tb-1">
+			<div class="col-sm-4">
+				<img src="media/baby-h.jpg" width=100%/>
+			</div>
+			<div class="col-sm-4">
+				<h5>標題</h5>
+				<p>簡單描述參與方式</p>
+			</div>
+			<div class="col-sm-4">
+				<a href=# ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /for designer to join section-->
+
+<!-- footer of page sector -->
+<footer class=" color-bg-2-1 margin-b-4i">
+<div class="container">
+	<div class="col-sm-6">
+		<h3>Contact us</h3>
+		<h5>We based in Beijing and we are supported by x-labs, xxx fundation and xxx.</h5>
+		<ul>
+			<li>Email: abc@handson.com</li>
+			<li>Address: XXXX, Beijing</li>
+		</ul>
+		<p class="small"></p>
+		<p class="small"> </p>
+		<img src="media/qrcode.png" width="100" height="100" />
+	</div>
+	<div class="col-sm-6">
+		<img src="media/wechat.svg" width=30em height=30em align="right" />
+		<img src="media/weibo.png" width=30em height=30em align="right" />
+		<img src="media/googleplus.jpg" width=30em height=30em align="right" />
+	</div>
 </div>
-<!-- /root element of contents-->
+<!-- /footer of page sector -->
 
 	</body>
 </html>
