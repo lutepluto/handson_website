@@ -248,7 +248,7 @@ body { padding-top: 70px; }
 .well {border-radius:1em; box-shadow: 0.2em 0.2em 0.3em -0.1em grey;}
 
 header {
-	  height: 600px;
+	  height: 700px;
 }
 
 #logo>span{
@@ -265,40 +265,28 @@ header {
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 600px;
+  height: 700px;
+}
+
+#menu{
+	display: block;
 }
 
 @media screen and (max-width: 700px) {
-	#header-bg {
-		width: 100%;
-		height: 500px;
-	}
-	
-	header {
-		  height: 500px;
-	}
-
+	#header-bg {	width: 100%;	height: 500px;	}
+	header {  height: 500px;}
+	#menu{		display:none;	}
+	#logo>span{		display:inline;	}
 }
 
 /* Phone size */
 @media screen and (max-width: 550px) {
-	#header-bg {
-		width: 100%;
-		height: 400px;
-	}
-	
-	header {
-		  height: 400px;
-	}
-	
-	#menu{
-		display:none;
-	}
-	
-	#logo>span{
-		display:inline;
-	}
+	#header-bg {		width: 100%;		height: 400px;	}
+	header {	 height: 400px;	}
+	#menu{		display:none;	}
+	#logo>span{		display:inline;	}
 }
+
 
 
 
