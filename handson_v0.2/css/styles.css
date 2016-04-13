@@ -287,6 +287,42 @@ header {
 	#logo>span{		display:inline;	}
 }
 
+/* Section style */
+/* the 3 para of line-gradient means: turn x degree from 12 o'clock clockwise, bottom color, top color*/ 
+.section-blue {
+	background: linear-gradient(50deg, #6BB9D1, #7CDBF3); 
+	margin-top:0; 
+	margin-bottom:0; 
+	padding-top:0;
+	padding-bottom:0;
+	border:0;
+	}
+.section-orange {
+	background: linear-gradient(50deg, #DC6200, #FE8402);
+	margin-top:0; 
+	margin-bottom:0; 
+	padding-top:0;
+	padding-bottom:0;
+	border:0;
+}
+.section-white {
+	background: linear-gradient(50deg, #EFEFEF, #FFFFFF);
+	margin-top:0; 
+	margin-bottom:0; 
+	padding-top:0;
+	padding-bottom:0;
+	border:0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
