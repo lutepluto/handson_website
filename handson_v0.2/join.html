@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Home page of Handson, a social entreprise devoted on connecting technology and social issue">
+		<meta name="author" content="Myles Ieong">
+		<meta name="robots" content="index, follow">
+		<title>Handson - 首頁</title>
+		<!-- icons -->
+		<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+		<link rel="shortcut icon" href="media/favicon.ico">
+		
+		<!-- CSS file -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/carousel.css">
+		
+		<!-- CSS for google fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+		<!-- JQuery scripts and Bootstrap Core scripts -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="js/webservice.js"></script>
+		<script src="js/master.js"></script>
+
+	</head>
+	<!-- disable onload activated temporaly
+	<body onload="getLatestCaller();">
+	-->
+	<body>
+
+<!-- header: includes logo and menu -->
+<header>
+	<div id="header-bg">
+		<div class="container font-yahei">
+			<div class="row color-bg-white">
+				<div id="logo" class="col-sm-3 text-center">
+					<img class="margin-tb-1" src="media/handson-logo.jpg" width=40em />
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+				</div>
+				<div id="menu" class="col-sm-9 ">
+					<ul class="nav nav-pills nav-justified margin-tb-1">
+						<li class="active"><a href="index.html">主页</a></li>
+						<li><a href="story.html">故事</a></li>
+						<li><a href="tech.html">技术</a></li>
+						<li><a href="product.html">产品</a></li>
+						<li><a href="join.html">參與</a></li>
+						<li><a href="about.html">关于我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row text-center" >
+				<h1>Build hands</h1>
+				<h3>for kids who need it</h3>
+				<p>A lot of kids are born without hands, our mission is</p>
+				<p>to use 3D printing technology to help them.</p>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- /header: includes logo and menu -->
+
+<!-- story thumbnail section -->
+<section class="color-bg-white">
+	<div class="container">
+		<div class="row text-center margin-tb-1">
+			<h1>故事</h1>
+			<p>這里展示我們幫助的小孩子的故事</p>
+		</div>
+		<div class="row margin-lr-3 margin-tb-1">
+			<div class="col-sm-4">
+				<img src="media/baby-h.jpg" width=100%/>
+				<label>Story</label><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><label>Beijing</label>
+				<h5>Story1</h5>
+				<p>Story content: should be about 140 words. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+			</div>
+			<div class="col-sm-4">
+				<img src="media/baby-l.jpg" width=100%/>
+				<label>Story</label><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><label>Beijing</label>
+				<h5>Story2</h5>
+				<p>Story content: should be about 140 words. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+			</div>
+			<div class="col-sm-4">
+				<img src="media/baby-s.jpg" width=100%/>
+				<label>Story</label><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><label>Beijing</label>
+				<h5>Story3</h5>
+				<p>Story content: should be about 140 words. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/story thumbnail section -->
+
+<!-- Our solution section-->
+<section class="color-bg-2-1">
+	<div class="container">
+		<div class="row text-center margin-tb-1">
+			<h1>方案</h1>
+			<p>這里展示我們的解決方案</p>
+		</div>
+		<div class="row margin-lr-3 text-center margin-tb-1">
+			<div class="col-sm-4">
+				<img src="media/baby-h.jpg" width=100%/>
+				<h5>Solution 1</h5>
+				<p class="margin-lr-2">Solution desciption</p>
+				<button type="button" class="btn btn-default">Check out</button>
+			</div>
+			<div class="col-sm-4">
+				<img src="media/baby-l.jpg" width=100%/>
+				<h5>Solution 2</h5>
+				<p class="margin-lr-2">Solution desciption</p>
+				<button type="button" class="btn btn-default">Check out</button>
+			</div>
+			<div class="col-sm-4">
+				<img src="media/baby-s.jpg" width=100%/>
+				<h5>Solution 3</h5>
+				<p class="margin-lr-2">Solution desciption</p>
+				<button type="button" class="btn btn-default">Check out</button>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Our solution section-->
+
+<!-- for kid to join section-->
+<section class="color-bg-white">
+	<div class="container">
+		<div class="row text-center margin-tb-1">
+			<h1>小孩子參與</h1>
+			<p>這里展示有需要的小孩子參加的方式</p>
+		</div>
+		<div class="row margin-lr-3 margin-tb-1">
+			<div class="col-sm-4">
+				<img src="media/baby-h.jpg" width=100%/>
+			</div>
+			<div class="col-sm-4">
+				<h5>標題</h5>
+				<p>簡單描述參與方式</p>
+			</div>
+			<div class="col-sm-4">
+				<a href=# ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /for kid to join section-->
+
+<!-- for designer to join section-->
+<section class="color-bg-2-2">
+	<div class="container">
+		<div class="row text-center margin-tb-1">
+			<h1>設計師參與</h1>
+			<p>這里展示設計師參與的方式</p>
+		</div>
+		<div class="row margin-lr-3 margin-tb-1">
+			<div class="col-sm-4">
+				<img src="media/baby-h.jpg" width=100%/>
+			</div>
+			<div class="col-sm-4">
+				<h5>標題</h5>
+				<p>簡單描述參與方式</p>
+			</div>
+			<div class="col-sm-4">
+				<a href=# ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /for designer to join section-->
+
+<!-- footer of page sector -->
+<footer class=" color-bg-2-1 margin-b-4i">
+<div class="container">
+	<div class="col-sm-6">
+		<h3>Contact us</h3>
+		<h5>We based in Beijing and we are supported by x-labs, xxx fundation and xxx.</h5>
+		<ul>
+			<li>Email: abc@handson.com</li>
+			<li>Address: XXXX, Beijing</li>
+		</ul>
+		<p class="small"></p>
+		<p class="small"> </p>
+		<img src="media/qrcode.png" width="100" height="100" />
+	</div>
+	<div class="col-sm-6">
+		<img src="media/wechat.svg" width=30em height=30em align="right" />
+		<img src="media/weibo.png" width=30em height=30em align="right" />
+		<img src="media/googleplus.jpg" width=30em height=30em align="right" />
+	</div>
+</div>
+<!-- /footer of page sector -->
+
+	</body>
+</html>
