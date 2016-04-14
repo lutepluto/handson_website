@@ -35,16 +35,26 @@
 					alert("Data: " + data + "\nStatus: " + status);
 				});
 				*/
-				/*Get method
+				/*Get method*/
 				alert("launch get ajax");
-				$.get("https://jinshuju.net/api/v1/forms/ex27t2",function(data,status){
+				$.get("http://google.com",function(data,status){
 					alert("Data: " + data + "\nStatus: " + status);
 				});
-				*/
-				/* Another internal get method */
+				
+				/* Another internal get method/
 				$.get( "index.html", function( data ) {
 					$( "#target" ).html( data );
 				});
+				*/
+/* Another attemp to get external site but fail
+$.ajax({
+  url: 'http://google.com',
+  type: 'GET',
+  success: function(res) {
+    alert(res.responseText);
+  }
+});
+*/
 			});
 		});
 		
