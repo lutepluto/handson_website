@@ -2,8 +2,7 @@
  index
  |--主页(/index.html)
  |--参与(/join.html)
- |    |--AsAVolunteer(/join#.html)
- |    |--AsACaller(/join#.html)
- |    |--AsProfessions(/join#.html)
+ |    |--AsCaller(/join#.html)
+ |    |--AsDesigner(/join#.html)
  |--FAQ(/faq.html)
  |--关于(/about.html)

@@ -124,7 +124,7 @@ body { padding-top: 70px; }
 
 /* the 3 para of line-gradient means: turn x degree from 12 o'clock clockwise, bottom color, top color*/ 
 .color-bg-gradient-blue {background: linear-gradient(50deg, #6BB9D1, #7CDBF3);}
-.color-bg-gradient-orange {background: linear-gradient(50deg, #DC6200, #FE8402);}
+.color-bg-gradient-orange{background:linear-gradient(50deg, #EE8422, #FFB857);}
 
 .color-ct-3-1 {	/*GREEN:light-green*/	color: #AFEAAA;}
 .color-ct-3-2 {	/*GREEN:medium-green*/	color: #87E293;}
@@ -133,6 +133,7 @@ body { padding-top: 70px; }
 .color-ct-2-2 {	/*BLUE:deep-blue*/	color: #51A5BA;}
 .color-ct-1-1 {	/*ORANGE:light-orange*/	color: #FE8402;}
 .color-ct-grey {	color: grey;}
+.color-ct-white {	color: #EEEEEE;}
 
 .font-huge{	font-size:10em;}
 .font-grande{	font-size:8em;}
@@ -287,7 +288,10 @@ header {
 	#logo>span{		display:inline;	}
 }
 
-
+/* Override container and row, deactivate the default margin/padding */
+.container {padding-left:0;padding-right:0;margin-left:0;margin-right:0;width:100%;}
+.row {padding-left:0;padding-right:0;margin-left:0;margin-right:0;}
+.col-sm-6 {padding-left:0;padding-right:0;}
 
 
 
