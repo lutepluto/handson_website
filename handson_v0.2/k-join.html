@@ -71,7 +71,7 @@
 	<div class="container">
 		<!-- foreword of questionaire-->
 		<div class="row">
-			<div class="padding-lr-3 margin-tb-2">
+			<div class="padding-lr-3 margin-tb-2 bottom-line-blue-1">
 				<h2>展翼计划—受助者信息采集</h2>
 				<p>你好！<br/><br/>
 				感谢你的关注，一只3D打印手可能解决不了所有问题，但是酷酷的机械手可以带给孩子们一些自信！<br/><br/>
@@ -93,31 +93,85 @@
 		
 		<!-- content of questionaire-->
 		<div class="row">
-			1. 您从何种渠道了解到项目信息？ 
-			若来自AIESEC介绍，基金会或者医院请填写一下分会名称，基金会名称或者医院名称，方便我们追踪，谢谢
-			微信文章
-			QQ群介绍
-			AIESEC介绍 **
-			朋友推荐
-			基金会或者医院 **
+		<form action="action_page.php" method="post">
+			<!-- Question #1-->
+			<div class="margin-tb-2 padding-lr-5">
+				<h4>1. 您从何种渠道了解到项目信息？ </h4>
+				<p>若来自AIESEC介绍，基金会或者医院请填写一下分会名称，基金会名称或者医院名称，方便我们追踪，谢谢</p>
+				<label class="radio-inline"><input type="radio" name="optradio">微信文章</label><br/>
+				<label class="radio-inline"><input type="radio" name="optradio">QQ群介绍</label><br/>
+				<label class="radio-inline"><input type="radio" name="optradio">AIESEC介绍**</label><br/>
+				<label class="radio-inline"><input type="radio" name="optradio">朋友推荐</label><br/>
+				<label class="radio-inline"><input type="radio" name="optradio">基金会或者医院**</label>
+			</div>
+			<!-- /Question #1-->
 			
-			2. 申请者姓名
+			<!-- Question #2-->
+			<div class="margin-tb-2 padding-lr-5">
+				<h4>2. 申请者姓名</h4>
+				<input type="text" name="firstname">
+			</div>
+			<!-- /Question #2-->
 			
-			3. 受惠者姓名 
+			<!-- Question #3-->
+			<div class="margin-tb-2 padding-lr-5">
+				<h4>3. 受惠者姓名</h4>
+				<input type="text" name="firstname">
+			</div>
+			<!-- /Question #3-->
 			
-			4. 申请者与受惠者关系 
+			<!-- Question #4-->
+			<div class="margin-tb-2 padding-lr-5">
+				<h4>4. 申请者与受惠者关系 </h4>
+				<input type="text" name="firstname">
+			</div>
+			<!-- /Question #4-->			
+			 
+			<!-- Question #5-->
+			<div class="margin-tb-2 padding-lr-5">
+				<h4>5. 受惠者出生年/月</h4>
+				<input type="text" name="firstname">
+			</div>
+			<!-- /Question #5-->				
 			
-			5. 受惠者出生年/月 
+			<!-- Question #6-->
+			<div class="margin-tb-2 padding-lr-5">
+				<h4>6. 快递地址 </h4>
+				<input type="text" name="firstname">
+			</div>
+			<!-- /Question #6-->				
 			
-			6. 快递地址 
+			<!-- Question #7-->
+			<div class="margin-tb-2 padding-lr-5">
+				<h4>7. 联络电话 </h4>
+				<input type="text" name="firstname">
+			</div>
+			<!-- /Question #7-->				
 			
-			7. 联络电话 
+			<!-- Question #8-->
+			<div class="margin-tb-2 padding-lr-5">
+				<h4>8. 邮箱</h4>
+				<input type="text" name="firstname">
+			</div>
+			<!-- /Question #8-->				
 			
-			8. 邮箱 
+			<!-- Question #9-->
+			<div class="margin-tb-2 padding-lr-5">
+				<h4>9. 请根据图片所示选择类型</h4>
+				<img src="media/hand-cat.jpg" class="img-responsive"/>
+				<p>选择受助者类型</p> 
+				<label class="radio-inline"><input type="radio" name="optradio">A类</label>
+				<label class="radio-inline"><input type="radio" name="optradio">B类</label>
+				<label class="radio-inline"><input type="radio" name="optradio">C类</label>
+			</div>
+			<!-- /Question #9-->				
 			
-			9. 请根据图片所示选择类型
-			选择受助者类型 
-			 A类   B类   C类
+			<!-- Submit button -->
+			<div class="margin-tb-2 padding-lr-5">
+				<input class="btn btn-primary" type="submit" value="提交">
+			</div>
+			<!-- Submit button -->
+		</form> 
 		</div>
 		<!-- /content of questionaire-->
 	</div>
