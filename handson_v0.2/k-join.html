@@ -27,8 +27,8 @@
 		<script src="js/master.js"></script>
 		<script>
 		$(document).ready(function(){
-		$("#submit-button").click(function(){
-			jQuery.ajax({
+		  $("#submit-button").click(function(){
+		/*	jQuery.ajax({
 			contentType:'application/json; charset=UTF-8',
 			dataType: "json",
 			method: 'POST',
@@ -37,12 +37,15 @@
 			success: function(data) {
 				alert("response: " + data);
 			}
-		}).done(function(){
+		  }).done(function(){
 			alert("request sent.")
-		}).fail(function(){
+		  }).fail(function(){
 			alert( "error" );
-		}).always(function() {
+		  }).always(function() {
 			alert( "complete" );
+		  });
+		});*/
+		  alert("submit button clicked.");
 		});
 		</script>
 
@@ -113,7 +116,7 @@
 		
 		<!-- content of questionaire-->
 		<div class="row">
-		<form action="action_page.php" method="post">
+		<!--<form action="/dynamic/ping-servlet" method="post">-->
 			<!-- Question #1-->
 			<div class="margin-tb-2 padding-lr-5">
 				<h4>1. 您从何种渠道了解到项目信息？ </h4>
@@ -188,10 +191,10 @@
 			
 			<!-- Submit button -->
 			<div class="margin-tb-2 padding-lr-5">
-				<input id="submit-button" class="btn btn-primary" type="submit" value="提交">
+				<button id="submit-button" class="btn btn-primary">提交</button>
 			</div>
 			<!-- Submit button -->
-		</form> 
+		<!--</form>--> 
 		</div>
 		<!-- /content of questionaire-->
 	</div>
