@@ -395,6 +395,9 @@ header {
 .col-sm-10 {padding-left:0;padding-right:0;}
 .col-sm-11 {padding-left:0;padding-right:0;}
 
-
+#index-link div:hover {
+	color:#999999;
+	background-color:#333333;
+}
 
 
