@@ -25,6 +25,26 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="js/webservice.js"></script>
 		<script src="js/master.js"></script>
+		<script>
+		$(document).ready(function(){
+		$("#submit-button").click(function(){
+			jQuery.ajax({
+			contentType:'application/json; charset=UTF-8',
+			dataType: "json",
+			method: 'POST',
+			url: '/dynamic/ping-servlet',
+			data: "Post data from nginx"
+			success: function(data) {
+				alert("response: " + data);
+			}
+		}).done(function(){
+			alert("request sent.")
+		}).fail(function(){
+			alert( "error" );
+		}).always(function() {
+			alert( "complete" );
+		});
+		</script>
 
 	</head>
 	<!-- disable onload activated temporaly
@@ -168,7 +188,7 @@
 			
 			<!-- Submit button -->
 			<div class="margin-tb-2 padding-lr-5">
-				<input class="btn btn-primary" type="submit" value="提交">
+				<input id="submit-button" class="btn btn-primary" type="submit" value="提交">
 			</div>
 			<!-- Submit button -->
 		</form> 
