@@ -27,11 +27,14 @@
 		<script src="js/master.js"></script>
 		<script>
 		$(document).ready(function(){
-		  $("#submit-button").click(function(){
-		    $.post("/dynamic/ping-servlet","data from nginx",
-		      function(data){alert(data);}	
-		    );
-		  });
+			
+			/* Submit form button */
+			$("#submit-button").click(function(){
+				$.post("/dynamic/ping-servlet","data from nginx",
+					function(data){alert(data);}	
+				);
+			});
+			
 		});
 		</script>
 
@@ -118,7 +121,7 @@
 			<!-- Question #2-->
 			<div class="margin-tb-2 padding-lr-5">
 				<h4>2. 申请者姓名</h4>
-				<input type="text" name="firstname">
+				<input id="input1" type="text" name="firstname">
 			</div>
 			<!-- /Question #2-->
 			
