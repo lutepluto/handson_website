@@ -170,6 +170,8 @@ body { padding-top: 70px; }
 .color-bg-lightorange {	/*ORANGE:light-orange*/	background-color: #FE8402;}
 .color-bg-white {	background-color: white;}
 .color-bg-white-tran-10 { background-color: rgba(255,255,255,.90);}
+.color-bg-black-tran-10 { background-color: rgba(0,0,0,.90);}
+.color-bg-black-tran-50 { background-color: rgba(0,0,0,.50);}
 .color-bg-grey {	background-color: grey;}
 .color-bg-lightgrey {	background-color: #EEEEEE;}
 .color-bg-silver {	background-color: silver;}
@@ -402,8 +404,8 @@ body { padding-top: 70px; }
 .fix-width-1{ width:1%;}
 .fix-width-h{ width:0.5%;}
 
-.fix-height-30{ height:30em;}
-.fix-height-25{ height:25em;}
+.fix-height-300{ height:300px;}
+.fix-height-250{ height:250px;}
 .fix-height-20{ height:20em;}
 .fix-height-10{ height:10em;}
 .fix-height-9{ height:9em;}
@@ -489,12 +491,12 @@ body { padding-top: 70px; }
 }
 
 .position-relative{position: relative;}
-.position-absolute{position: absolute;}
+.position-absolute{position: absolute; left:0;top:0;}
 
 .hide-when-hover:hover {
-	/*z-index:-1;*/
-	color:#999999;
-	background-color:#333333;
+	z-index:-1;
+	/*color:#999999;
+	background-color:#333333;*/
 }
 
 
