@@ -42,6 +42,7 @@ body { padding-top: 70px; }
 .padding-lr-3 {padding-left: 3em; padding-right: 3em;}
 .padding-lr-4 {padding-left: 4em; padding-right: 4em;}
 .padding-lr-5 {padding-left: 5em; padding-right: 5em;}
+.padding-lr-dnm20x3 {padding-left: 20em; padding-right: 20em;}
 
 .padding-t-h {padding-top: 0.5em;}
 .padding-t-1 {padding-top: 1em;}
@@ -63,6 +64,7 @@ body { padding-top: 70px; }
 .padding-tb-3 {padding-top: 3em; padding-bottom: 3em;}
 .padding-tb-4 {padding-top: 4em; padding-bottom: 4em;}
 .padding-tb-5 {padding-top: 5em; padding-bottom: 5em;}
+.padding-tb-10 {padding-top: 10em; padding-bottom: 10em;}
 
 .margin-birdie-up-1 { margin-top: -1.1em; }
 .margin-birdie-up-2 { margin-top: -1.65em; }
@@ -165,6 +167,9 @@ body { padding-top: 70px; }
 .color-bg-grey {	background-color: grey;}
 .color-bg-lightgrey {	background-color: #EEEEEE;}
 .color-bg-orange {	background-color: #ff9100;}
+.color-bg-purple {	background-color: #A481DB;}
+
+
 
 /* the 3 para of line-gradient means: turn x degree from 12 o'clock clockwise, bottom color, top color*/ 
 .color-bg-gradient-blue {background: linear-gradient(50deg, #6BB9D1, #7CDBF3);}
@@ -181,8 +186,10 @@ body { padding-top: 70px; }
 
 .font-huge{	font-size:10em;}
 .font-grande{	font-size:8em;}
-.font-medium{	font-size:5em;}
+.font-medium{	font-size:3em;}
 .font-small{	font-size:2em;}
+.font-xs{	font-size:1.5em;}
+.font-xxs{	font-size:1em;}
 .font-tiny{	font-size:0.75em;}
 .font-bold{ font-style: bold;}
 .font-italic{ font-style: italic;}
@@ -211,6 +218,7 @@ body { padding-top: 70px; }
 .bottom-line-orange-1{	border-bottom: 0.3em solid #FE8402; }
 .bottom-line-orange-2{	border-bottom: 0.5em solid #FE8402; }
 .bottom-line-orange-3{	border-bottom: 0.7em solid #FE8402; }
+.bottom-line-blue-h{	border-bottom: 0.1em solid #49CAC1; }
 .bottom-line-blue-1{	border-bottom: 0.3em solid #49CAC1; }
 .bottom-line-blue-2{	border-bottom: 0.5em solid #49CAC1; }
 .bottom-line-blue-3{	border-bottom: 0.7em solid #49CAC1; }
@@ -242,12 +250,20 @@ body { padding-top: 70px; }
 .border-white-2{	border: 0.5em solid #FFFFFF; }
 .border-white-3{	border: 0.7em solid #FFFFFF; }
 
+.border-lightgrey-1{	border: 0.3em solid #EEEEEE; }
+.border-lightgrey-2{	border: 0.5em solid #EEEEEE; }
+.border-lightgrey-3{	border: 0.7em solid #EEEEEE; }
+
 .border-white-1-tran-10{	border: 0.3em solid rgba(255,255,255,.90); }
 .border-white-2-tran-10{	border: 0.5em solid rgba(255,255,255,.90); }
 .border-white-3-tran-10{	border: 0.7em solid rgba(255,255,255,.90); }
 
-.border-color-blue {border-color:#51A5BA;}
+.border-white-1-tran-20{	border: 0.3em solid rgba(255,255,255,.80); }
+.border-white-2-tran-20{	border: 0.5em solid rgba(255,255,255,.80); }
+.border-white-3-tran-20{	border: 0.7em solid rgba(255,255,255,.80); }
 
+.border-color-blue {border-color:#51A5BA;}
+.border-color-white {border-color:#FFFFFF;}
 
 /* Bootstrap source code referece: .nav-pills
 .nav-pills>li{float:left}
@@ -339,7 +355,7 @@ body { padding-top: 70px; }
 	display:none;
 }
 
-
+/*
 header {
 	  height: 600px;
 }
@@ -356,11 +372,13 @@ header {
   width: 100%;
   height: 600px;
 }
+*/
 
 #menu{
 	display: block;
 }
 
+/*
 @media screen and (max-width: 700px) {
 	#header-bg {	width: 100%;	height: 500px;	}
 	header {  height: 500px;}
@@ -368,12 +386,11 @@ header {
 	#logo>span{		display:inline;	}
 	#header-slogan h3{font-size:1.3em}
 	#header-slogan h1{font-size:1.8em}
-}
+}*/
 
-/* Phone size */
-@media screen and (max-width: 550px) {
-	#header-bg {		width: 100%;		height: 400px;	}
-	header {	 height: 400px;	}
+/* critical point of col-sm-x size */
+@media screen and (max-width: 800px) {
+	.padding-lr-dnm20x3 {padding-left: 3em; padding-right: 3em;}
 	#menu{		display:none;	}
 	#logo>span{		display:inline;	}
 	#header-slogan h3{font-size:1.2em}
@@ -400,10 +417,44 @@ header {
 	background-color:#333333;
 }
 
-.max-width-960 {
-	max-width:960px;
+.max-width-960px { max-width:960px;}
+
+.align-center {margin-right: auto; margin-left: auto;}
+
+.fix-width-10{ width:10%;}
+.fix-width-5{ width:5%;}
+.fix-width-3{ width:3%;}
+.fix-width-1{ width:1%;}
+.fix-width-h{ width:0.5%;}
+
+.fix-height-30{ height:30%;}
+.fix-height-25{ height:25%;}
+.fix-height-20{ height:20%;}
+.fix-height-10{ height:10%;}
+.fix-height-5{ height:5%;}
+.fix-height-3{ height:3%;}
+.fix-height-1{ height:1%;}
+.fix-height-h{ height:0.5%;}
+
+.inlined { display:inline-block;}
+
+.color-bg-media1 { 
+	background: url(../media/img/handsnotext.jpg) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
 }
 
-.align-center {
-	margin-right: auto; margin-left: auto;
-}
+
+
+
+
+
+
+
+
+
+

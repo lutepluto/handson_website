@@ -27,37 +27,42 @@
 		<script src="js/master.js"></script>
 
 	</head>
-
+	<!-- disable onload activated temporaly
+	<body onload="getLatestCaller();">
+	-->
 	<body>
+
 <!-- header: includes logo and menu -->
-<header class="color-bg-lightgrey margin-t-5i">
-	<section class="font-yahei max-width-960px align-center">
+<header class="font-yahei">
+	<div id="header-bg">
 		<div class="container">
-			<div class="row">
-				<div id="logo" class="col-sm-3 text-center">
-					<img class="margin-tb-1" src="media/img/handson-logo.png" width=150em />
-					<span class="glyphicon glyphicon-menu-hamburger"></span>
-				</div>
-				<div id="menu" class="col-sm-9 ">
-					<ul class="nav nav-pills nav-justified margin-tb-1">
-						<li class="active"><a href="index.html">首页</a></li>
-						<li><a href="k-join.html">申请义肢</a></li>
-						<li><a href="d-join.html">我想帮助</a></li>
-						<li><a href="about.html">关于</a></li>
-					</ul>
+			<div class="row color-bg-white-tran-10">
+				<div>
+					<div id="logo" class="col-sm-3 text-center">
+						<img class="margin-tb-1" src="media/img/handson-logo.png" width=150em />
+						<span class="glyphicon glyphicon-menu-hamburger"></span>
+					</div>
+					<div id="menu" class="col-sm-9 ">
+						<ul class="nav nav-pills nav-justified margin-tb-1">
+							<li class="active"><a href="index.html">首页</a></li>
+							<li><a href="k-join.html">申请义肢</a></li>
+							<li><a href="d-join.html">我想帮助</a></li>
+							<li><a href="about.html">关于</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="row color-bg-media1">
-				<div class="align-center padding-tb-10 padding-lr-dnm20x3 ">
-					<div class="border-white-1-tran-20 padding-lr-3 text-center color-ct-white">
-						<H3 class="font-xs">中国有2400万肢残人士</H3>
-						<H3 class="font-xs">其中4.6％是0-14岁的</H3>
-						<H1 class="font-medium">青少年儿童</H1>
+			<div class="row" >
+				<div id="header-slogan" class="text-center color-ct-lightblue padding-tb-5 padding-lr-2 ">
+					<div class="border-white-1-tran-10 padding-lr-3">
+						<H3>中国有2400万肢残人士</H3>
+						<H3>其中4.6％是0-14岁的</H3>
+						<H1>青少年儿童</H1>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 </header>
 <!-- /header: includes logo and menu -->
 
@@ -67,7 +72,7 @@
 	<section class="font-yahei max-width-960px align-center">
 		<div class="container">
 			<div class="row color-bg-lightgrey">
-				<div class="text-center margin-tb-4 padding-lr-2 font-yahei color-ct-grey">
+				<div class="text-center margin-b-4 padding-lr-2 font-yahei color-ct-grey">
 					<div class="fix-width-5 bottom-line-blue-h inlined"></div>
 					<h2 class="inlined padding-lr-1">我们做什么?</h2>
 					<div class="fix-width-5 bottom-line-blue-h inlined"></div>
