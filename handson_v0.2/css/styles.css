@@ -400,4 +400,10 @@ header {
 	background-color:#333333;
 }
 
+.max-width-960 {
+	max-width:960px;
+}
 
+.align-center {
+	margin-right: auto; margin-left: auto;
+}
