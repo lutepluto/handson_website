@@ -176,6 +176,7 @@ body { padding-top: 70px; }
 .color-bg-blue {	/*BLUE:deep-blue*/	background-color: #51A5BA;}
 .color-bg-lightorange {	/*ORANGE:light-orange*/	background-color: #FE8402;}
 .color-bg-white {	background-color: white;}
+.color-bg-black {	background-color: black;}
 .color-bg-white-tran-10 { background-color: rgba(255,255,255,.90);}
 .color-bg-black-tran-10 { background-color: rgba(0,0,0,.90);}
 .color-bg-black-tran-20 { background-color: rgba(0,0,0,.80);}
