@@ -20,8 +20,20 @@ index
  <* Branch:Birdie *>
  index
  |--主页(/index.html)
- |--参与(/join.html)
- |    |--AsAVolunteer(/join#.html)
- |    |--AsACaller(/join#.html)
- |    |--AsProfessions(/join#.html)
+ |--申请义肢(/k-join.html)
+ |--我想帮助(/d-join.html)
+ |--关于(/about.html)
+ 
+ <* Propose structure of master *>
+  index
+ |--主页(/index.html)(內容入口+菜單入口)
+ |--故事(/story.html)(目前袁浩/各種案例)
+ |--技术(/tech.html)
+ |    |--機器手打印須知(江舟文檔內容)
+ |    |--手部模型介紹 (介紹cyborg beast和其子模型/award designers)
+ |--申请义肢(/k-join.html)
+ |--我想參與(/d-join.html)
+ |    |--學生
+ |    |--企業
+ |    |--志願者
  |--关于(/about.html)
