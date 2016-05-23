@@ -4,7 +4,7 @@
  * The height may need to be changed if the height of you
  * navigation changes.
 */
-body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: pingfang sc,microsoft yahei,helvatica;}
+body { padding-top: 70px; }
 
 /**
  * Bootstrap requires a containing element to wrap site contents 
@@ -15,7 +15,7 @@ body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: ping
  * If using container-fluid, you may need to set a maximum width, 
  * so that the container will not spread to the entire viewport.
 */
-.container-fluid { max-width: 1200px;}
+.container-fluid { max-width: 1200px; }
 
 /**
  * We can add some "helper classes" to add or remove margins to
@@ -170,10 +170,10 @@ body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: ping
 .icon-grande {    font-size: 200px;}
 
 .color-bg-lightgreen {	/*GREEN:light-green*/	background-color: #AFEAAA;}
-.color-bg-green {	/*GREEN:medium-green*/	background-color: #7BAA6B;}
+.color-bg-green {	/*GREEN:medium-green*/	background-color: #87E293;}
 .color-bg-deepgreen {	/*GREEN:deep-green*/	background-color: #41924B;}
 .color-bg-lightblue {	/*BLUE:light-blue*/	background-color: #6BCAE2;}
-.color-bg-blue {	/*BLUE:deep-blue*/	background-color:#4D78CA;}
+.color-bg-blue {	/*BLUE:deep-blue*/	background-color: #51A5BA;}
 .color-bg-lightorange {	/*ORANGE:light-orange*/	background-color: #FE8402;}
 .color-bg-white {	background-color: white;}
 .color-bg-black {	background-color: black;}
@@ -184,15 +184,15 @@ body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: ping
 .color-bg-black-tran-40 { background-color: rgba(0,0,0,.60);}
 .color-bg-black-tran-50 { background-color: rgba(0,0,0,.50);}
 .color-bg-grey {	background-color: grey;}
-.color-bg-lightgrey {	background-color: #F8F8F8;}
+.color-bg-lightgrey {	background-color: #EEEEEE;}
 .color-bg-silver {	background-color: silver;}
-.color-bg-orange {	background-color: #E27272;}
-.color-bg-purple {		background-color:#9E57DD;}
-.color-bg-limegreen {	background-color: #9BCB3C;}
-.color-bg-orangered {	background-color: #F26739;}
-.color-bg-cadetblue {	background-color: #91BEAE;}
-.color-bg-darkslategrey {	background-color: #104A57;}
-.color-bg-bluepurple {	background-color: #A86EAE;}
+.color-bg-orange {	background-color: #ff9100;}
+.color-bg-purple {	background-color: #A481DB;}
+.color-bg-limegreen {	background-color: LimeGreen;}
+.color-bg-orangered {	background-color: orangered;}
+.color-bg-cadetblue {	background-color: cadetblue;}
+.color-bg-darkslategrey {	background-color: DarkSlateGrey;}
+.color-bg-bluepurple {	background-color: #8855BB;}
 
 /* the 3 para of line-gradient means: turn x degree from 12 o'clock clockwise, bottom color, top color*/ 
 .color-bg-gradient-blue {background: linear-gradient(50deg, #6BB9D1, #7CDBF3);}
@@ -205,14 +205,14 @@ body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: ping
 .color-ct-blue{	/*BLUE:deep-blue*/	color: #51A5BA;}
 .color-ct-lightorange {	/*ORANGE:light-orange*/	color: #FE8402;}
 .color-ct-grey {	color: grey;}
-.color-ct-orangered {	color: #F26739;}
-.color-ct-cadetblue {	color: #91BEAE;}
+.color-ct-orangered {	color: orangered;}
+.color-ct-cadetblue {	color: CadetBlue;}
 .color-ct-silver {	color: silver;}
 .color-ct-darkgrey {	color: darkgrey;}
-.color-ct-limegreen {	color: #9BCB3C;}
+.color-ct-limegreen {	color: LimeGreen;}
 .color-ct-white {	color: #FFFFFF;}
-.color-ct-darkslategrey {	color: #104A57;}
-.color-ct-bluepurple {	color: #A86EAE;}
+.color-ct-darkslategrey {	color: darkslategrey;}
+.color-ct-bluepurple {	color: #8855BB;}
 
 .font-huge{	font-size:10em;}
 .font-grande{	font-size:8em;}
@@ -248,7 +248,7 @@ body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: ping
 .bottom-line-orange-1{	border-bottom: 0.3em solid #FE8402; }
 .bottom-line-orange-2{	border-bottom: 0.5em solid #FE8402; }
 .bottom-line-orange-3{	border-bottom: 0.7em solid #FE8402; }
-.bottom-line-blue-h{	border-bottom: 2px solid #4D8AB6; width:70px;}
+.bottom-line-blue-h{	border-bottom: 0.1em solid #49CAC1; }
 .bottom-line-blue-1{	border-bottom: 0.3em solid #49CAC1; }
 .bottom-line-blue-2{	border-bottom: 0.5em solid #49CAC1; }
 .bottom-line-blue-3{	border-bottom: 0.7em solid #49CAC1; }
@@ -303,35 +303,36 @@ body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: ping
 .list-group-item.active>.badge,.nav-pills>.active>a>.badge{color:#337ab7;background-color:#fff}
 .nav-pills>li>a>.badge{margin-left:3px}
 */
-.nav-pills>li{
-	width:100px;
-
-}
 .nav-pills>li>a{
+	color:#51A5BA;
 	background-color:rgba(0,0,0,0);
 	padding-left: .5em;
 	padding-right: .5em;
-	margin-right:50px;
-	width:100px;
-	color: #747474;
-	border-radius:0px;
-	margin-bottom:-1px;
-	margin-top:-1px;
 }
-
-.nav-pills>li>a:hover {
-background-color:rgba(0,0,0,0);
-color:#1C6DC1;
-border-bottom:2px solid #1C6DC1;
-/*-webkit-transition:all .2s ease-in-out;*/
-}
-.activem{
-color:#1C6DC1!important;
-border-bottom:2px solid #1C6DC1;
-}
-.nav-pills>li>a:active {
+.nav-pills>li>a:focus{
+	color:#6BCAE2;
 	background-color:rgba(0,0,0,0);
-color:#1C6DC1;
+	border-radius:5em;
+}
+.nav-pills>li>a:hover{
+	color:#6BCAE2;
+	background-color:rgba(0,0,0,0);
+	border-radius:5em;
+}
+.nav-pills>li.active>a{
+	color:#6BCAE2;
+	background-color:rgba(0,0,0,0);
+	border-radius:5em;
+}
+.nav-pills>li.active>a:focus{
+	color:#6BCAE2;
+	background-color:rgba(0,0,0,0);
+	border-radius:5em;
+}
+.nav-pills>li.active>a:hover{
+	color:#6BCAE2;
+	background-color:rgba(0,0,0,0);
+	border-radius:5em;
 }
 
 /* Override pagination from square to circle */
@@ -376,155 +377,6 @@ color:#1C6DC1;
 	border-radius:5em;
 }
 
-/* Gene's code */
-.bannertext{
-	border:8px solid rgba(255,255,255,0.7);
-}
-.bannertext1, .bannertext2{
-	font-size:30px;
-	font-family: pingfang sc,microsoft yahei,helvatica;
-	opacity:0.8;
-}
-
-.bannertext3{
-	font-size:48px;
-	font-family: pingfang sc,microsoft yahei,helvatica;
-	opacity:0.8;
-}
-.question{
-	margin-top:50px;
-	font-size:38px;
-	color:#636363;
-	font-family: pingfang sc,microsoft yahei,helvatica;
-}
-.questione{
-	font-size:20px;
-	margin-bottom:80px;
-	color:#636363;
-	font-family: pingfang sc,microsoft yahei,helvatica;
-}
-.what1{
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-	font-size:48px;
-	margin-top:24px;
-	margin-bottom:24px;
-}
-.what2{
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-	font-size:22px;
-}
-.nannan{
-	color:white;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-	font-size:22px;
-	-webkit-transition:all 0.2s ease-in-out;
-	padding-left:2em;
-	padding-right:2em;
-	border:2px solid;
-}
-.nannan:hover{
-	color:#9E57DD;
-	background-color:white;
-	-webkit-transition:all 0.2s ease-in-out;
-}
-.threeblocks{
-	margin-top:30px;
-}
-.threeblocktitle{
-	margin-top:30px;
-	margin-bottom:30px;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-	font-size:25px;
-}
-.numb{
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-	font-size:40px;
-	margin-top:10px;
-}
-.promise{
-	margin-top:80px;
-	font-size:40px;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-	 font-weight:500;
-}
-.free{
-	color:#4D8AB6;
-	margin-top:40px;
-	font-size:50px;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-	 font-weight:300;
-}
-.promiseblock{
-	padding-left:0px;
-}
-.knowmore{
-	font-size:20px;
-	color:#4D8AB6;
-	border-color:#4D8AB6;
-	padding-left:3em;
-	padding-right:3em;
-	border:2px solid;
-	-webkit-transition:all 0.2s ease-in-out;
-}
-.knowmore:hover{
-	background-color:#4D8AB6;
-	color:white;
-	-webkit-transition:all 0.2s ease-in-out;
-}
-footer{
-	border-top:1px solid rgba(0,0,0,0.1);
-}
-.footerintro{
-	font-size:14px;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-}
-.contactus{
-	font-size:15px;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-	margin-top:35px;
-}
-.contact{
-	font-size:14px;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-	/*margin-top:50px;*/
-}
-.hovertext{
-	font-size:20px;
-}
-
-.mission1, .mission2{
-	font-size:57px;
-	color:#4A90E2;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-}
-.mission1{
-	margin-left:-60px;
-}
-.mission2{
-	margin-left:40px;
-}
-.missionbullet{
-	font-size:20px;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-}
-.emphasize{
-	font-size:24px;
-	color:#4A90E2;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-}
-.pointtext{
-	font-size:16px;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-}
-.pointsstartend{
-	background-color:#868686;
-	font-size:12px;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-}
-.fontfamily{
-	font-family:pingfang sc,microsoft yahei,helvatica; 
-}
-
 /* Override well */
 .well {border-radius:1em; box-shadow: 0.2em 0.2em 0.3em -0.1em grey;}
 
@@ -563,13 +415,9 @@ footer{
 .fix-width-1{ width:1%;}
 .fix-width-h{ width:0.5%;}
 
-.fix-height-x{ height:128px;}
-.fix-height-300{ height:370px;}
+.fix-height-300{ height:300px;}
 .fix-height-250{ height:250px;}
 .fix-height-200{ height:200px;}
-.fix-height-175{ height:175px;}
-.fix-height-150{ height:150px;}
-.fix-height-125{ height:125px;}
 .fix-height-100{ height:100px;}
 .fix-height-90{ height:90px;}
 .fix-height-80{ height:80px;}
@@ -597,7 +445,7 @@ footer{
 }
 
 .color-bg-media2 { 
-	background: url(../media/img/about-banner.jpg) no-repeat;
+	background: url(../media/img/about-banner.png) no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -635,16 +483,7 @@ footer{
 }
 
 #menu{
-	color:grey;
 	display: block;
-	font-size:20px;
-	width:500px;
-	margin-left:150px;
-}
-
-/* patchy media interaction for timeline stroke */
-@media screen and (max-width: 900px) {
-	.pointtext{ font-size:13px; font-family:pingfang sc,microsoft yahei,helvatica; }
 }
 
 /* critical point of col-sm-x size */
