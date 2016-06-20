@@ -1,4 +1,21 @@
 /**
+ * Content:
+ * 1. Body & Container-fluid
+ * 2. Padding and Margin
+ * 3. icon size (can adapt to fonts)
+ * 4. Colorings
+ * 5. Font size
+ * 6. Box-shadow
+ * 7. Text-shadow
+ * 8. Borders
+ * 9. Override (clear/add attributes)
+ * 10. Gene's code
+ * 11. Alignment
+ * 12. Width/height related
+ * 13. else
+**/
+
+/**
  * Padding-top is required if using .navbar-fixed-top.
  * This can be removed Remove if using .navbar-static-top.
  * The height may need to be changed if the height of you
@@ -221,11 +238,14 @@ body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: ping
 .font-xs{	font-size:1.5em;}
 .font-xxs{	font-size:1em;}
 .font-tiny{	font-size:0.75em;}
+
 .font-bold{ font-weight: bold;}
 .font-italic{ font-style: italic;}
+
 .font-lobster{	font-family: 'Lobster', cursive;}
 .font-yahei{ font-family: 'Microsoft JhengHei', 'SimHei', 'MingLiU';}
 .font-kaiti { font-family: 'KaiTi';}
+.font-pingfang {font-family:pingfang sc,microsoft yahei,helvatica; }
 
 /* Box shadow definition */
 /* The 5 para means: hori-offset, verti-offset, bluring, size, color */
@@ -295,6 +315,21 @@ body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: ping
 .border-color-blue {border-color:#51A5BA;}
 .border-color-white {border-color:#FFFFFF;}
 
+/* Override container and row, deactivate the default margin/padding */
+.container {padding-left:0;padding-right:0;margin-left:0;margin-right:0;width:100%;}
+.row {padding-left:0;padding-right:0;margin-left:0;margin-right:0;}
+.col-sm-1 {padding-left:0;padding-right:0;}
+.col-sm-2 {padding-left:0;padding-right:0;}
+.col-sm-3 {padding-left:0;padding-right:0;}
+.col-sm-4 {padding-left:0;padding-right:0;}
+.col-sm-5 {padding-left:0;padding-right:0;}
+.col-sm-6 {padding-left:0;padding-right:0;}
+.col-sm-7 {padding-left:0;padding-right:0;}
+.col-sm-8 {padding-left:0;padding-right:0;}
+.col-sm-9 {padding-left:0;padding-right:0;}
+.col-sm-10 {padding-left:0;padding-right:0;}
+.col-sm-11 {padding-left:0;padding-right:0;}
+
 /* Bootstrap source code referece: .nav-pills
 .nav-pills>li{float:left}
 .nav-pills>li>a{border-radius:4px}
@@ -333,6 +368,9 @@ border-bottom:2px solid #1C6DC1;
 	background-color:rgba(0,0,0,0);
 color:#1C6DC1;
 }
+
+/* Override well */
+.well {border-radius:1em; box-shadow: 0.2em 0.2em 0.3em -0.1em grey;}
 
 /* Override pagination from square to circle */
 .pagination>li>a{
@@ -525,28 +563,11 @@ footer{
 	font-family:pingfang sc,microsoft yahei,helvatica; 
 }
 
-/* Override well */
-.well {border-radius:1em; box-shadow: 0.2em 0.2em 0.3em -0.1em grey;}
 
-/* Override container and row, deactivate the default margin/padding */
-.container {padding-left:0;padding-right:0;margin-left:0;margin-right:0;width:100%;}
-.row {padding-left:0;padding-right:0;margin-left:0;margin-right:0;}
-.col-sm-1 {padding-left:0;padding-right:0;}
-.col-sm-2 {padding-left:0;padding-right:0;}
-.col-sm-3 {padding-left:0;padding-right:0;}
-.col-sm-4 {padding-left:0;padding-right:0;}
-.col-sm-5 {padding-left:0;padding-right:0;}
-.col-sm-6 {padding-left:0;padding-right:0;}
-.col-sm-7 {padding-left:0;padding-right:0;}
-.col-sm-8 {padding-left:0;padding-right:0;}
-.col-sm-9 {padding-left:0;padding-right:0;}
-.col-sm-10 {padding-left:0;padding-right:0;}
-.col-sm-11 {padding-left:0;padding-right:0;}
-
-
-.max-width-960px { max-width:960px;}
 
 .align-center {margin-right: auto; margin-left: auto;}
+
+.max-width-960px { max-width:960px;}
 
 .fix-width-100{ width:100%;}
 .fix-width-90{ width:90%;}
