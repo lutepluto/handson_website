@@ -195,6 +195,10 @@ body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: ping
 .color-bg-white {	background-color: white;}
 .color-bg-black {	background-color: black;}
 .color-bg-white-tran-10 { background-color: rgba(255,255,255,.90);}
+.color-bg-white-tran-20 { background-color: rgba(255,255,255,.80);}
+.color-bg-white-tran-30 { background-color: rgba(255,255,255,.70);}
+.color-bg-white-tran-40 { background-color: rgba(255,255,255,.60);}
+.color-bg-white-tran-50 { background-color: rgba(255,255,255,.50);}
 .color-bg-black-tran-10 { background-color: rgba(0,0,0,.90);}
 .color-bg-black-tran-20 { background-color: rgba(0,0,0,.80);}
 .color-bg-black-tran-30 { background-color: rgba(0,0,0,.70);}
@@ -585,6 +589,7 @@ footer{
 .fix-width-h{ width:0.5%;}
 
 .fix-height-x{ height:128px;}
+.fix-height-350{ height:400px;}
 .fix-height-300{ height:370px;}
 .fix-height-250{ height:250px;}
 .fix-height-200{ height:200px;}
