@@ -186,6 +186,17 @@ body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: ping
 .icon-medium {    font-size: 100px;}
 .icon-grande {    font-size: 200px;}
 
+.color-trans-1 {opacity: 0.1;}
+.color-trans-2 {opacity: 0.2;}
+.color-trans-3 {opacity: 0.3;}
+.color-trans-4 {opacity: 0.4;}
+.color-trans-5 {opacity: 0.5;}
+.color-trans-6 {opacity: 0.6;}
+.color-trans-7 {opacity: 0.7;}
+.color-trans-8 {opacity: 0.8;}
+.color-trans-9 {opacity: 0.9;}
+.color-trans-10 {opacity: 1.0;}
+
 .color-bg-lightgreen {	/*GREEN:light-green*/	background-color: #AFEAAA;}
 .color-bg-green {	/*GREEN:medium-green*/	background-color: #7BAA6B;}
 .color-bg-deepgreen {	/*GREEN:deep-green*/	background-color: #41924B;}
@@ -221,6 +232,7 @@ body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: ping
 
 .color-ct-lightgreen {	/*GREEN:light-green*/	color: #AFEAAA;}
 .color-ct-green {	/*GREEN:medium-green*/	color: #87E293;}
+.color-ct-biggreen {	/*GREEN:big-green*/	color: #a7f442;}
 .color-ct-deepgreen {	/*GREEN:deep-green*/	color: #41924B;}
 .color-ct-lightblue {	/*BLUE:light-blue*/	color: #6BCAE2;}
 .color-ct-blue{	/*BLUE:deep-blue*/	color: #51A5BA;}
@@ -694,6 +706,16 @@ footer{
 
 .color-bg-sz { 
 	background: url(../media/cities/sz.jpg) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+}
+
+.color-bg-your { 
+	background: url(../media/cities/your.jpg) no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
