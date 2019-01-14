@@ -1,7 +1,0 @@
-﻿ <* Branch:Birdie *>
- index
- |--首页(/index.html)
- |--申请义肢(/k-join.html)
- |--我想帮助(/d-join.html)
- |--关于(/about.html include faq.html)
- 

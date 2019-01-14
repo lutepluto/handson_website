@@ -1,0 +1,24 @@
+{
+  "name": "handson_website",
+  "version": "0.0.1",
+  "description": "handson 3D-printing homesite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lutepluto/handson_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lutepluto/handson_website/issues"
+  },
+  "homepage": "https://github.com/lutepluto/handson_website#readme",
+  "devDependencies": {
+    "ejs-compiled-loader": "^1.1.0",
+    "webpack": "^4.28.4",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
