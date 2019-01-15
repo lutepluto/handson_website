@@ -1,0 +1,17 @@
+<!-- icons -->
+<link rel="apple-touch-icon" href="<%= require('images/apple-touch-icon.png') %>">
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- CSS file -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- CSS for google fonts -->
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+<% htmlWebpackPlugin.files.css.filter(function (css) { -%>
+<%   return css.entryName === htmlWebpackPlugin.options.data.entryName -%>
+<% }).map(function (css) { -%>
+<%   return css.path -%> 
+<% }).forEach(function (path) { -%>
+<link rel="stylesheet" href="<%= path %>">
+<% }) -%>
