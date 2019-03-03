@@ -22,15 +22,17 @@ const injections = Object.keys(scripts)
     return new HtmlWebpackPlugin({
       filename,
       template: `ejs-compiled-loader!${filepath}`,
-      inject: false,
+      inject: true,
+      chunks: [key],
       data: {
         entryName: key
       }
     })
   })
 
+console.log(injections)
+
 module.exports = {
-  mode: 'none',
   entry: scripts,
   output: {
     path: path.join(__dirname, 'build'),
@@ -71,6 +73,18 @@ module.exports = {
         ]
       }
     ]
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'initial',
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendor',
+          chunks: 'all'
+        }
+      }
+    }
   },
   plugins: [
     new webpack.ProvidePlugin({

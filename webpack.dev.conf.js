@@ -18,6 +18,9 @@ module.exports = webpackMerge(baseConfig, {
       // }
     ]
   },
+  optimization: {
+    runtimeChunk: 'single'
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
@@ -26,5 +29,6 @@ module.exports = webpackMerge(baseConfig, {
     contentBase: __dirname,
     publicPath: '/build/',
     hot: true
-  }
+  },
+  stats: 'verbose'
 })
