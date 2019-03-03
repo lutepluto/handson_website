@@ -1,45 +1,35 @@
 const webpackMerge = require('webpack-merge')
-const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const baseConfig = require('./webpack.base.conf');
 
 module.exports = webpackMerge(baseConfig, {
+  mode: 'production',
+  output: {
+    filename: './scripts/[name].[chunkhash].js',
+  },
   module: {
     rules: [
-      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
-      // {
-      //   test: /\.scss$/,
-      //   use: [
-      //     'style-loader',
-      //     { loader: 'css-loader', options: { importLoaders: 1 } },
-      //     'sass-loader'
-      //   ]
-      // }
+      {
+        test: /\.css$/,
+        use: [{
+          loader: MiniCssExtractPlugin.loader
+        }, 'css-loader']
+      }
     ]
   },
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.css$/,
-  //       use: ExtractTextWebpackPlugin.extract([ 'css-loader' ])
-  //     }
-  //   ]
-  // },
-  // plugins: [
-  //   new ExtractTextWebpackPlugin({
-  //     filename: "styles/[name].css",
-  //   })
-  // ],
-  optimization: {
-    splitChunks: {
-      chunks: 'initial',
-      cacheGroups: {
-        commons: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendor',
-          chunks: 'initial'
-        }
-      }
-    }
-  }
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "styles/[name].[chunkhash].css",
+    }),
+    new OptimizeCssAssetsPlugin({
+      assetNameRegExp: /\.css$/,
+      cssProcessor: require('cssnano'),
+      cssProcessorPluginOptions: {
+        preset: ['default', { discardComments: { removeAll: true } }],
+      },
+      canPrint: true
+    })
+  ]
 })

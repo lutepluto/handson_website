@@ -30,8 +30,6 @@ const injections = Object.keys(scripts)
     })
   })
 
-console.log(injections)
-
 module.exports = {
   entry: scripts,
   output: {
@@ -79,9 +77,15 @@ module.exports = {
       chunks: 'initial',
       cacheGroups: {
         vendor: {
-          test: /[\\/]node_modules[\\/]/,
           name: 'vendor',
+          test: /[\\/]node_modules[\\/]/,
           chunks: 'all'
+        },
+        styles: {
+          name: 'styles',
+          test: /\.css$/,
+          chunks: 'initial',
+          enforce: true
         }
       }
     }
