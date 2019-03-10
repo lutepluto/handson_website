@@ -95,128 +95,66 @@
             <h5 class="questione">Our Road Map</h5>
           </div>
         </div>
-        <!--Upper part of timeline-->
-        <div class="row">
-          <div class="col-sm-1"></div>
-          <div class="col-sm-2">
-            <div class="color-ct-orangered pointtext">
-              <h2>2015 Oct.</h2>
-              <p data-i18n="roadMap.steps.step1.line1">通过腾讯公益众筹到项目启动资金。</P>
-              <p data-i18n="roadMap.steps.step1.line2">通过各种渠道收集到需要义肢帮助的需求方信息30例。</p>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="text-center padding-t-5">
-              <span class="img-circle color-bg-cadetblue color-ct-white glyphicon glyphicon-facetime-video padding-tb-1 padding-lr-1 icon-xs"></span>
-              <div class="color-bg-cadetblue fix-width-5 fix-height-x align-center margin-t-1i"></div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="color-ct-limegreen pointtext">
-              <h2>2016 Jan.</h2>
-              <p data-i18n="roadMap.steps.step3">在北京，上海，广州三地举办三场机械手制作工作坊，参与志愿者超过100人，制作16只机械义肢并全部配送给需求方。</p>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="text-center padding-t-7">
-              <span class="img-circle color-bg-darkslategrey color-ct-white glyphicon glyphicon-user padding-tb-1 padding-lr-1 icon-xs"></span>
-              <div class="color-bg-darkslategrey fix-width-5 fix-height-100 align-center margin-t-1i"></div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="color-ct-bluepurple pointtext">
-              <h2>2016 May</h2>
-              <p data-i18n="roadMap.steps.step5.line1">与AIESEC合作，义肢制作工作坊将会扩展到深圳，武汉，哈尔滨，广州，北京，苏州等更多城市。</P>
-              <p data-i18n="roadMap.steps.step5.line2">针对更多其他残疾情况的义肢模型进行开发。</P>
-            </div>
-          </div>
-          <div class="col-sm-1"></div>
-        </div>
-        <!--/Upper part of timeline-->
 
-        <!--Middle part of timeline-->
-        <div class="row">
-          <div class="col-sm-1">
-            <div data-i18n="roadMap.steps.start"
-              class="color-bg-silver color-ct-white font-tiny padding-tb-h fix-height-hardcode pointsstartend text-center"
-            >
-              盘古开天辟地
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="color-bg-orangered padding-tb-h" align="middle">
-              <img src="<%= require('images/img/dunhill.png') %>" width="15em" height="15em">
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="color-bg-cadetblue padding-tb-h" align="middle">
-              <img src="<%= require('images/img/dunhill.png') %>" width="15em" height="15em">
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="color-bg-limegreen padding-tb-h" align="middle">
-              <img src="<%= require('images/img/dunhill.png') %>" width="15em" height="15em">
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="color-bg-darkslategrey padding-tb-h" align="middle">
-              <img src="<%= require('images/img/dunhill.png') %>" width="15em" height="15em">
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="color-bg-bluepurple padding-tb-h" align="middle">
-              <img src="<%= require('images/img/dunhill.png') %>" width="15em" height="15em">
-            </div>
-          </div>
-          <div class="col-sm-1">
-            <div data-i18n="roadMap.steps.end"
-              class="color-bg-silver color-ct-white font-tiny padding-tb-h fix-height-hardcode pointsstartend text-center"
-            >
-              更美好的未来
-            </div>
-          </div>
+        <div class="roadmap">
+          <ol class="roadmap__backbone">
+            <li class="roadmap__end pointsstartend">
+              <span data-i18n="roadMap.steps.start">盘古开天辟地</span>
+            </li>
+            <li class="roadmap__item color-bg-orangered">
+              <div class="item__up color-ct-orangered">
+                <h4 class="item__title">2015 Oct.</h4>
+                <p data-i18n="roadMap.steps.step1.line1">通过腾讯公益众筹到项目启动资金。</P>
+                <p data-i18n="roadMap.steps.step1.line2">通过各种渠道收集到需要义肢帮助的需求方信息30例。</p>
+              </div>
+              <div class="item__bottom text-center">
+                <span class="item__icon color-bg-orangered glyphicon glyphicon-off item__icon--margin-60"></span>
+              </div>
+            </li>
+            <li class="roadmap__item color-bg-cadetblue">
+              <div class="item__up text-center">
+                <span class="item__icon color-bg-cadetblue glyphicon glyphicon-facetime-video item__icon--margin-128"></span>
+              </div>
+              <div class="item__bottom color-ct-cadetblue">
+                <h4 class="item__title">2015 Nov.</h4>
+                <p data-i18n="roadMap.steps.step2.line1">项目纪录短片上线,全平台播放超过10万。</P>
+                <p data-i18n="roadMap.steps.step2.line2">基于3D打印机械义肢开源社区e-NABLE的义肢模型改进了第一版的机械手模型。</P>
+              </div>
+            </li>
+            <li class="roadmap__item color-bg-limegreen">
+              <div class="item__up color-ct-limegreen">
+                <h4 class="item__title">2016 Jan.</h4>
+                <p data-i18n="roadMap.steps.step3">在北京，上海，广州三地举办三场机械手制作工作坊，参与志愿者超过100人，制作16只机械义肢并全部配送给需求方。</p>
+              </div>
+              <div class="item__bottom text-center">
+                <span class="item__icon color-bg-limegreen glyphicon glyphicon-home item__icon--margin-125"></span>
+              </div>
+            </li>
+            <li class="roadmap__item color-bg-darkslategrey">
+              <div class="item__up text-center">
+                <span class="item__icon color-bg-darkslategrey glyphicon glyphicon-user item__icon--margin-100"></span>
+              </div>
+              <div class="item__bottom color-ct-darkslategrey">
+                <h4 class="item__title">2016 Mar.</h4>
+                <p data-i18n="roadMap.steps.step4.line1">组建核心运营团队，针对义肢研发，志愿者网络建立，义肢设计师管理，线上平台，工作坊产品等方向设定计划。</P>
+                <p data-i18n="roadMap.steps.step4.line2">项目入驻清华X-lab，拟以社企形式运营。</P>
+              </div>
+            </li>
+            <li class="roadmap__item color-bg-bluepurple">
+              <div class="item__up color-ct-bluepurple">
+                <h4 class="item__title">2016 May</h4>
+                <p data-i18n="roadMap.steps.step5.line1">与AIESEC合作，义肢制作工作坊将会扩展到深圳，武汉，哈尔滨，广州，北京，苏州等更多城市。</P>
+                <p data-i18n="roadMap.steps.step5.line2">针对更多其他残疾情况的义肢模型进行开发。</P>
+              </div>
+              <div class="item__bottom text-center">
+                <span class="item__icon color-bg-bluepurple glyphicon glyphicon-globe item__icon--margin-70"></span>
+              </div>
+            </li>
+            <li class="roadmap__end pointsstartend">
+              <span data-i18n="roadMap.steps.end">更美好的未来</span>
+            </li>
+          </ol>
         </div>
-        <!--/Middle part of timeline-->
-
-        <!--Lower part of timeline-->
-        <div class="row">
-          <div class="col-sm-1"></div>
-          <div class="col-sm-2">
-            <div class="text-center">
-              <div class="color-bg-orangered fix-width-5 fix-height-60 align-center"></div>
-              <span class="img-circle color-bg-orangered color-ct-white glyphicon glyphicon-off padding-tb-1 padding-lr-1 icon-xs margin-t-hi"></span>
-            </div>
-          </div>
-          <div class="col-sm-2 pointtext">
-            <div class="color-ct-cadetblue">
-              <h2>2015 Nov.</h2>
-              <p data-i18n="roadMap.steps.step2.line1">项目纪录短片上线,全平台播放超过10万。</P>
-              <p data-i18n="roadMap.steps.step2.line2">基于3D打印机械义肢开源社区e-NABLE的义肢模型改进了第一版的机械手模型。</P>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="text-center">
-              <div class="color-bg-limegreen fix-width-5 fix-height-125 align-center"></div>
-              <span class="img-circle color-bg-limegreen color-ct-white glyphicon glyphicon-home padding-tb-1 padding-lr-1 icon-xs margin-t-hi"></span>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="color-ct-darkslategrey pointtext">
-              <h2>2016 Mar.</h2>
-              <p data-i18n="roadMap.steps.step4.line1">组建核心运营团队，针对义肢研发，志愿者网络建立，义肢设计师管理，线上平台，工作坊产品等方向设定计划。</P>
-              <p data-i18n="roadMap.steps.step4.line2">项目入驻清华X-lab，拟以社企形式运营。</P>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="text-center">
-              <div class="color-bg-bluepurple fix-width-5 fix-height-70 align-center"></div>
-              <span class="img-circle color-bg-bluepurple color-ct-white glyphicon glyphicon-globe padding-tb-1 padding-lr-1 icon-xs margin-t-hi"></span>
-            </div>
-          </div>
-          <div class="col-sm-1"></div>
-        </div>
-        <!--/Lower part of timeline-->
-
       </div>
     </section>
     <!-- /New: our journey [before CRITICAL-POINT]-->

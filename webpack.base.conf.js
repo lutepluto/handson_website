@@ -30,6 +30,28 @@ const injections = Object.keys(scripts)
     })
   })
 
+function recursiveIssuer(m) {
+  if (m.issuer) {
+    return recursiveIssuer(m.issuer);
+  } else if (m.name) {
+    return m.name;
+  } else {
+    return false;
+  }
+}
+
+const styleGroups = Object.keys(scripts)
+  .map(key => key.slice(8))
+  .reduce((prev, curr) => {
+    prev[`${curr}Styles`] = {
+      name: curr,
+      test: (m, c, entry) => m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
+      chunks: 'all',
+      enforce: true
+    }
+    return prev
+  }, {})
+
 module.exports = {
   entry: scripts,
   output: {
@@ -89,12 +111,13 @@ module.exports = {
           test: /[\\/]node_modules[\\/]/,
           chunks: 'initial'
         },
-        styles: {
-          name: 'styles',
-          test: /\.css$/,
-          chunks: 'initial',
-          enforce: true
-        }
+        // styles: {
+        //   name: 'styles',
+        //   test: /\.s?css$/,
+        //   chunks: 'all',
+        //   enforce: true
+        // },
+        ...styleGroups
       }
     }
   },

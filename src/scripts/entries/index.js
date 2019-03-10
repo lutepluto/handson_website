@@ -6,7 +6,7 @@ import '../common'
 
 import 'magnific-popup'
 import 'magnific-popup/dist/magnific-popup.css'
-import "styles/home.css"
+import "styles/home.scss"
 
 jqueryI18next.init(i18next, $)
 $(document.body).localize()

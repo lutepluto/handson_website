@@ -1,0 +1,150 @@
+.roadmap {
+  &__backbone {
+    display: flex;
+    margin: 0;
+    padding-top: 420px;
+    padding-bottom: 435px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__end {
+    padding: .5em;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  &__item {
+    position: relative;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    flex: 1;
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 15px;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      background-color: #fff;
+      transform: translate(-50%, -50%);
+    }
+
+    .item__title {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+
+    .item__icon {
+      position: relative;
+      padding: 1em;
+      color: #fff;
+      font-size: 30px;
+      border-radius: 50%;
+
+      &:after {
+        position: absolute;
+        content: '';
+        width: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &.color-bg-orangered:after {
+        background-color: #F26739;
+      }
+
+      &.color-bg-cadetblue:after {
+        background-color: #91BEAE;
+      }
+
+      &.color-bg-limegreen:after {
+        background-color: #9BCB3C;
+      }
+
+      &.color-bg-darkslategrey:after {
+        background-color: #104A57;
+      }
+
+      &.color-bg-bluepurple:after {
+        background-color: #A86EAE;
+      }
+    }
+
+    .item__up, .item__bottom {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      font-size: 16px;
+      font-family: pingfang sc,microsoft yahei,helvatica;
+    }
+
+    .item__up {
+      bottom: 100%;
+
+      .item__icon {
+        transform: translateY(.5em);
+
+        &--margin-128 {
+          margin-bottom: 128px;
+
+          &:after {
+            height: 128px;
+          }
+        }
+
+        &--margin-100 {
+          margin-bottom: 100px;
+
+          &:after {
+            height: 100px;
+          }
+        }
+
+        &:after {
+          top: 100%;
+        }
+      }
+    }
+
+    .item__bottom {
+      top: 100%;
+
+      .item__icon {
+        transform: translateY(-.5em);
+
+        &--margin-60 {
+          margin-top: 60px;
+
+          &:after {
+            height: 60px;
+          }
+        }
+
+        &--margin-125 {
+          margin-top: 125px;
+
+          &:after {
+            height: 125px;
+          }
+        }
+
+        &--margin-70 {
+          margin-top: 70px;
+
+          &:after {
+            height: 70px;
+          }
+        }
+
+        &:after {
+          bottom: 100%;
+        }
+      }
+    }
+  }
+}
