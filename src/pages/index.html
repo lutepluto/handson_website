@@ -17,19 +17,19 @@
           </div>
           <div id="menu" class="col-sm-9 ">
             <ul class="nav nav-pills nav-justified margin-tb-1">
-              <li><a href="index.html" class="activem">首页</a></li>
-              <li><a href="application.html">申请义肢</a></li>
-              <li><a href="join.html">我想帮助</a></li>
-              <li><a href="about.html">关于</a></li>
+              <li><a href="index.html" class="activem" data-i18n="common:nav.home">首页</a></li>
+              <li><a href="application.html" data-i18n="common:nav.application">申请义肢</a></li>
+              <li><a href="join.html" data-i18n="common:nav.help">我想帮助</a></li>
+              <li><a href="about.html" data-i18n="common:nav.vision">关于</a></li>
             </ul>
           </div>
         </div>
         <div class="row color-bg-media1">
           <div class="align-center padding-tb-10 padding-lr-dnm20x3">
             <div class="border-white-1-tran-20 padding-lr-2 text-center color-ct-white bannertext">
-              <H3 class="font-xs bannertext1">中国有2400万肢残人士</H3>
-              <H3 class="font-xs bannertext2">其中4.6％是0-14岁的</H3>
-              <H1 class="font-medium bannertext3">青少年儿童</H1>
+              <H3 class="font-xs bannertext1" data-i18n="banner.line1">中国有2400万肢残人士</H3>
+              <H3 class="font-xs bannertext2" data-i18n="banner.line2">其中4.6％是0-14岁的</H3>
+              <H1 class="font-medium bannertext3" data-i18n="banner.line3">青少年儿童</H1>
             </div>
           </div>
         </div>
@@ -44,26 +44,24 @@
         <div class="row color-bg-lightgrey">
           <div class="text-center margin-tb-4 padding-lr-2 font-yahei color-ct-grey">
             <div class=" bottom-line-blue-h inlined"></div>
-            <h2 class="inlined padding-lr-1 question">我们做什么?</h2>
+            <h2 class="inlined padding-lr-1 question" data-i18n="goal.title">我们做什么?</h2>
             <div class=" bottom-line-blue-h inlined"></div>
             <h5 class="questione">What we do?</h5>
           </div>
         </div>
-        <div class="row color-bg-purple">
-          <div class="">
-            <div class="col-sm-5">
-              <img src="<%= require('images/img/nannan-crop.jpg') %>" width="100%" height="100%" >
-            </div>
-            <div class="col-sm-7">
-              <div class="padding-tb-1 padding-lr-3 purple">
-                <h2 class="color-ct-white margin-tb-1 fint-small what1">Hands On 展翼计划</h2>
-                <p class="color-ct-white margin-tb-1 font-xs what2">
-                  通过设计，制作经济简易的3D打印机械义肢，并开源与传播这项技术，展翼计划希望能帮助中国上百万有肢体残疾问题的青少年儿童。
-                </p>
-                <div class="text-center margin-t-2">
-                  <a class="video-link btn border-radius-5 border-color-white color-bg-purple nannan" >了解南南的故事</a>
-                  <!--<button class="video-link btn border-radius-5 border-color-white color-bg-purple nannan" >了解南南的故事</button>-->
-                </div>
+        <div class="color-bg-purple storybox">
+          <div class="storybox__img">
+            <img src="<%= require('images/img/nannan-crop.jpg') %>">
+          </div>
+          <div class="storybox__bd">
+            <div class="padding-tb-1 padding-lr-3 purple">
+              <h2 class="color-ct-white margin-tb-1 fint-small what1">Hands On 展翼计划</h2>
+              <p class="color-ct-white margin-tb-1 font-xs what2" data-i18n="goal.content">
+                通过设计，制作经济简易的3D打印机械义肢，并开源与传播这项技术，展翼计划希望能帮助中国上百万有肢体残疾问题的青少年儿童。
+              </p>
+              <div class="text-center margin-t-2">
+                <a class="video-link btn border-radius-5 border-color-white color-bg-purple nannan" data-i18n="goal.button">了解南南的故事</a>
+                <!--<button class="video-link btn border-radius-5 border-color-white color-bg-purple nannan" >了解南南的故事</button>-->
               </div>
             </div>
           </div>
@@ -71,14 +69,14 @@
       </div>
     </section>
     <!-- /why: sections -->
-    
+
     <!-- how: sections -->
     <section class="font-yahei max-width-960px align-center">
       <div class="container">
         <div class="row color-bg-lightgrey">
           <div class="text-center margin-tb-4  margin-lr-2 font-yahei color-ct-grey">
             <div class=" bottom-line-blue-h inlined"></div>
-            <h2 class="inlined padding-lr-1 question">我们怎么做?</h2>
+            <h2 class="inlined padding-lr-1 question" data-i18n="steps.title">我们怎么做?</h2>
             <div class="bottom-line-blue-h inlined"></div>
             <h5 class="questione">How we do it?</h5>
           </div>
@@ -89,8 +87,8 @@
             <div class="position-relative border-lightgrey-1 fix-height-300">
               <a href="k-join.html" >
               <div class="fix-width-100 z-2 z-hover-4 position-absolute fix-height-300 padding-lr-2 padding-tb-1 color-bg-black-tran-20">
-                <div class="text-center padding-tb-8">							
-                    <h3 class="color-ct-white font-bold padding-tb-2 hovertext">- 立刻申请 -</h3>
+                <div class="text-center padding-tb-8">
+                    <h3 class="color-ct-white font-bold padding-tb-2 hovertext" data-i18n="steps.step1.button">- 立刻申请 -</h3>
                 </div>
               </div>
             </a>
@@ -98,62 +96,58 @@
                 <h2 class="color-ct-white numb">1</h2>
                 <div class="text-center threeblocks">
                   <img src="<%= require('images/img/info.png') %>" >
-                  <h4 class="color-ct-white margin-tb-1 font-bold threeblocktitle">登记义肢需求信息</h4>
-                  <p class="color-ct-white margin-t-1 margin-b-3 padding-lr-2">我们会配对可以帮忙设计与制作的志愿者</p>
+                  <h4 class="color-ct-white margin-tb-1 font-bold threeblocktitle" data-i18n="steps.step1.title">登记义肢需求信息</h4>
+                  <p class="color-ct-white margin-t-1 margin-b-3 padding-lr-2" data-i18n="steps.step1.content">我们会配对可以帮忙设计与制作的志愿者</p>
                 </div>
               </div>
             </div>
           </div>
           <!--/1st color block-->
-          
+
           <!--2nd color block-->
           <div class="col-sm-4">
             <div class="position-relative border-lightgrey-1 fix-height-300">
               <a href="about.html">
               <div class="fix-width-100 z-2 z-hover-4 position-absolute fix-height-300 padding-lr-2 padding-tb-1 color-bg-black-tran-20 ">
                 <div class="text-center padding-tb-8 ">
-                  <h4 class="color-ct-white font-bold padding-tb-2 hovertext">- 了解技术 -</h4>
+                  <h4 class="color-ct-white font-bold padding-tb-2 hovertext" data-i18n="steps.step2.button">- 了解技术 -</h4>
                 </div>
               </div>
               </a>
               <div class="z-3 z-hover-1 position-absolute fix-height-300 padding-lr-2 padding-tb-1 color-bg-green fix-width-100">
                 <h2 class="color-ct-white numb">2</h2>
                 <div class="text-center threeblocks">
-              
                     <img src="<%= require('images/img/design.png') %>" >
-                    <h4 class="color-ct-white margin-tb-1 font-bold threeblocktitle">设计定制化的义肢</h4>
-                    <p class="color-ct-white margin-t-1 margin-b-3 padding-lr-2">根据收集上来的数据，我们会设计适合的模型</p>
-                
+                    <h4 class="color-ct-white margin-tb-1 font-bold threeblocktitle" data-i18n="steps.step2.title">设计定制化的义肢</h4>
+                    <p class="color-ct-white margin-t-1 margin-b-3 padding-lr-2" data-i18n="steps.step2.content">根据收集上来的数据，我们会设计适合的模型</p>
                 </div>
               </div>
             </div>
           </div>
           <!--/2nd color block-->
-          
+
           <!--3rd color block-->
           <div class="col-sm-4">
             <div class="position-relative border-lightgrey-1 fix-height-300">
               <a href="d-join.html">
               <div class="fix-width-100 z-2 z-hover-4 position-absolute fix-height-300 padding-lr-2 padding-tb-1 color-bg-black-tran-20">
                 <div class="text-center padding-tb-8 ">
-                    <h4 class="color-ct-white font-bold padding-tb-2 hovertext">- 我想帮助 -</h4>
+                    <h4 class="color-ct-white font-bold padding-tb-2 hovertext" data-i18n="steps.step3.button">- 我想帮助 -</h4>
                 </div>
               </div>
               </a>
               <div class="z-3 z-hover-1 position-absolute fix-height-300 padding-lr-2 padding-tb-1 color-bg-orange fix-width-100">
                 <h2 class="color-ct-white numb">3</h2>
                 <div class="text-center threeblocks">
-              
                     <img src="<%= require('images/img/make.png') %>" >
-                    <h4 class="color-ct-white margin-tb-1 font-bold threeblocktitle">通过志愿者网络制作</h4>
-                    <p class="color-ct-white margin-t-1 margin-b-3 padding-lr-2">我们通过我们遍布全国的志愿者网络为需求方制作义肢</p>
-
+                    <h4 class="color-ct-white margin-tb-1 font-bold threeblocktitle" data-i18n="steps.step3.title">通过志愿者网络制作</h4>
+                    <p class="color-ct-white margin-t-1 margin-b-3 padding-lr-2" data-i18n="steps.step3.content">我们通过我们遍布全国的志愿者网络为需求方制作义肢</p>
                 </div>
               </div>
             </div>
           </div>
           <!--/3rd color block-->
-          
+
         </div>
       </div>
     </section>
@@ -164,9 +158,11 @@
       <div class="container">
         <div class="row">
           <div class="margin-tb-5 padding-lr-5 promiseblock">
-            <h3 class="color-ct-grey promise">并且，我们承诺︰</h3>
-            <h1 class="color-ct-blue free">所有设计制作的义肢，都将免费捐赠给有需要的人。</h1>
-            <div class="text-center margin-tb-2"><a href="about.html" class="btn border-radius-5 border-color-blue color-bg-lightgrey knowmore">了解更多</a></div>
+            <h3 class="color-ct-grey promise" data-i18n="promise.title">并且，我们承诺︰</h3>
+            <h1 class="color-ct-blue free" data-i18n="promise.content">所有设计制作的义肢，都将免费捐赠给有需要的人。</h1>
+            <div class="text-center margin-tb-2">
+              <a href="about.html" class="btn border-radius-5 border-color-blue color-bg-lightgrey knowmore" data-i18n="moreButton">了解更多</a>
+            </div>
           </div>
         </div>
       </div>

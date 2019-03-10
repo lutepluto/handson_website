@@ -1,0 +1,35 @@
+{
+    "banner": {
+        "line1": "There are 24 million people with physical disabilities in China,",
+        "line2": "of which 4.6% are young children",
+        "line3": "aged 0-14"
+    },
+    "goal": {
+        "title": "What we do？",
+        "content": "Through making economical and simple 3D printing mechanical prosthetics, and open source and dissemination of this technology, the Hands-On program hopes to help millions of young children with physical disabilities in China.",
+        "button": "Watch Nannan's story"
+    },
+    "steps": {
+        "title": "How we do it？",
+        "step1": {
+            "title": "Register prosthetic needs information",
+            "content": "we will match prosthetic designers and volunteers for young children with different physical disability",
+            "button": "- Apply Now -"
+        },
+        "step2": {
+            "title": "Design customized prosthetic",
+            "content": "based on the collected data, we will design the appropriate model for every young child",
+            "button": "- Learn the Technology -"
+        },
+        "step3": {
+            "title": "Produced prosthetic through our volunteer community network",
+            "content": "we create prosthetics for demanders through a network of volunteers across the country",
+            "button": "- Want to Help -"
+        }
+    },
+    "promise": {
+        "title": "We promise:",
+        "content": "All prosthetics will be donated free of charge to those in need"
+    },
+    "moreButton": "Learn More"
+}

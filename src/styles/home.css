@@ -1,0 +1,20 @@
+.storybox {
+  display: flex;
+}
+
+.storybox .storybox__img {
+  position: relative;
+  width: 42%;
+  overflow: hidden
+}
+
+.storybox .storybox__img > img {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.storybox .storybox__bd {
+  flex: 1;
+}

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/lutepluto/handson_website#readme",
   "devDependencies": {
+    "@alienfast/i18next-loader": "^1.0.18",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
@@ -38,6 +39,8 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "i18next": "^15.0.5",
+    "jquery-i18next": "^1.2.1",
     "magnific-popup": "^1.1.0"
   }
 }

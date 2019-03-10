@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "home": "Homepage",
+        "application": "Application",
+        "help": "Help",
+        "vision": "Vision"
+    },
+    "footer": {
+        "about": {
+            "line1": "The hands on was initiated by a group of enthusiastic volunteers and is an open source volunteer network.",
+            "line2": "I hope to help domestic hand-disabled children with economical and simple 3D printing mechanical prostheses."
+        },
+        "contact": {
+            "title": "Contact Us:",
+            "email": "Email",
+            "wechat": "WeChat"
+        }
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "banner": "Hands On",
+    "mission": {
+        "title": "Our Mission",
+        "summary": {
+            "line1": "『   以普及性的创新科技",
+            "line2": "满足弱势群体的切身之需   』"
+        },
+        "details": {
+            "line1": {
+                "prefix": "我们关注",
+                "strong": "弱势群体的切身之需",
+                "suffix": "。我们认为社会的发展不应该遗忘或忽视弱势群体；"
+            },
+            "line2": {
+                "prefix": "我们相信科技的发展是有温度的。我们认为",
+                "strong": "创新科技",
+                "suffix": "的应用能够给弱势群体带了新的解决方法；"
+            },
+            "line3": {
+                "prefix": "我们坚持",
+                "strong": "普及性的方式",
+                "suffix": "来解决问题。立足于科技创新，我们以普及性的方式来研发、引进和传播相关的技术方案，应用到弱势群体的具体问题上"
+            }
+        }
+    },
+    "roadMap": {
+        "title": "Our Road Map",
+        "steps": {
+            "start": "盘古开天辟地",
+            "step1": {
+                "line1": "Launched the project through  Crowdfunding in Tencent Foundation.",
+                "line2": "30 cases of  requiring prosthetic help were collected through various channels."
+            },
+            "step2": {
+                "line1": "项目纪录短片上线,全平台播放超过10万。",
+                "line2": "based on the 3D printing prosthetic open source community e-NABLE, we create the first prosthetic model improved the first version of the robot model."
+            },
+            "step3": "Held three prosthetic hands making workshops in Beijing, Shanghai and Guangzhou for the first time. More than 100 volunteers participated in the production of 16  prostheses and delivered them to the disable children in demend.",
+            "step4": {
+                "line1": "Set up a core operation team to set up plans for prosthetic model research, volunteer network building, prosthetic designer management, online platform management, and workshop holiding.",
+                "line2": "The project is located in Tsinghua X-lab and operated in the form of a social enterprise."
+            },
+            "step5": {
+                "line1": "Established the cooperation with AIESEC, the prosthetic production workshop had been extended to Shenzhen, Wuhan, Harbin, Guangzhou, Beijing, Suzhou and other cities.",
+                "line2": "In the same time, we developed the prosthetic models for more disability cases."
+            },
+            "end": "更美好的未来"
+        }
+    },
+    "faq": {
+        "title": "或许你想知道的",
+        "question1": "1. 你们只帮助儿童吗？成年人昵？",
+        "answer1": "我们现在的机械义肢(Cyborg Beast)主要为儿童设计，所以会更有針对性地幫助3-14岁的青少年儿童受助者。义肢也适用于成人，我们也在 研发外观更仿真，更话合成人的义肢产品（如Flexy Hand)。",
+        "question2": "2. 你们这个义肢能实现什么功能？对小朋友有什么实际帮助？",
+        "answer2": {
+            "main": "我们的机械义肢主要实现的是抓握功能。 3D打印机械义胜作为手部輔助工具，并非为了完全实现真手的功能。但是对于手部残疾的小朋友来说，我们这款义肢的意义主要体现在︰",
+            "list1": "生活中场景式的双手配合活动",
+            "list2": "鍛炼残肢手部肌肉，促进正常发育",
+            "list3": "将\"双手配合使用\"变成一个没有那么沮丧的学习过程，減少双手不能配合时的焦虑，有助于心理健康成长。"
+        },
+        "question3": "3. 你们的义肢跟市面上的其他义肢比起来有什么不同呀？",
+        "answer3": {
+            "main": "市面上已有的义肢产品从成本﹑外形﹑功能﹑重量等等都不适用於儿童，我们所做的3D打印机械义肢︰ ",
+            "list1": "主要部件3D打印，生产成本低",
+            "list2": "机械传动﹑装卸更换方便",
+            "list3": "可以实现基本的抓握功能",
+            "list4": "制作简单，对晋通人来说不存在制作门槛，适合大范圍普及"
+        },
+        "question4": "4. 你们的义肢收费吗？",
+        "answer4": "需要义肢的小朋友通过展翼计划申请的义肢均为免费。",
+        "question5": "5. 网上好多各种高级的脑电波之类的机械手啊，你们要不要试一下？",
+        "answer5": "项目不侧重研发高精尖科技，而侧重普及牲强的，为解决大多数人遇到的问题而设计的科技。",
+        "question6": "6. 你们的产品都适用于什么残疾情况？",
+        "answer6": {
+            "line1": "针对手部残疾情况，我们目前分为三种主要手型︰短指﹑保留腕骨﹑沒有腕骨。",
+            "line2": "对应三种手型，我们会分别研发义肢﹑义手和义臂。目前所有义肢的其本摸型都會基于开源义肢社区 e-NABLE (http://enablingthefuture.org)上的模型進行改进设汁。"
+        },
+        "question7": {
+            "title": "7. 我想学习制作这样的义肢帮助别人，具体如何做？",
+            "tag": "＃设计师"
+        },
+        "answer7": "我们正在组建一个设计师志愿者网络，欢迎有3D打印经驗/3D建模經驗的朋友通过網站或者我们微信公众号（wow3dhand)报名。设计师报名之后需要参写到入门任务当中，完成入门任务并通过评定之後可以参考问题8选择适合您的工作。",
+        "question8": {
+            "title": "8. 设计师可以承担什麼工作？",
+            "tag": "＃设计师"
+        },
+        "answer8": {
+            "main": "完成入门任务的前提下，有四类工作可以選擇，可以多選︰",
+            "list1": {
+                "title": "1.志愿者设计师",
+                "line1": "能力較强且有打印资源的设计师，我们会直接配对一位受助者，协助數據采集和沟通等工作，设计师独立解决具体案例。",
+                "line2": "＜设计师的工作＞︰与受助者沟通，基於数据來独立设计模型〔可以自行设计也可以参考其他人研发的模型，自行打印组装义肢井寄给受助者。"
+            },
+            "list2": {
+                "title": "2.模型研发设计师",
+                "line1": "我们协助和组织设计师基于上面提到的三种情况进行模型研发与侧试，会由合作的3D打印企业提供打印服务支持。",
+                "line2": "＜设计师的工作＞︰基于三种基本情況挑選自己感兴趣的种类进行模型研发工作，我們的核心技術成員也会跟大家一起協作，我们提供3D打印服务支持。"
+            },
+            "list3": {
+                "title": "3.工作坊支持设计师",
+                "line1": "每次工作坊我们会从受助者中挑選多位残疾情况类似（适配同一种模型）的人，每位设计师视情况分配1-3个受助者，根据测量数据，测试模型匹配度并进行一定调整，保证工作坊上志願者组裝的机械手适合受助者使用，会由合作的3D打印企业提供仃印服务支持。",
+                "line2": "＜设汁师的工作＞︰基於被分配的受助者數据和基礎模型尝试制作1-2只手井对模型做一定微调，调整打印比例保证适合受助者，確定无误后，由我们统一打印并配送到工作坊由志願者进行组裝。"
+            },
+            "list4": {
+                "title": "4. 教育产品支持设计师",
+                "line1": "根据具体教育产品设計情况，主要工作会是向學生提供一定时间的线上指导，协助學生學习机械义肢的制作并帮助到特定的受助者。"
+            },
+            "list5": "PS. 除了志愿者设计师外，另外三类设计师都会根据项目运营情况获得补助。"
+        },
+        "question9": "9. 我想帮忙，但我不具备相关专业能力，我可以贡献什么？",
+        "answer9": "如果你身边有需要帮助的人，请在我们的网站或者微信公众号(wow3dhand)上提交帮助申请，我们会定明处理并提供免費帮助。 如果你有其他資源介绍(3D打印，需求方寻找渠道，媒體，义肢研发等），希望你可以关注我们微信公众号并在后台给我们留言。"
+    }
+}

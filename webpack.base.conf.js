@@ -40,7 +40,8 @@ module.exports = {
   resolve: {
     alias: {
       'styles': path.resolve(__dirname, 'src/styles'),
-      'images': path.resolve(__dirname, 'src/images')
+      'images': path.resolve(__dirname, 'src/images'),
+      'locales': path.resolve(__dirname, 'locales')
     }
   },
   externals: {
@@ -69,6 +70,13 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /locales/,
+        loader: '@alienfast/i18next-loader',
+        query: {
+          basenameAsNamespace: true
+        }
       }
     ]
   },
@@ -79,7 +87,7 @@ module.exports = {
         vendor: {
           name: 'vendor',
           test: /[\\/]node_modules[\\/]/,
-          chunks: 'all'
+          chunks: 'initial'
         },
         styles: {
           name: 'styles',

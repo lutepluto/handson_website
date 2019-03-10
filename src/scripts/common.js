@@ -1,7 +1,18 @@
 import $ from 'jquery'
+import i18next from 'i18next'
+import resources from 'locales'
 
 import 'styles/styles.css'
 import 'styles/carousel.css'
+
+i18next.init({
+  lng: 'en',
+  fallbackLng: 'zh',
+  ns: ['common', 'home', 'application', "join", 'about'],
+  defaultNS: 'home',
+  debug: 'true',
+  resources
+})
 
 $(window).resize(function(){
   if ($('#logo > span').css('display') === 'none') {

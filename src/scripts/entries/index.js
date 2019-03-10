@@ -1,9 +1,15 @@
 import $ from 'jquery'
+import i18next from 'i18next'
+import jqueryI18next from 'jquery-i18next'
 
 import '../common'
 
 import 'magnific-popup'
 import 'magnific-popup/dist/magnific-popup.css'
+import "styles/home.css"
+
+jqueryI18next.init(i18next, $)
+$(document.body).localize()
 
 $(() => {
   $('.video-link').magnificPopup({
