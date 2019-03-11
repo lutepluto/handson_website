@@ -18,3 +18,71 @@
     flex: 1;
   }
 }
+
+.workplace {
+  display: flex;
+  align-items: stretch;
+}
+
+.flipcard {
+  flex: 1;
+  position: relative;
+  min-height: 370px;
+  padding: 1em 2em;
+  color: #fff;
+
+  &:hover .flipcard__mask {
+    display: block;
+  }
+
+  + .flipcard {
+    margin-left: 8px;
+  }
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__bullet {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  &__title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  &__content {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  &__mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+
+    .mask__text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      white-space: nowrap;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

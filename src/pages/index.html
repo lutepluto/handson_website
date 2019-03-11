@@ -84,73 +84,79 @@
             <h5 class="questione">How we do it?</h5>
           </div>
         </div>
-        <div class="row">
-          <!--1st color block-->
-          <div class="col-sm-4">
-            <div class="position-relative border-lightgrey-1 fix-height-300">
-              <a href="k-join.html" >
-              <div class="fix-width-100 z-2 z-hover-4 position-absolute fix-height-300 padding-lr-2 padding-tb-1 color-bg-black-tran-20">
-                <div class="text-center padding-tb-8">
-                    <h3 class="color-ct-white font-bold padding-tb-2 hovertext" data-i18n="steps.step1.button">- 立刻申请 -</h3>
-                </div>
+
+        <div class="workplace">
+          <div class="flipcard color-bg-blue">
+            <div class="flipcard__inner">
+              <div class="flipcard__bullet">1</div>
+              <div class="flipcard__avatar">
+                <img src="<%= require('images/img/info.png') %>" >
               </div>
+              <h3 class="flipcard__title" data-i18n="steps.step1.title">
+                登记义肢需求信息
+              </h3>
+              <p class="flipcard__content" data-i18n="steps.step1.content">
+                我们会配对可以帮忙设计与制作的志愿者
+              </p>
+            </div>
+            <a href="application.html" class="flipcard__mask">
+              <span class="mask__text" data-i18n="steps.step1.button">- 立刻申请 -</span>
             </a>
-              <div class="z-3 z-hover-1 position-absolute fix-height-300 padding-lr-2 padding-tb-1 color-bg-blue fix-width-100 ">
-                <h2 class="color-ct-white numb">1</h2>
-                <div class="text-center threeblocks">
-                  <img src="<%= require('images/img/info.png') %>" >
-                  <h4 class="color-ct-white margin-tb-1 font-bold threeblocktitle" data-i18n="steps.step1.title">登记义肢需求信息</h4>
-                  <p class="color-ct-white margin-t-1 margin-b-3 padding-lr-2" data-i18n="steps.step1.content">我们会配对可以帮忙设计与制作的志愿者</p>
-                </div>
-              </div>
-            </div>
           </div>
-          <!--/1st color block-->
 
-          <!--2nd color block-->
-          <div class="col-sm-4">
-            <div class="position-relative border-lightgrey-1 fix-height-300">
-              <a href="about.html">
-              <div class="fix-width-100 z-2 z-hover-4 position-absolute fix-height-300 padding-lr-2 padding-tb-1 color-bg-black-tran-20 ">
-                <div class="text-center padding-tb-8 ">
-                  <h4 class="color-ct-white font-bold padding-tb-2 hovertext" data-i18n="steps.step2.button">- 了解技术 -</h4>
-                </div>
+          <div class="flipcard color-bg-green">
+            <div class="flipcard__inner">
+              <div class="flipcard__bullet">2</div>
+              <div class="flipcard__avatar">
+                <img src="<%= require('images/img/design.png') %>" >
               </div>
-              </a>
-              <div class="z-3 z-hover-1 position-absolute fix-height-300 padding-lr-2 padding-tb-1 color-bg-green fix-width-100">
-                <h2 class="color-ct-white numb">2</h2>
-                <div class="text-center threeblocks">
-                    <img src="<%= require('images/img/design.png') %>" >
-                    <h4 class="color-ct-white margin-tb-1 font-bold threeblocktitle" data-i18n="steps.step2.title">设计定制化的义肢</h4>
-                    <p class="color-ct-white margin-t-1 margin-b-3 padding-lr-2" data-i18n="steps.step2.content">根据收集上来的数据，我们会设计适合的模型</p>
-                </div>
-              </div>
+              <h3 class="flipcard__title" data-i18n="steps.step2.title">
+                设计定制化的义肢
+              </h3>
+              <p class="flipcard__content" data-i18n="steps.step2.content">
+                根据收集上来的数据，我们会设计适合的模型
+              </p>
             </div>
+            <a href="about.html" class="flipcard__mask">
+              <span class="mask__text" data-i18n="steps.step2.button">- 了解技术 -</span>
+            </a>
           </div>
-          <!--/2nd color block-->
 
-          <!--3rd color block-->
-          <div class="col-sm-4">
-            <div class="position-relative border-lightgrey-1 fix-height-300">
-              <a href="d-join.html">
-              <div class="fix-width-100 z-2 z-hover-4 position-absolute fix-height-300 padding-lr-2 padding-tb-1 color-bg-black-tran-20">
-                <div class="text-center padding-tb-8 ">
-                    <h4 class="color-ct-white font-bold padding-tb-2 hovertext" data-i18n="steps.step3.button">- 我想帮助 -</h4>
-                </div>
+          <div class="flipcard color-bg-orange">
+            <div class="flipcard__inner">
+              <div class="flipcard__bullet">3</div>
+              <div class="flipcard__avatar">
+                <img src="<%= require('images/img/make.png') %>" >
               </div>
-              </a>
-              <div class="z-3 z-hover-1 position-absolute fix-height-300 padding-lr-2 padding-tb-1 color-bg-orange fix-width-100">
-                <h2 class="color-ct-white numb">3</h2>
-                <div class="text-center threeblocks">
-                    <img src="<%= require('images/img/make.png') %>" >
-                    <h4 class="color-ct-white margin-tb-1 font-bold threeblocktitle" data-i18n="steps.step3.title">通过志愿者网络制作</h4>
-                    <p class="color-ct-white margin-t-1 margin-b-3 padding-lr-2" data-i18n="steps.step3.content">我们通过我们遍布全国的志愿者网络为需求方制作义肢</p>
-                </div>
-              </div>
+              <h3 class="flipcard__title" data-i18n="steps.step3.title">
+                通过志愿者网络制作
+              </h3>
+              <p class="flipcard__content" data-i18n="steps.step3.content">
+                我们通过我们遍布全国的志愿者网络为需求方制作义肢
+              </p>
             </div>
+            <a href="join.html" class="flipcard__mask">
+              <span class="mask__text" data-i18n="steps.step3.button">- 我想帮助 -</span>
+            </a>
           </div>
-          <!--/3rd color block-->
 
+          <div class="flipcard color-bg-bluepurple">
+            <div class="flipcard__inner">
+              <div class="flipcard__bullet">4</div>
+              <div class="flipcard__avatar">
+                <img src="<%= require('images/img/make.png') %>" >
+              </div>
+              <h3 class="flipcard__title" data-i18n="steps.step4.title">
+                跟踪改进义肢
+              </h3>
+              <p class="flipcard__content" data-i18n="steps.step4.content">
+                我们会针对受助者进行定期的回访，不断更新和辅助义肢在生活中的使用情况
+              </p>
+            </div>
+            <a href="join.html" class="flipcard__mask">
+              <span class="mask__text" data-i18n="steps.step4.button">- 立即加入 -</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
