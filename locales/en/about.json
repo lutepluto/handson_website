@@ -27,13 +27,13 @@
     "roadMap": {
         "title": "Our Road Map",
         "steps": {
-            "start": "盘古开天辟地",
+            "start": "Start",
             "step1": {
                 "line1": "Launched the project through  Crowdfunding in Tencent Foundation.",
                 "line2": "30 cases of  requiring prosthetic help were collected through various channels."
             },
             "step2": {
-                "line1": "项目纪录短片上线,全平台播放超过10万。",
+                "line1": "Launched project documentary and reached more than 100,000 views",
                 "line2": "based on the 3D printing prosthetic open source community e-NABLE, we create the first prosthetic model improved the first version of the robot model."
             },
             "step3": "Held three prosthetic hands making workshops in Beijing, Shanghai and Guangzhou for the first time. More than 100 volunteers participated in the production of 16  prostheses and delivered them to the disable children in demend.",
@@ -45,7 +45,19 @@
                 "line1": "Established the cooperation with AIESEC, the prosthetic production workshop had been extended to Shenzhen, Wuhan, Harbin, Guangzhou, Beijing, Suzhou and other cities.",
                 "line2": "In the same time, we developed the prosthetic models for more disability cases."
             },
-            "end": "更美好的未来"
+            "step6": {
+                "line1": "The Hands On Project was invited as a technology + charity representative to participate in Tencent's “99 Public Welfare Day” and Tencent Public Welfare Market. Tencent and the Hands On shot a public welfare special propaganda films, which were released on the 99 public welfare day homepage recommended location. The amount of exposures exceeds to 16 million."
+            },
+            "step7": {
+                "line1": "Hands On won the China Youth Championship of the “Youth Co-Lab Dialogue” Challenge organized by the United Nations Development Programme (UNDP), and finally participated in the Asia Pacific Finals on behalf of China and won the “Asia Pacific Youth Sustainable Development Innovation Award”."
+            },
+            "step8": {
+                "line1": "the Hands On won the Bronze Award of the first “Chinanext Yicai social innovation award” "
+            },
+            "step9": {
+                "line1": "Tech For Good, a sub-project of the Hands On project, and the Tencent Social Ads Algorithm Competition jointly held a hackathon with the core theme of “AI helps to find children who lost across the ages”, and was highly praised by participants and nonprofit organizations."
+            },
+            "end": "Future"
         }
     },
     "faq": {
