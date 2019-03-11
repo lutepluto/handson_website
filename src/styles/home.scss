@@ -58,6 +58,15 @@
     font-weight: 700;
   }
 
+  &__avatar {
+    height: 60px;
+
+    > img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
   &__content {
     margin-top: 1em;
     margin-bottom: 1em;
