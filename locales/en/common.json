@@ -1,9 +1,10 @@
 {
     "nav": {
-        "home": "Homepage",
-        "application": "Application",
+        "home": "Home",
+        "application": "Apply",
         "help": "Help",
-        "vision": "Vision"
+        "vision": "About",
+        "language": "中文"
     },
     "footer": {
         "about": {

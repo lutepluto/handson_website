@@ -35,5 +35,12 @@ $(() => {
       }
     }
   })
+
+  $(document).on('click', '[data-toggle="i18next"]', () => {
+    console.log(i18next.language)
+    i18next.changeLanguage(i18next.language === 'en' ? 'zh' : 'en', () => {
+      $(document.body).localize()
+    })
+  });
 })
 

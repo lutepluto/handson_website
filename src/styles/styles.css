@@ -645,11 +645,40 @@ footer{
 }
 
 #menu{
-	color:grey;
-	display: block;
-	font-size:20px;
-	width:500px;
-	margin-left:150px;
+  color:grey;
+  display: block;
+  font-size:20px;
+}
+
+#menu .language {
+  width: auto;
+}
+
+#menu .language > a {
+  width: auto;
+  margin: 0;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#menu .language > a:hover,
+#menu .language > a:focus {
+  border-bottom: 0;
+  color: #747474;
+  background-color: transparent;
+}
+
+#menu .nav > li {
+  width: auto;
+}
+
+#menu .nav > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+#menu .nav > li > a {
+  margin-right: 0;
+  text-align: center;
 }
 
 /* patchy media interaction for timeline stroke */
