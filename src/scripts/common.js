@@ -37,9 +37,14 @@ $(() => {
   })
 
   $(document).on('click', '[data-toggle="i18next"]', () => {
-    console.log(i18next.language)
-    i18next.changeLanguage(i18next.language === 'en' ? 'zh' : 'en', () => {
+    const lng = i18next.language
+    i18next.changeLanguage(lng === 'en' ? 'zh' : 'en', () => {
       $(document.body).localize()
+
+      // iframe toggle
+      $('.placeholder-guide')[`${lng === 'en' ? 'remove' : 'add'}Class`]('hide')
+      $('#goldendata_form_vAzl4E')[`${lng === 'en' ? 'add' : 'remove'}Class`]('hide')
+      $('#goldendata_form_4wW6YZ')[`${lng === 'en' ? 'add' : 'remove'}Class`]('hide')
     })
   });
 })

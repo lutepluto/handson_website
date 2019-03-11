@@ -722,4 +722,12 @@ footer{
 .wmode-v-rl {writing-mode: vertical-rl;}
 .wmode-v-lr {writing-mode: vertical-lr;}
 
-
+.placeholder-guide {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 25px;
+  word-break: break-word;
+  color: #4D78CA;
+}
