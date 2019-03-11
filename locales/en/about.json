@@ -3,24 +3,24 @@
     "mission": {
         "title": "Our Mission",
         "summary": {
-            "line1": "『   以普及性的创新科技",
-            "line2": "满足弱势群体的切身之需   』"
+            "line1": "『   Meet the needs of the vulnerable groups by",
+            "line2": "universal and develop the innovation   』"
         },
         "details": {
             "line1": {
-                "prefix": "我们关注",
-                "strong": "弱势群体的切身之需",
-                "suffix": "。我们认为社会的发展不应该遗忘或忽视弱势群体；"
+                "prefix": "We are concerned about the needs of",
+                "strong": "the vulnerable groups.",
+                "suffix": "We believe that the development of society should not forget or ignore vulnerable groups"
             },
             "line2": {
-                "prefix": "我们相信科技的发展是有温度的。我们认为",
-                "strong": "创新科技",
-                "suffix": "的应用能够给弱势群体带了新的解决方法；"
+                "prefix": "We believe that the development of technology should with humanity care. We believe that the application of",
+                "strong": "innovative technologies",
+                "suffix": "can bring new solutions to vulnerable groups"
             },
             "line3": {
-                "prefix": "我们坚持",
-                "strong": "普及性的方式",
-                "suffix": "来解决问题。立足于科技创新，我们以普及性的方式来研发、引进和传播相关的技术方案，应用到弱势群体的具体问题上"
+                "prefix": "We insist on",
+                "strong": "a universal approach to solving problems.",
+                "suffix": "Based on technological innovation, we develop, introduce and disseminate relevant technical solutions in a universal way and apply them to specific issues of vulnerable groups."
             }
         }
     },
@@ -61,66 +61,66 @@
         }
     },
     "faq": {
-        "title": "或许你想知道的",
-        "question1": "1. 你们只帮助儿童吗？成年人昵？",
-        "answer1": "我们现在的机械义肢(Cyborg Beast)主要为儿童设计，所以会更有針对性地幫助3-14岁的青少年儿童受助者。义肢也适用于成人，我们也在 研发外观更仿真，更话合成人的义肢产品（如Flexy Hand)。",
-        "question2": "2. 你们这个义肢能实现什么功能？对小朋友有什么实际帮助？",
+        "title": "FAQ",
+        "question1": "1. Do you only help children? What about adults?",
+        "answer1": "Our current mechanical prosthetic (Cyborg Beast) is designed primarily for children, so it will be more targeted to help young children and children aged 3-14. Prosthetics are also suitable for adults. And we are also developing a more artificial appearance, more synthetic prosthetic products for adults in the same time (such as Flexy Hand).",
+        "question2": "2. What function can you achieve with this prosthetic? What practical help is there for children?",
         "answer2": {
-            "main": "我们的机械义肢主要实现的是抓握功能。 3D打印机械义胜作为手部輔助工具，并非为了完全实现真手的功能。但是对于手部残疾的小朋友来说，我们这款义肢的意义主要体现在︰",
-            "list1": "生活中场景式的双手配合活动",
-            "list2": "鍛炼残肢手部肌肉，促进正常发育",
-            "list3": "将\"双手配合使用\"变成一个没有那么沮丧的学习过程，減少双手不能配合时的焦虑，有助于心理健康成长。"
+            "main": "Our mechanical prosthesis mainly achieves the grip function. 3D printing mechanical as a hand assist tool, not to fully realize the real hand function. However, for children with hand disability, the meaning of our prosthetic body is mainly reflected in:",
+            "list1": "Scene-style hands with activities in life",
+            "list2": "Exercise the residual muscles of the hand and promote normal development",
+            "list3": "Turning \"using hands\" into a less frustrating learning process, reducing anxiety when children hands can't match, helps them to grow mentally."
         },
-        "question3": "3. 你们的义肢跟市面上的其他义肢比起来有什么不同呀？",
+        "question3": "3. How is your prosthetic limb different from other prosthetic limbs on the market?",
         "answer3": {
-            "main": "市面上已有的义肢产品从成本﹑外形﹑功能﹑重量等等都不适用於儿童，我们所做的3D打印机械义肢︰ ",
-            "list1": "主要部件3D打印，生产成本低",
-            "list2": "机械传动﹑装卸更换方便",
-            "list3": "可以实现基本的抓握功能",
-            "list4": "制作简单，对晋通人来说不存在制作门槛，适合大范圍普及"
+            "main": "The existing prosthetic products on the market are not suitable for children from cost, shape, function, weight, etc. We have made 3D printing mechanical prostheses: ",
+            "list1": "Main components 3D printing, low production costs",
+            "list2": "Mechanical transmission, easy changing and updating",
+            "list3": "Basic gripping function",
+            "list4": "Simple to make, there is no production threshold for Jintong people, suitable for widespread use"
         },
-        "question4": "4. 你们的义肢收费吗？",
-        "answer4": "需要义肢的小朋友通过展翼计划申请的义肢均为免费。",
-        "question5": "5. 网上好多各种高级的脑电波之类的机械手啊，你们要不要试一下？",
-        "answer5": "项目不侧重研发高精尖科技，而侧重普及牲强的，为解决大多数人遇到的问题而设计的科技。",
-        "question6": "6. 你们的产品都适用于什么残疾情况？",
+        "question4": "4. Is your prosthetic fee charged?",
+        "answer4": "The prosthetic limbs that the prosthetic children need to apply through the Hands on Plan are free.",
+        "question5": "5. There are a lot of robotic prosthetic like prosthetic using high-level brain waves. Do you want to try it?",
+        "answer5": "Our project does not focus on the development of sophisticated technology, but focuses on the technology that is designed to solve the problems that most people encounter.",
+        "question6": "6. What disability does your product apply to?",
         "answer6": {
-            "line1": "针对手部残疾情况，我们目前分为三种主要手型︰短指﹑保留腕骨﹑沒有腕骨。",
-            "line2": "对应三种手型，我们会分别研发义肢﹑义手和义臂。目前所有义肢的其本摸型都會基于开源义肢社区 e-NABLE (http://enablingthefuture.org)上的模型進行改进设汁。"
+            "line1": "For hand disability, we are currently divided into three main hand types: short finger, reserved carpal bone, no carpal bone.",
+            "line2": "For the three hand types, we will develop the prosthetic limb, hands and arms separately. The current model of all prosthetic limbs will be based on the model on the open source prosthetic community e-NABLE (http://enablingthefuture.org)."
         },
         "question7": {
-            "title": "7. 我想学习制作这样的义肢帮助别人，具体如何做？",
-            "tag": "＃设计师"
+            "title": "7. I want to learn how to make such a prosthetic to help others. How can I do this?",
+            "tag": "＃Designer"
         },
-        "answer7": "我们正在组建一个设计师志愿者网络，欢迎有3D打印经驗/3D建模經驗的朋友通过網站或者我们微信公众号（wow3dhand)报名。设计师报名之后需要参写到入门任务当中，完成入门任务并通过评定之後可以参考问题8选择适合您的工作。",
+        "answer7": "We are building a network of designer volunteers, and friends who have experience in 3D printing/3D modeling are welcome to register via the website or our WeChat public account (wow3dhand). After the designer has signed up, you need to write to the entry task. After completing the entry task and passing the assessment, you can refer to question 8 to choose the work that suits you.",
         "question8": {
-            "title": "8. 设计师可以承担什麼工作？",
-            "tag": "＃设计师"
+            "title": "8. What can the designer do?",
+            "tag": "＃Designer"
         },
         "answer8": {
-            "main": "完成入门任务的前提下，有四类工作可以選擇，可以多選︰",
+            "main": "Under the premise of completing the entry task, there are four types of work to choose from, you can choose more:",
             "list1": {
-                "title": "1.志愿者设计师",
-                "line1": "能力較强且有打印资源的设计师，我们会直接配对一位受助者，协助數據采集和沟通等工作，设计师独立解决具体案例。",
-                "line2": "＜设计师的工作＞︰与受助者沟通，基於数据來独立设计模型〔可以自行设计也可以参考其他人研发的模型，自行打印组装义肢井寄给受助者。"
+                "title": "1.Volunteer designer",
+                "line1": "Designers with strong capabilities and 3D print resources, we will directly match a recipient to assist with data collection and communication, and the designer will solve the specific case independently.",
+                "line2": "＜Designer's work＞ Communicate with the recipients and design the model independently based on the data. (You can design it yourself or refer to the model developed by others, and print and assemble the prosthetic well to send it to the recipient.)"
             },
             "list2": {
-                "title": "2.模型研发设计师",
-                "line1": "我们协助和组织设计师基于上面提到的三种情况进行模型研发与侧试，会由合作的3D打印企业提供打印服务支持。",
-                "line2": "＜设计师的工作＞︰基于三种基本情況挑選自己感兴趣的种类进行模型研发工作，我們的核心技術成員也会跟大家一起協作，我们提供3D打印服务支持。"
+                "title": "2.Model R&D Designer",
+                "line1": "We assist and organize designers to conduct model development and side-tests based on the three situations mentioned above, and print service support will be provided by cooperating 3D printing companies.",
+                "line2": "＜Designer's work＞ Based on three basic situations, select the types of interest that you are interested in, and our core technology members will work with you. We provide 3D printing service support."
             },
             "list3": {
-                "title": "3.工作坊支持设计师",
-                "line1": "每次工作坊我们会从受助者中挑選多位残疾情况类似（适配同一种模型）的人，每位设计师视情况分配1-3个受助者，根据测量数据，测试模型匹配度并进行一定调整，保证工作坊上志願者组裝的机械手适合受助者使用，会由合作的3D打印企业提供仃印服务支持。",
-                "line2": "＜设汁师的工作＞︰基於被分配的受助者數据和基礎模型尝试制作1-2只手井对模型做一定微调，调整打印比例保证适合受助者，確定无误后，由我们统一打印并配送到工作坊由志願者进行组裝。"
+                "title": "3.Workshop supporter",
+                "line1": "In each workshop, we will select a number of people with similar disability (adapted to the same model) from each of the recipients. Each designer assigns 1-3 recipients as appropriate, and tests the model matching based on the measured data. And make certain adjustments to ensure that the prosthetic assembled by the volunteers in the workshop are suitable for the recipients, and the cooperation service will be provided by the cooperating 3D printing company.",
+                "line2": "＜Designer's work＞ Based on the assigned recipient data and the basic model, try to make 1-2 hand wells to make some fine adjustments to the model, adjust the print ratio to ensure that it is suitable for the recipients. And distributed to the workshop and assembled by volunteers."
             },
             "list4": {
-                "title": "4. 教育产品支持设计师",
-                "line1": "根据具体教育产品设計情况，主要工作会是向學生提供一定时间的线上指导，协助學生學习机械义肢的制作并帮助到特定的受助者。"
+                "title": "4. Education Product Supporter",
+                "line1": "According to the specific educational product design, the main work of the supporter will be to provide students with online guidance for a certain period of time to help students learn the production of mechanical prosthetics and help specific recipients."
             },
-            "list5": "PS. 除了志愿者设计师外，另外三类设计师都会根据项目运营情况获得补助。"
+            "list5": "PS. In addition to the volunteer designers, the other three types of designers will receive subsidies based on the operation of the project."
         },
-        "question9": "9. 我想帮忙，但我不具备相关专业能力，我可以贡献什么？",
-        "answer9": "如果你身边有需要帮助的人，请在我们的网站或者微信公众号(wow3dhand)上提交帮助申请，我们会定明处理并提供免費帮助。 如果你有其他資源介绍(3D打印，需求方寻找渠道，媒體，义肢研发等），希望你可以关注我们微信公众号并在后台给我们留言。"
+        "question9": "9. I want to help, but I don't have the relevant professional skills. How can I contribute?",
+        "answer9": "If you have someone who needs help, please submit a help application on our website or WeChat public account (wow3dhand), we will process and provide free help. If you have other resources (3D printing, demand side looking for channels, media, prosthetic R&D, etc.), we hope you can follow us on WeChat public account and leave us a message."
     }
 }

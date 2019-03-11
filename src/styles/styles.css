@@ -295,6 +295,10 @@ body { padding-top: 70px; -webkit-font-smoothing: antialiased; font-family: ping
 .border-color-blue {border-color:#51A5BA;}
 .border-color-white {border-color:#FFFFFF;}
 
+.nowrap {
+  white-space: nowrap;
+}
+
 /* Bootstrap source code referece: .nav-pills
 .nav-pills>li{float:left}
 .nav-pills>li>a{border-radius:4px}
