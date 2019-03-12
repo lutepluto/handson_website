@@ -8,8 +8,8 @@ import '../common'
 i18next
   .use(LngDetector)
   .init({
-    ns: ['common', 'application'],
-    defaultNS: 'application',
+    ns: ['common', 'join'],
+    defaultNS: 'join',
     debug: 'true',
     resources
   }, (err) => {
