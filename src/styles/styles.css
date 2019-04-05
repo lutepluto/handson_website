@@ -497,9 +497,9 @@ footer{
 }
 
 .mission1, .mission2{
-	font-size:57px;
-	color:#4A90E2;
-	font-family:pingfang sc,microsoft yahei,helvatica; 
+  font-size: 40px;
+  color:#4A90E2;
+  font-family:pingfang sc,microsoft yahei,helvatica; 
 }
 .mission1{
 	margin-left:-60px;

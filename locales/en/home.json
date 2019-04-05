@@ -6,29 +6,29 @@
     },
     "goal": {
         "title": "What we do？",
-        "content": "Through making economical and simple 3D printing mechanical prosthetics, and open source and dissemination of this technology, the Hands-On program hopes to help millions of young children with physical disabilities in China.",
+        "content": "With economical and simple 3D printing mechanical prosthetics, and open-source dissemination of this technology, the Hands-On program hopes to help millions of young children with physical disabilities in China.",
         "button": "Watch Nannan's story"
     },
     "steps": {
         "title": "How we do it？",
         "step1": {
-            "title": "Register prosthetic needs information",
-            "content": "we will match prosthetic designers and volunteers for young children with different physical disability",
+            "title": "Collect information (for those who need prosthesis)",
+            "content": "we will match prosthetic designers and volunteers for children with different physical disabilities",
             "button": "- Apply Now -"
         },
         "step2": {
-            "title": "Design customized prosthetic",
-            "content": "based on the collected data, we will design the appropriate model for every young child",
+            "title": "Design customized prosthetics",
+            "content": "based on the data, we will design the appropriate model for every child",
             "button": "- Learn the Technology -"
         },
         "step3": {
-            "title": "Produced prosthetic through our volunteer community network",
-            "content": "we create prosthetics for demanders through a network of volunteers across the country",
+            "title": "Produced through our volunteer community network",
+            "content": "we create prosthetics for the needy through a network of volunteers across the country",
             "button": "- Want to Help -"
         },
         "step4": {
-            "title": "Track and improve prosthetic limb",
-            "content": "we will conduct regular return visits to the recipients, constantly update and assist the use of prosthetic limbs in life",
+            "title": "Track and improve prosthetic limbs",
+            "content": "we will conduct regular return visits to the recipients and provide assistance for the use of prostheses in daily life.",
             "button": "- Join Now -"
         }
     },

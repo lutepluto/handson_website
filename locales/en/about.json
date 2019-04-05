@@ -4,16 +4,16 @@
         "title": "Our Mission",
         "summary": {
             "line1": "『   Meet the needs of the vulnerable groups by",
-            "line2": "universal and develop the innovation   』"
+            "line2": "universalizing and developing innovative technology.   』"
         },
         "details": {
             "line1": {
                 "prefix": "We are concerned about the needs of",
-                "strong": "the vulnerable groups.",
-                "suffix": "We believe that the development of society should not forget or ignore vulnerable groups"
+                "strong": "vulnerable groups.",
+                "suffix": "We believe the development of society should not forget or ignore them."
             },
             "line2": {
-                "prefix": "We believe that the development of technology should with humanity care. We believe that the application of",
+                "prefix": "We believe that the development of technology should be humane and the application of",
                 "strong": "innovative technologies",
                 "suffix": "can bring new solutions to vulnerable groups"
             },
@@ -29,33 +29,33 @@
         "steps": {
             "start": "Start",
             "step1": {
-                "line1": "Launched the project through  Crowdfunding in Tencent Foundation.",
-                "line2": "30 cases of  requiring prosthetic help were collected through various channels."
+                "line1": "Launched the project through Crowd funding at Tencent Foundation.",
+                "line2": "30 cases were collected through various channels."
             },
             "step2": {
-                "line1": "Launched project documentary and reached more than 100,000 views",
-                "line2": "based on the 3D printing prosthetic open source community e-NABLE, we create the first prosthetic model improved the first version of the robot model."
+                "line1": "Launched project documentary and the video was watched more than 100,000 times",
+                "line2": "based on the 3D printing prosthetic model developed by open source community e-NABLE, we create our first mechanical prosthetic model."
             },
-            "step3": "Held three prosthetic hands making workshops in Beijing, Shanghai and Guangzhou for the first time. More than 100 volunteers participated in the production of 16  prostheses and delivered them to the disable children in demend.",
+            "step3": "Held three prosthetic hands-making workshops in Beijing, Shanghai and Guangzhou. More than 100 volunteers participated in the production of 16 prostheses and delivered them to disabled children in need.",
             "step4": {
-                "line1": "Set up a core operation team to set up plans for prosthetic model research, volunteer network building, prosthetic designer management, online platform management, and workshop holiding.",
-                "line2": "The project is located in Tsinghua X-lab and operated in the form of a social enterprise."
+                "line1": "Set up a core operation team for prosthetic model research, volunteer network building, prosthetic designer management, online platform management, and workshop holiding.",
+                "line2": "The project is located in Tsinghua's X-lab and operates in the form of a social enterprise."
             },
             "step5": {
-                "line1": "Established the cooperation with AIESEC, the prosthetic production workshop had been extended to Shenzhen, Wuhan, Harbin, Guangzhou, Beijing, Suzhou and other cities.",
-                "line2": "In the same time, we developed the prosthetic models for more disability cases."
+                "line1": "Cooperate with AIESEC. Our prosthetic production workshop had been extended to Shenzhen, Wuhan, Harbin, Guangzhou, Beijing, Suzhou and other cities.",
+                "line2": "In the same time, we developed more prosthetic models for different cases."
             },
             "step6": {
-                "line1": "The Hands On Project was invited as a technology + charity representative to participate in Tencent's “99 Public Welfare Day” and Tencent Public Welfare Market. Tencent and the Hands On shot a public welfare special propaganda films, which were released on the 99 public welfare day homepage recommended location. The amount of exposures exceeds to 16 million."
+                "line1": "The Hands On Project was invited as representative of “technology + charity” to participate in Tencent's “99 Public Welfare Day” and the Tencent Public Welfare Market. Tencent and Hands On shot a series of public welfare publicity films, which were released on the 99 Public Welfare Day homepage and watched over 16 million times."
             },
             "step7": {
-                "line1": "Hands On won the China Youth Championship of the “Youth Co-Lab Dialogue” Challenge organized by the United Nations Development Programme (UNDP), and finally participated in the Asia Pacific Finals on behalf of China and won the “Asia Pacific Youth Sustainable Development Innovation Award”."
+                "line1": "Hands On won the China Youth Championship of the “Youth Co-Lab Dialogue” Challenge organized by the United Nations Development Programme(UNDP), and was selected as the representative of China to participated in the Asia Pacific Finals and won the “Asia Pacific Youth Sustainable Development Innovation Award”."
             },
             "step8": {
-                "line1": "the Hands On won the Bronze Award of the first “Chinanext Yicai social innovation award” "
+                "line1": "Hands On won the Bronze Award of the first “Chinanext Yicai social innovation award” ceremeony "
             },
             "step9": {
-                "line1": "Tech For Good, a sub-project of the Hands On project, and the Tencent Social Ads Algorithm Competition jointly held a hackathon with the core theme of “AI helps to find children who lost across the ages”, and was highly praised by participants and nonprofit organizations."
+                "line1": "Tech For Good, a sub-project of the Hands On project, and the Tencent Social Ads Algorithm Competition jointly held a ”hackathon“ with the theme of “AI helps to find children lost across the ages”, and was highly praised by participants and nonprofit organizations."
             },
             "end": "Future"
         }
@@ -63,64 +63,64 @@
     "faq": {
         "title": "FAQ",
         "question1": "1. Do you only help children? What about adults?",
-        "answer1": "Our current mechanical prosthetic (Cyborg Beast) is designed primarily for children, so it will be more targeted to help young children and children aged 3-14. Prosthetics are also suitable for adults. And we are also developing a more artificial appearance, more synthetic prosthetic products for adults in the same time (such as Flexy Hand).",
-        "question2": "2. What function can you achieve with this prosthetic? What practical help is there for children?",
+        "answer1": "Our current mechanical prosthetic (Cyborg Beast) is designed primarily for children, which means it is more targeted for children aged 3-14. That's doesn't mean prosthetics aren't suitable for adults. At the same time, we are also developing products that look more like human limbs with more function for adults (such as Flexy Hand).",
+        "question2": "2. What function does this prosthetic have? What can it do to help children with their daily lives?",
         "answer2": {
-            "main": "Our mechanical prosthesis mainly achieves the grip function. 3D printing mechanical as a hand assist tool, not to fully realize the real hand function. However, for children with hand disability, the meaning of our prosthetic body is mainly reflected in:",
-            "list1": "Scene-style hands with activities in life",
-            "list2": "Exercise the residual muscles of the hand and promote normal development",
-            "list3": "Turning \"using hands\" into a less frustrating learning process, reducing anxiety when children hands can't match, helps them to grow mentally."
+            "main": "Our mechanical prosthesis helps children with gripping things. The 3D-printed mechanical prosthesis is an assisted tool for disables and it can not fully realize the function of a real hand. For children with hand-related disabilities, our prosthesis may help them with:",
+            "list1": "Accomplishing daily activities that require both hands",
+            "list2": "Exercising muscles of the disabled hand and promoting normal development",
+            "list3": "Turning \"using hands\" into a less frustrating learning process, reducing anxiety when children's hands can't match."
         },
         "question3": "3. How is your prosthetic limb different from other prosthetic limbs on the market?",
         "answer3": {
-            "main": "The existing prosthetic products on the market are not suitable for children from cost, shape, function, weight, etc. We have made 3D printing mechanical prostheses: ",
-            "list1": "Main components 3D printing, low production costs",
-            "list2": "Mechanical transmission, easy changing and updating",
-            "list3": "Basic gripping function",
-            "list4": "Simple to make, there is no production threshold for Jintong people, suitable for widespread use"
+            "main": "The prosthetic products on the market are not suitable for children in terms of cost, shape, function, weight, etc. The 3D-printed mechanical prostheses we made: ",
+            "list1": "Cost little with the main components produced by 3D printing technology.",
+            "list2": "Can be changed and updated easily with its mechanical transmission.",
+            "list3": "Achieving basic gripping function",
+            "list4": "Are simple to produce as there is no production threshold, making them suitable for widespread use"
         },
-        "question4": "4. Is your prosthetic fee charged?",
-        "answer4": "The prosthetic limbs that the prosthetic children need to apply through the Hands on Plan are free.",
-        "question5": "5. There are a lot of robotic prosthetic like prosthetic using high-level brain waves. Do you want to try it?",
-        "answer5": "Our project does not focus on the development of sophisticated technology, but focuses on the technology that is designed to solve the problems that most people encounter.",
+        "question4": "4. Do you charge for your prosthetic?",
+        "answer4": "The prosthetic limbs that the prosthetic children need to apply for through the Hands on Plan are free.",
+        "question5": "5. There are a lot of robotic prosthetic with the technology of high-level brain waves. Are you interested in trying them?",
+        "answer5": "Our project does not focus on the development of sophisticated technology, but focuses on the technology that is designed to solve the problems that most people encounter and provides an affordable solution to them.",
         "question6": "6. What disability does your product apply to?",
         "answer6": {
-            "line1": "For hand disability, we are currently divided into three main hand types: short finger, reserved carpal bone, no carpal bone.",
-            "line2": "For the three hand types, we will develop the prosthetic limb, hands and arms separately. The current model of all prosthetic limbs will be based on the model on the open source prosthetic community e-NABLE (http://enablingthefuture.org)."
+            "line1": "We currently divid hand disability into three main hand types: short finger, reserved carpal bone and no carpal bone.",
+            "line2": "For these three types, we have developed the prosthetic limbs, hands and arms separately. The current model of all prosthetic limbs will be based on the model on the open source prosthetic community e-NABLE (http://enablingthefuture.org)."
         },
         "question7": {
             "title": "7. I want to learn how to make such a prosthetic to help others. How can I do this?",
             "tag": "＃Designer"
         },
-        "answer7": "We are building a network of designer volunteers, and friends who have experience in 3D printing/3D modeling are welcome to register via the website or our WeChat public account (wow3dhand). After the designer has signed up, you need to write to the entry task. After completing the entry task and passing the assessment, you can refer to question 8 to choose the work that suits you.",
+        "answer7": "We are building a network of volunteers designers, and people who have experience in 3D printing/3D modeling are welcome to register via our website or our WeChat public account (wow3dhand). There will be an entry task to test your abilitiy. For more information about the position, please turn to question 8.",
         "question8": {
             "title": "8. What can the designer do?",
             "tag": "＃Designer"
         },
         "answer8": {
-            "main": "Under the premise of completing the entry task, there are four types of work to choose from, you can choose more:",
+            "main": "Once you have finished the entry task, there are four types of work to choose from, you can choose more:",
             "list1": {
                 "title": "1.Volunteer designer",
-                "line1": "Designers with strong capabilities and 3D print resources, we will directly match a recipient to assist with data collection and communication, and the designer will solve the specific case independently.",
-                "line2": "＜Designer's work＞ Communicate with the recipients and design the model independently based on the data. (You can design it yourself or refer to the model developed by others, and print and assemble the prosthetic well to send it to the recipient.)"
+                "line1": "For designers with strong capabilities and 3D print resources, he or her will be directly matched with a recipient to assist with data collection and communication, and the designer is expected to solve the specific case independently.",
+                "line2": "＜Designer's work＞︰ Communicate with the recipients and design the model independently based on the data. (You can design it by yourself or refer to the model developed by others. You are expected to print and assemble the prosthetic and send it to the recipient.)"
             },
             "list2": {
                 "title": "2.Model R&D Designer",
-                "line1": "We assist and organize designers to conduct model development and side-tests based on the three situations mentioned above, and print service support will be provided by cooperating 3D printing companies.",
-                "line2": "＜Designer's work＞ Based on three basic situations, select the types of interest that you are interested in, and our core technology members will work with you. We provide 3D printing service support."
+                "line1": "Hands On will assist and organize designers to develop and test the model and there will be support provided by cooperating 3D printing companies.",
+                "line2": "＜Designer's work＞︰Select either type of the three situation that you are interested in, our core technology team will work with you and provide 3D printing service support."
             },
             "list3": {
                 "title": "3.Workshop supporter",
-                "line1": "In each workshop, we will select a number of people with similar disability (adapted to the same model) from each of the recipients. Each designer assigns 1-3 recipients as appropriate, and tests the model matching based on the measured data. And make certain adjustments to ensure that the prosthetic assembled by the volunteers in the workshop are suitable for the recipients, and the cooperation service will be provided by the cooperating 3D printing company.",
-                "line2": "＜Designer's work＞ Based on the assigned recipient data and the basic model, try to make 1-2 hand wells to make some fine adjustments to the model, adjust the print ratio to ensure that it is suitable for the recipients. And distributed to the workshop and assembled by volunteers."
+                "line1": "In each workshop, we will select a number of recipients with similar disabilities (adapted to the same model) . Each designer is expected to help with  1-3 recipients as appropriate The designer is responsible for testing the model based on the measured data as well as making necessary adjustments to ensure that the prosthetic assembled by the volunteers in the workshop are suitable for the recipients. Hands On’s cooperating 3D printing company will provide help is necessary.",
+                "line2": "＜Designer's work＞︰Based on recipients’ data and the basic model, try to make 1-2 hand wells to make some fine adjustments to the model, adjust the print ratio to ensure that it is suitable for the recipients. The model will be distributed to the workshop and assembled by Hands On’s volunteers."
             },
             "list4": {
                 "title": "4. Education Product Supporter",
-                "line1": "According to the specific educational product design, the main work of the supporter will be to provide students with online guidance for a certain period of time to help students learn the production of mechanical prosthetics and help specific recipients."
+                "line1": "provide students with online guidance during a certain period of time, helping students learn the production of mechanical prosthetics."
             },
-            "list5": "PS. In addition to the volunteer designers, the other three types of designers will receive subsidies based on the operation of the project."
+            "list5": "PS. Except for the volunteer designers, the other three types of designers will receive subsidies based on the operation of the project."
         },
-        "question9": "9. I want to help, but I don't have the relevant professional skills. How can I contribute?",
-        "answer9": "If you have someone who needs help, please submit a help application on our website or WeChat public account (wow3dhand), we will process and provide free help. If you have other resources (3D printing, demand side looking for channels, media, prosthetic R&D, etc.), we hope you can follow us on WeChat public account and leave us a message."
+        "question9": "9. I want to help, but I don't have the relevant professional skills. What can I do?",
+        "answer9": "If you know someone who needs help, please submit an  application on our website or WeChat public account (wow3dhand), we will process and provide free help. If you have other resources (3D printing, demand side looking for channels, media, prosthetic R&D, etc.), please follow us on WeChat public account and leave us a message."
     }
 }
