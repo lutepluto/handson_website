@@ -1,334 +1,532 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-cn">
-<head>  
-  <title>Handson - 关于</title>
+  <head>
+    <title>Handson - 关于</title>
 
-  <%- include src/pages/common/meta.html -%>
-  <%- include src/pages/common/styles.html -%>
-</head>
+    <%- include src/pages/common/meta.html -%> <%- include
+    src/pages/common/styles.html -%>
+  </head>
 
-<body>
-  <!-- header: includes logo and menu -->
-  <header class="color-bg-lightgrey margin-t-5i">
-    <section class="font-yahei max-width-960px align-center">
-      <div class="container">
-        <div class="row">
-          <div id="logo" class="col-sm-3 text-center">
-            <img class="margin-tb-1" src="<%= require('images/img/handson-logo.png') %>" width="150em">
-            <span class="glyphicon glyphicon-menu-hamburger"></span>
+  <body>
+    <!-- header: includes logo and menu -->
+    <header class="color-bg-lightgrey margin-t-5i">
+      <section class="font-yahei max-width-960px align-center">
+        <div class="container">
+          <div class="row">
+            <div id="logo" class="col-sm-3 text-center">
+              <img
+                class="margin-tb-1"
+                src="<%= require('images/img/handson-logo.png') %>"
+                width="150em"
+              />
+              <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <div id="menu" class="col-sm-9">
+              <ul class="nav nav-pills pull-right margin-tb-1">
+                <li>
+                  <a href="index.html" data-i18n="common:nav.home">首页</a>
+                </li>
+                <li>
+                  <a href="application.html" data-i18n="common:nav.application"
+                    >申请义肢</a
+                  >
+                </li>
+                <li>
+                  <a href="join.html" data-i18n="common:nav.help">我想帮助</a>
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="activem"
+                    data-i18n="common:nav.vision"
+                    >关于</a
+                  >
+                </li>
+                <li class="language">
+                  <a
+                    href="javascript: void(0)"
+                    data-toggle="i18next"
+                    data-i18n="common:nav.language"
+                    >中文</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <div id="menu" class="col-sm-9 ">
-            <ul class="nav nav-pills pull-right margin-tb-1">
-              <li><a href="index.html" data-i18n="common:nav.home">首页</a></li>
-              <li><a href="application.html" data-i18n="common:nav.application">申请义肢</a></li>
-              <li><a href="join.html" data-i18n="common:nav.help">我想帮助</a></li>
-              <li><a href="about.html" class="activem" data-i18n="common:nav.vision">关于</a></li>
-              <li class="language">
-                <a href="javascript: void(0)" data-toggle="i18next" data-i18n="common:nav.language">中文</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row color-bg-media2">
-          <div class="align-center padding-tb-10 padding-lr-dnm20x3 ">
-            <div class="border-white-1-tran-20 padding-lr-3 text-center color-ct-white bannertext">
-              <h1 class="font-medium bannertext3 margin-tb-1" data-i18n="banner">展翼计划</h1>
-              <!--<p class="font-xs bannertext1">成为志愿者网络的一份子，用简单的设计，帮助大部份人。</p>-->
+          <div class="row color-bg-media2">
+            <div class="align-center padding-tb-10 padding-lr-dnm20x3">
+              <div
+                class="border-white-1-tran-20 padding-lr-3 text-center color-ct-white bannertext"
+              >
+                <h1
+                  class="font-medium bannertext3 margin-tb-1"
+                  data-i18n="banner"
+                >
+                  展翼计划
+                </h1>
+                <!--<p class="font-xs bannertext1">成为志愿者网络的一份子，用简单的设计，帮助大部份人。</p>-->
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </header>
-  <!-- /header: includes logo and menu -->
+      </section>
+    </header>
+    <!-- /header: includes logo and menu -->
 
-  <main class="color-bg-lightgrey">
-    <!-- New:Our mission section -->
-    <section class="font-yahei max-width-960px align-center">
-      <div class="container">
-        <div class="row color-bg-lightgrey">
-          <div class="text-center margin-tb-3 padding-lr-2 font-yahei color-ct-grey">
-            <div class="bottom-line-blue-h inlined"></div>
-            <h2 class="inlined padding-lr-1 question" data-i18n="mission.title">我们的使命</h2>
-            <div class=" bottom-line-blue-h inlined"></div>
-            <h5 class="questione">Our Mission</h5>
-          </div>
-        </div>
-        <div class="row color-bg-lightgrey">
-          <div class="padding-lr-2">
-            <div class="text-center">
-              <div>
-                <p class="color-ct-blue text-center font-medium inlined mission1 nowrap" data-i18n="mission.summary.line1">『   以普及性的创新科技</p>
-              </div>
-              <div>
-                <p class="color-ct-blue text-center font-medium inlined mission2 nowrap" data-i18n="mission.summary.line2">满足弱势群体的切身之需   』</p>
-              </div>
+    <main class="color-bg-lightgrey">
+      <!-- New:Our mission section -->
+      <section class="font-yahei max-width-960px align-center">
+        <div class="container">
+          <div class="row color-bg-lightgrey">
+            <div
+              class="text-center margin-tb-3 padding-lr-2 font-yahei color-ct-grey"
+            >
+              <div class="bottom-line-blue-h inlined"></div>
+              <h2
+                class="inlined padding-lr-1 question"
+                data-i18n="mission.title"
+              >
+                我们的使命
+              </h2>
+              <div class="bottom-line-blue-h inlined"></div>
+              <h5 class="questione">Our Mission</h5>
             </div>
-            <ul class="margin-tb-3 missionbullet">
-              <li class="margin-tb-1">
-                <span data-i18n="mission.details.line1.prefix">我们关注</span>
-                <strong class="color-ct-blue inlined font-xs emphasize" data-i18n="mission.details.line1.strong">弱势群体的切身之需</strong>
-                <span data-i18n="mission.details.line1.suffix">。我们认为社会的发展不应该遗忘或忽视弱势群体；</span>
+          </div>
+          <div class="row color-bg-lightgrey">
+            <div class="padding-lr-2">
+              <div class="text-center">
+                <div>
+                  <p
+                    class="color-ct-blue text-center font-medium inlined mission1 nowrap"
+                    data-i18n="mission.summary.line1"
+                  >
+                    『 以普及性的创新科技
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="color-ct-blue text-center font-medium inlined mission2 nowrap"
+                    data-i18n="mission.summary.line2"
+                  >
+                    满足弱势群体的切身之需 』
+                  </p>
+                </div>
+              </div>
+              <ul class="margin-tb-3 missionbullet">
+                <li class="margin-tb-1">
+                  <span data-i18n="mission.details.line1.prefix">我们关注</span>
+                  <strong
+                    class="color-ct-blue inlined font-xs emphasize"
+                    data-i18n="mission.details.line1.strong"
+                    >弱势群体的切身之需</strong
+                  >
+                  <span data-i18n="mission.details.line1.suffix"
+                    >。我们认为社会的发展不应该遗忘或忽视弱势群体；</span
+                  >
+                </li>
+                <li class="margin-tb-1">
+                  <span data-i18n="mission.details.line2.prefix"
+                    >我们相信科技的发展是有温度的。我们认为</span
+                  >
+                  <strong
+                    class="color-ct-blue inlined font-xs emphasize"
+                    data-i18n="mission.details.line2.strong"
+                    >创新科技</strong
+                  >
+                  <span data-i18n="mission.details.line2.suffix"
+                    >的应用能够给弱势群体带了新的解决方法；</span
+                  >
+                </li>
+                <li class="margin-tb-1">
+                  <span data-i18n="mission.details.line3.prefix">我们坚持</span>
+                  <strong
+                    class="color-ct-blue inlined font-xs emphasize"
+                    data-i18n="mission.details.line3.strong"
+                    >普及性的方式</strong
+                  >
+                  <span data-i18n="mission.details.line3.suffix"
+                    >来解决问题。立足于科技创新，我们以普及性的方式来研发、引进和传播相关的技术方案，应用到弱势群体的具体问题上</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /New:Our mission section -->
+
+      <!-- New: our journey [before CRITICAL-POINT]-->
+      <section
+        class="font-yahei max-width-960px align-center block-dmn-disappear"
+      >
+        <div class="container">
+          <div class="row color-bg-lightgrey">
+            <div
+              class="text-center margin-tb-3 padding-lr-2 font-yahei color-ct-grey"
+            >
+              <div class="bottom-line-blue-h inlined"></div>
+              <h2
+                class="inlined padding-lr-1 question"
+                data-i18n="roadMap.title"
+              >
+                我们的历程
+              </h2>
+              <div class="bottom-line-blue-h inlined"></div>
+              <h5 class="questione">Our Road Map</h5>
+            </div>
+          </div>
+
+          <div class="roadmap">
+            <ol class="roadmap__backbone">
+              <li class="roadmap__end pointsstartend">
+                <span data-i18n="roadMap.steps.start">盘古开天辟地</span>
               </li>
-              <li class="margin-tb-1">
-                <span data-i18n="mission.details.line2.prefix">我们相信科技的发展是有温度的。我们认为</span>
-                <strong class="color-ct-blue inlined font-xs emphasize" data-i18n="mission.details.line2.strong">创新科技</strong>
-                <span data-i18n="mission.details.line2.suffix">的应用能够给弱势群体带了新的解决方法；</span>
+              <li class="roadmap__item color-bg-orangered">
+                <div class="item__up color-ct-orangered">
+                  <h4 class="item__title">2015 Oct.</h4>
+                  <p data-i18n="roadMap.steps.step1.line1">
+                    通过腾讯公益众筹到项目启动资金。
+                  </p>
+                  <p data-i18n="roadMap.steps.step1.line2">
+                    通过各种渠道收集到需要义肢帮助的需求方信息30例。
+                  </p>
+                </div>
+                <div class="item__bottom text-center">
+                  <span
+                    class="item__icon color-bg-orangered glyphicon glyphicon-off item__icon--margin-60"
+                  ></span>
+                </div>
               </li>
-              <li class="margin-tb-1">
-                <span data-i18n="mission.details.line3.prefix">我们坚持</span>
-                <strong class="color-ct-blue inlined font-xs emphasize" data-i18n="mission.details.line3.strong">普及性的方式</strong>
-                <span data-i18n="mission.details.line3.suffix">来解决问题。立足于科技创新，我们以普及性的方式来研发、引进和传播相关的技术方案，应用到弱势群体的具体问题上</span>
+              <li class="roadmap__item color-bg-cadetblue">
+                <div class="item__up text-center">
+                  <span
+                    class="item__icon color-bg-cadetblue glyphicon glyphicon-facetime-video item__icon--margin-128"
+                  ></span>
+                </div>
+                <div class="item__bottom color-ct-cadetblue">
+                  <h4 class="item__title">2015 Nov.</h4>
+                  <p data-i18n="roadMap.steps.step2.line1">
+                    项目纪录短片上线,全平台播放超过10万。
+                  </p>
+                  <p data-i18n="roadMap.steps.step2.line2">
+                    基于3D打印机械义肢开源社区e-NABLE的义肢模型改进了第一版的机械手模型。
+                  </p>
+                </div>
               </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /New:Our mission section -->
-    
-    <!-- New: our journey [before CRITICAL-POINT]-->
-    <section class="font-yahei max-width-960px align-center block-dmn-disappear">
-      <div class="container">
-        <div class="row color-bg-lightgrey">
-          <div class="text-center margin-tb-3 padding-lr-2 font-yahei color-ct-grey">
-            <div class=" bottom-line-blue-h inlined"></div>
-            <h2 class="inlined padding-lr-1 question" data-i18n="roadMap.title">我们的历程</h2>
-            <div class=" bottom-line-blue-h inlined"></div>
-            <h5 class="questione">Our Road Map</h5>
-          </div>
-        </div>
+              <li class="roadmap__item color-bg-limegreen">
+                <div class="item__up color-ct-limegreen">
+                  <h4 class="item__title">2016 Jan.</h4>
+                  <p data-i18n="roadMap.steps.step3">
+                    在北京，上海，广州三地举办三场机械手制作工作坊，参与志愿者超过100人，制作16只机械义肢并全部配送给需求方。
+                  </p>
+                </div>
+                <div class="item__bottom text-center">
+                  <span
+                    class="item__icon color-bg-limegreen glyphicon glyphicon-home item__icon--margin-125"
+                  ></span>
+                </div>
+              </li>
+              <li class="roadmap__item color-bg-darkslategrey">
+                <div class="item__up text-center">
+                  <span
+                    class="item__icon color-bg-darkslategrey glyphicon glyphicon-user item__icon--margin-100"
+                  ></span>
+                </div>
+                <div class="item__bottom color-ct-darkslategrey">
+                  <h4 class="item__title">2016 Mar.</h4>
+                  <p data-i18n="roadMap.steps.step4.line1">
+                    组建核心运营团队，针对义肢研发，志愿者网络建立，义肢设计师管理，线上平台，工作坊产品等方向设定计划。
+                  </p>
+                  <p data-i18n="roadMap.steps.step4.line2">
+                    项目入驻清华X-lab，拟以社企形式运营。
+                  </p>
+                </div>
+              </li>
+              <li class="roadmap__item color-bg-bluepurple">
+                <div class="item__up color-ct-bluepurple">
+                  <h4 class="item__title">2016 May</h4>
+                  <p data-i18n="roadMap.steps.step5.line1">
+                    与AIESEC合作，义肢制作工作坊将会扩展到深圳，武汉，哈尔滨，广州，北京，苏州等更多城市。
+                  </p>
+                  <p data-i18n="roadMap.steps.step5.line2">
+                    针对更多其他残疾情况的义肢模型进行开发。
+                  </p>
+                </div>
+                <div class="item__bottom text-center">
+                  <span
+                    class="item__icon color-bg-bluepurple glyphicon glyphicon-globe item__icon--margin-70"
+                  ></span>
+                </div>
+              </li>
+            </ol>
 
-        <div class="roadmap">
-          <ol class="roadmap__backbone">
-            <li class="roadmap__end pointsstartend">
-              <span data-i18n="roadMap.steps.start">盘古开天辟地</span>
-            </li>
-            <li class="roadmap__item color-bg-orangered">
-              <div class="item__up color-ct-orangered">
-                <h4 class="item__title">2015 Oct.</h4>
-                <p data-i18n="roadMap.steps.step1.line1">通过腾讯公益众筹到项目启动资金。</P>
-                <p data-i18n="roadMap.steps.step1.line2">通过各种渠道收集到需要义肢帮助的需求方信息30例。</p>
-              </div>
-              <div class="item__bottom text-center">
-                <span class="item__icon color-bg-orangered glyphicon glyphicon-off item__icon--margin-60"></span>
-              </div>
-            </li>
-            <li class="roadmap__item color-bg-cadetblue">
-              <div class="item__up text-center">
-                <span class="item__icon color-bg-cadetblue glyphicon glyphicon-facetime-video item__icon--margin-128"></span>
-              </div>
-              <div class="item__bottom color-ct-cadetblue">
-                <h4 class="item__title">2015 Nov.</h4>
-                <p data-i18n="roadMap.steps.step2.line1">项目纪录短片上线,全平台播放超过10万。</P>
-                <p data-i18n="roadMap.steps.step2.line2">基于3D打印机械义肢开源社区e-NABLE的义肢模型改进了第一版的机械手模型。</P>
-              </div>
-            </li>
-            <li class="roadmap__item color-bg-limegreen">
-              <div class="item__up color-ct-limegreen">
-                <h4 class="item__title">2016 Jan.</h4>
-                <p data-i18n="roadMap.steps.step3">在北京，上海，广州三地举办三场机械手制作工作坊，参与志愿者超过100人，制作16只机械义肢并全部配送给需求方。</p>
-              </div>
-              <div class="item__bottom text-center">
-                <span class="item__icon color-bg-limegreen glyphicon glyphicon-home item__icon--margin-125"></span>
-              </div>
-            </li>
-            <li class="roadmap__item color-bg-darkslategrey">
-              <div class="item__up text-center">
-                <span class="item__icon color-bg-darkslategrey glyphicon glyphicon-user item__icon--margin-100"></span>
-              </div>
-              <div class="item__bottom color-ct-darkslategrey">
-                <h4 class="item__title">2016 Mar.</h4>
-                <p data-i18n="roadMap.steps.step4.line1">组建核心运营团队，针对义肢研发，志愿者网络建立，义肢设计师管理，线上平台，工作坊产品等方向设定计划。</P>
-                <p data-i18n="roadMap.steps.step4.line2">项目入驻清华X-lab，拟以社企形式运营。</P>
-              </div>
-            </li>
-            <li class="roadmap__item color-bg-bluepurple">
-              <div class="item__up color-ct-bluepurple">
-                <h4 class="item__title">2016 May</h4>
-                <p data-i18n="roadMap.steps.step5.line1">与AIESEC合作，义肢制作工作坊将会扩展到深圳，武汉，哈尔滨，广州，北京，苏州等更多城市。</P>
-                <p data-i18n="roadMap.steps.step5.line2">针对更多其他残疾情况的义肢模型进行开发。</P>
-              </div>
-              <div class="item__bottom text-center">
-                <span class="item__icon color-bg-bluepurple glyphicon glyphicon-globe item__icon--margin-70"></span>
-              </div>
-            </li>
-          </ol>
+            <ol class="roadmap__backbone">
+              <li class="roadmap__item color-bg-orangered">
+                <div class="item__up color-ct-orangered">
+                  <h4 class="item__title">2017 Sept.</h4>
+                  <p data-i18n="roadMap.steps.step6.line1">
+                    展翼计划作为科技+公益代表受邀参加腾讯“99公
+                    益日”及腾讯公益市集，腾讯公益携手展翼计划拍摄公益专题宣传片，发布于99公
+                    益日首页推荐位置，播放量超过1600万。
+                  </p>
+                </div>
+                <div class="item__bottom text-center">
+                  <span
+                    class="item__icon color-bg-orangered glyphicon glyphicon-facetime-video item__icon--margin-60"
+                  ></span>
+                </div>
+              </li>
+              <li class="roadmap__item color-bg-cadetblue">
+                <div class="item__up text-center">
+                  <span
+                    class="item__icon color-bg-cadetblue glyphicon glyphicon-flag item__icon--margin-128"
+                  ></span>
+                </div>
+                <div class="item__bottom color-ct-cadetblue">
+                  <h4 class="item__title">2018 Jun.</h4>
+                  <p data-i18n="roadMap.steps.step7.line1">
+                    展翼计划获得联合国开发计划署（UNDP）举办的“青年创客对话”挑战赛中国区冠军，最终代表中国区参与亚太区决赛并荣获“亚太青年可持续发展创新奖”,全平台播放超过10万。
+                  </p>
+                </div>
+              </li>
+              <li class="roadmap__item color-bg-limegreen">
+                <div class="item__up color-ct-limegreen">
+                  <h4 class="item__title">2018 Aug.</h4>
+                  <p data-i18n="roadMap.steps.step8.line1">
+                    展翼计划获得首届明日益才社会创新大赛铜奖。
+                  </p>
+                </div>
+                <div class="item__bottom text-center">
+                  <span
+                    class="item__icon color-bg-limegreen glyphicon glyphicon-fire item__icon--margin-125"
+                  ></span>
+                </div>
+              </li>
+              <li class="roadmap__item color-bg-darkslategrey">
+                <div class="item__up text-center">
+                  <span
+                    class="item__icon color-bg-darkslategrey glyphicon glyphicon-thumbs-up item__icon--margin-100"
+                  ></span>
+                </div>
+                <div class="item__bottom color-ct-darkslategrey">
+                  <h4 class="item__title">2018 Sept.</h4>
+                  <p data-i18n="roadMap.steps.step9.line1">
+                    展翼计划子项目Tech For
+                    Good与腾讯广告算法大赛联合举办以“AI助力寻回跨年龄走失儿童”为核心议题的黑客马拉松，并受到参赛者及公益组织的一致好评。
+                  </p>
+                </div>
+              </li>
+              <li class="roadmap__end pointsstartend">
+                <span data-i18n="roadMap.steps.end">更美好的未来</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- /New: our journey [before CRITICAL-POINT]-->
 
-          <ol class="roadmap__backbone">
-            <li class="roadmap__item color-bg-orangered">
-              <div class="item__up color-ct-orangered">
-                <h4 class="item__title">2017 Sept.</h4>
-                <p data-i18n="roadMap.steps.step6.line1">展翼计划作为科技+公益代表受邀参加腾讯“99公 益日”及腾讯公益市集，腾讯公益携手展翼计划拍摄公益专题宣传片，发布于99公 益日首页推荐位置，播放量超过1600万。</P>
-              </div>
-              <div class="item__bottom text-center">
-                <span class="item__icon color-bg-orangered glyphicon glyphicon-facetime-video item__icon--margin-60"></span>
-              </div>
-            </li>
-            <li class="roadmap__item color-bg-cadetblue">
-              <div class="item__up text-center">
-                <span class="item__icon color-bg-cadetblue glyphicon glyphicon-flag item__icon--margin-128"></span>
-              </div>
-              <div class="item__bottom color-ct-cadetblue">
-                <h4 class="item__title">2018 Jun.</h4>
-                <p data-i18n="roadMap.steps.step7.line1">
-                  展翼计划获得联合国开发计划署（UNDP）举办的“青年创客对话”挑战赛中国区冠军，最终代表中国区参与亚太区决赛并荣获“亚太青年可持续发展创新奖”,全平台播放超过10万。
-                </P>
-              </div>
-            </li>
-            <li class="roadmap__item color-bg-limegreen">
-              <div class="item__up color-ct-limegreen">
-                <h4 class="item__title">2018 Aug.</h4>
-                <p data-i18n="roadMap.steps.step8.line1">展翼计划获得首届明日益才社会创新大赛铜奖。</p>
-              </div>
-              <div class="item__bottom text-center">
-                <span class="item__icon color-bg-limegreen glyphicon glyphicon-fire item__icon--margin-125"></span>
-              </div>
-            </li>
-            <li class="roadmap__item color-bg-darkslategrey">
-              <div class="item__up text-center">
-                <span class="item__icon color-bg-darkslategrey glyphicon glyphicon-thumbs-up item__icon--margin-100"></span>
-              </div>
-              <div class="item__bottom color-ct-darkslategrey">
-                <h4 class="item__title">2018 Sept.</h4>
-                <p data-i18n="roadMap.steps.step9.line1">
-                  展翼计划子项目Tech For Good与腾讯广告算法大赛联合举办以“AI助力寻回跨年龄走失儿童”为核心议题的黑客马拉松，并受到参赛者及公益组织的一致好评。
-                </P>
-              </div>
-            </li>
-            <li class="roadmap__end pointsstartend">
-              <span data-i18n="roadMap.steps.end">更美好的未来</span>
-            </li>
-          </ol>
+      <!-- FAQ List-->
+      <section class="font-yahei max-width-960px align-center">
+        <div class="container">
+          <div class="row color-bg-lightgrey">
+            <div
+              class="text-center margin-tb-3 padding-lr-2 font-yahei color-ct-grey"
+            >
+              <div class="bottom-line-blue-h inlined"></div>
+              <h2 class="inlined padding-lr-1 question" data-i18n="faq.title">
+                或许你想知道的
+              </h2>
+              <div class="bottom-line-blue-h inlined"></div>
+              <h5 class="questione">FAQ</h5>
+            </div>
+          </div>
+          <!--Q#!-->
+          <div class="row fontfamily">
+            <div class="padding-lr-3 margin-tb-2">
+              <h4 class="font-bold" data-i18n="faq.question1">
+                1. 你们只帮助儿童吗？成年人昵？
+              </h4>
+              <p data-i18n="faq.answer1">
+                我们现在的机械义肢(Cyborg
+                Beast)主要为儿童设计，所以会更有針对性地幫助3-14岁的青少年儿童受助者。义肢也适用于成人，我们也在
+                研发外观更仿真，更话合成人的义肢产品（如Flexy Hand)。
+              </p>
+            </div>
+          </div>
+          <!--Q#!-->
+          <div class="row fontfamily">
+            <div class="padding-lr-3 margin-tb-2">
+              <h4 class="font-bold" data-i18n="faq.question2">
+                2. 你们这个义肢能实现什么功能？对小朋友有什么实际帮助？
+              </h4>
+              <p data-i18n="faq.answer2.main">
+                我们的机械义肢主要实现的是抓握功能。
+                3D打印机械义胜作为手部輔助工具，并非为了完全实现真手的功能。但是对于手部残疾的小朋友来说，我们这款义肢的意义主要体现在︰
+              </p>
+              <ul>
+                <li data-i18n="faq.answer2.list1">
+                  生活中场景式的双手配合活动
+                </li>
+                <li data-i18n="faq.answer2.list2">
+                  鍛炼残肢手部肌肉，促进正常发育
+                </li>
+                <li data-i18n="faq.answer2.list3">
+                  将"双手配合使用"变成一个没有那么沮丧的学习过程，減少双手不能配合时的焦虑，有助于心理健康成长。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--Q#!-->
+          <div class="row fontfamily">
+            <div class="padding-lr-3 margin-tb-2">
+              <h4 class="font-bold" data-i18n="faq.question3">
+                3. 你们的义肢跟市面上的其他义肢比起来有什么不同呀？
+              </h4>
+              <p data-i18n="faq.answer3.main">
+                市面上已有的义肢产品从成本﹑外形﹑功能﹑重量等等都不适用於儿童，我们所做的3D打印机械义肢︰
+              </p>
+              <ul>
+                <li data-i18n="faq.answer3.list1">
+                  主要部件3D打印，生产成本低
+                </li>
+                <li data-i18n="faq.answer3.list2">机械传动﹑装卸更换方便</li>
+                <li data-i18n="faq.answer3.list3">可以实现基本的抓握功能</li>
+                <li data-i18n="faq.answer3.list4">
+                  制作简单，对晋通人来说不存在制作门槛，适合大范圍普及
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--Q#!-->
+          <div class="row fontfamily">
+            <div class="padding-lr-3 margin-tb-2">
+              <h4 class="font-bold" data-i18n="faq.question4">
+                4. 你们的义肢收费吗？
+              </h4>
+              <p data-i18n="faq.answer4">
+                需要义肢的小朋友通过展翼计划申请的义肢均为免费。
+              </p>
+            </div>
+          </div>
+          <!--Q#!-->
+          <div class="row fontfamily">
+            <div class="padding-lr-3 margin-tb-2">
+              <h4 class="font-bold" data-i18n="faq.question5">
+                5. 网上好多各种高级的脑电波之类的机械手啊，你们要不要试一下？
+              </h4>
+              <p data-i18n="faq.answer5">
+                项目不侧重研发高精尖科技，而侧重普及牲强的，为解决大多数人遇到的问题而设计的科技。
+              </p>
+            </div>
+          </div>
+          <!--Q#!-->
+          <div class="row fontfamily">
+            <div class="padding-lr-3 margin-tb-2">
+              <h4 class="font-bold" data-i18n="faq.question6">
+                6. 你们的产品都适用于什么残疾情况？
+              </h4>
+              <p data-i18n="faq.answer6.line1">
+                针对手部残疾情况，我们目前分为三种主要手型︰短指﹑保留腕骨﹑沒有腕骨。
+              </p>
+              <p data-i18n="faq.answer6.line2">
+                对应三种手型，我们会分别研发义肢﹑义手和义臂。目前所有义肢的其本摸型都會基于开源义肢社区
+                e-NABLE (http://enablingthefuture.org)上的模型進行改进设汁。
+              </p>
+            </div>
+          </div>
+          <!--Q#!-->
+          <div class="row fontfamily">
+            <div class="padding-lr-3 margin-tb-2">
+              <h4 class="font-bold">
+                <span data-i18n="faq.question7.title"
+                  >7. 我想学习制作这样的义肢帮助别人，具体如何做？</span
+                >
+                <small class="color-ct-blue" data-i18n="faq.question7.tag"
+                  >＃设计师</small
+                >
+              </h4>
+              <p data-i18n="faq.answer7">
+                我们正在组建一个设计师志愿者网络，欢迎有3D打印经驗/3D建模經驗的朋友通过網站或者我们微信公众号（wow3dhand)报名。设计师报名之后需要参写到入门任务当中，完成入门任务并通过评定之後可以参考问题8选择适合您的工作。
+              </p>
+            </div>
+          </div>
+          <!--Q#!-->
+          <div class="row fontfamily">
+            <div class="padding-lr-3 margin-tb-2">
+              <h4 class="font-bold">
+                <span data-i18n="faq.question8.title"
+                  >8. 设计师可以承担什麼工作？</span
+                >
+                <small class="color-ct-blue" data-i18n="faq.question8.tag"
+                  >＃设计师</small
+                >
+              </h4>
+              <p data-i18n="faq.answer8.main">
+                完成入门任务的前提下，有四类工作可以選擇，可以多選︰
+              </p>
+              <p>
+                <span data-i18n="faq.answer8.list1.title">1.志愿者设计师</span
+                ><br />
+                <span data-i18n="faq.answer8.list1.line1"
+                  >能力較强且有打印资源的设计师，我们会直接配对一位受助者，协助數據采集和沟通等工作，设计师独立解决具体案例。</span
+                ><br />
+                <span data-i18n="faq.answer8.list1.line2"
+                  >＜设计师的工作＞︰与受助者沟通，基於数据來独立设计模型〔可以自行设计也可以参考其他人研发的模型，自行打印组装义肢井寄给受助者。</span
+                >
+              </p>
+              <p>
+                <span data-i18n="faq.answer8.list2.title">2.模型研发设计师</span
+                ><br />
+                <span data-i18n="faq.answer8.list2.line1"
+                  >我们协助和组织设计师基于上面提到的三种情况进行模型研发与侧试，会由合作的3D打印企业提供打印服务支持。</span
+                ><br />
+                <span data-i18n="faq.answer8.list2.line2"
+                  >＜设计师的工作＞︰基于三种基本情況挑選自己感兴趣的种类进行模型研发工作，我們的核心技術成員也会跟大家一起協作，我们提供3D打印服务支持。</span
+                >
+              </p>
+              <p>
+                <span data-i18n="faq.answer8.list3.title"
+                  >3.工作坊支持设计师</span
+                ><br />
+                <span data-i18n="faq.answer8.list3.line1"
+                  >每次工作坊我们会从受助者中挑選多位残疾情况类似（适配同一种模型）的人，每位设计师视情况分配1-3个受助者，根据测量数据，测试模型匹配度并进行一定调整，保证工作坊上志願者组裝的机械手适合受助者使用，会由合作的3D打印企业提供仃印服务支持。</span
+                ><br />
+                <span data-i18n="faq.answer8.list3.line2"
+                  >＜设汁师的工作＞︰基於被分配的受助者數据和基礎模型尝试制作1-2只手井对模型做一定微调，调整打印比例保证适合受助者，確定无误后，由我们统一打印并配送到工作坊由志願者进行组裝。</span
+                >
+              </p>
+              <p>
+                <span data-i18n="faq.answer8.list4.title"
+                  >4. 教育产品支持设计师</span
+                ><br />
+                <span data-i18n="faq.answer8.list4.line1"
+                  >根据具体教育产品设計情况，主要工作会是向學生提供一定时间的线上指导，协助學生學习机械义肢的制作并帮助到特定的受助者。</span
+                >
+              </p>
+              <p data-i18n="faq.answer8.list5">
+                PS.
+                除了志愿者设计师外，另外三类设计师都会根据项目运营情况获得补助。
+              </p>
+            </div>
+          </div>
+          <!--Q#!-->
+          <div class="row fontfamily">
+            <div class="padding-lr-3 margin-tb-2">
+              <h4 class="font-bold" data-i18n="faq.question9">
+                9. 我想帮忙，但我不具备相关专业能力，我可以贡献什么？
+              </h4>
+              <p data-i18n="faq.answer9">
+                如果你身边有需要帮助的人，请在我们的网站或者微信公众号(wow3dhand)上提交帮助申请，我们会定明处理并提供免費帮助。
+                如果你有其他資源介绍(3D打印，需求方寻找渠道，媒體，义肢研发等），希望你可以关注我们微信公众号并在后台给我们留言。
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- /New: our journey [before CRITICAL-POINT]-->
+      </section>
+      <!--/FAQ list-->
+    </main>
 
-    <!-- FAQ List-->
-    <section class="font-yahei max-width-960px align-center">
-      <div class="container">
-        <div class="row color-bg-lightgrey">
-          <div class="text-center margin-tb-3 padding-lr-2 font-yahei color-ct-grey">
-            <div class=" bottom-line-blue-h inlined"></div>
-            <h2 class="inlined padding-lr-1 question" data-i18n="faq.title">或许你想知道的</h2>
-            <div class=" bottom-line-blue-h inlined"></div>
-            <h5 class="questione">FAQ</h5>
-          </div>
-        </div>
-        <!--Q#!-->
-        <div class="row fontfamily">
-          <div class="padding-lr-3 margin-tb-2">
-            <h4 class="font-bold" data-i18n="faq.question1">1. 你们只帮助儿童吗？成年人昵？</h4>
-            <p data-i18n="faq.answer1">
-              我们现在的机械义肢(Cyborg Beast)主要为儿童设计，所以会更有針对性地幫助3-14岁的青少年儿童受助者。义肢也适用于成人，我们也在 研发外观更仿真，更话合成人的义肢产品（如Flexy Hand)。
-            </p>
-          </div>
-        </div>
-        <!--Q#!-->
-        <div class="row fontfamily">
-          <div class="padding-lr-3 margin-tb-2">
-            <h4 class="font-bold" data-i18n="faq.question2">2. 你们这个义肢能实现什么功能？对小朋友有什么实际帮助？</h4>
-            <p data-i18n="faq.answer2.main">
-              我们的机械义肢主要实现的是抓握功能。 3D打印机械义胜作为手部輔助工具，并非为了完全实现真手的功能。但是对于手部残疾的小朋友来说，我们这款义肢的意义主要体现在︰
-            </p>
-            <ul>
-              <li data-i18n="faq.answer2.list1">生活中场景式的双手配合活动</li>
-              <li data-i18n="faq.answer2.list2">鍛炼残肢手部肌肉，促进正常发育</li>
-              <li data-i18n="faq.answer2.list3">将"双手配合使用"变成一个没有那么沮丧的学习过程，減少双手不能配合时的焦虑，有助于心理健康成长。</li>
-            </ul>
-          </div>
-        </div>
-        <!--Q#!-->
-        <div class="row fontfamily">
-          <div class="padding-lr-3 margin-tb-2">
-            <h4 class="font-bold" data-i18n="faq.question3">3. 你们的义肢跟市面上的其他义肢比起来有什么不同呀？</h4>
-            <p data-i18n="faq.answer3.main">市面上已有的义肢产品从成本﹑外形﹑功能﹑重量等等都不适用於儿童，我们所做的3D打印机械义肢︰ </p>
-            <ul>
-              <li data-i18n="faq.answer3.list1">主要部件3D打印，生产成本低</li>
-              <li data-i18n="faq.answer3.list2">机械传动﹑装卸更换方便</li>
-              <li data-i18n="faq.answer3.list3">可以实现基本的抓握功能</li>
-              <li data-i18n="faq.answer3.list4">制作简单，对晋通人来说不存在制作门槛，适合大范圍普及</li>
-            </ul>
-          </div>
-        </div>
-        <!--Q#!-->
-        <div class="row fontfamily">
-          <div class="padding-lr-3 margin-tb-2">
-            <h4 class="font-bold" data-i18n="faq.question4">4. 你们的义肢收费吗？</h4>
-            <p data-i18n="faq.answer4">需要义肢的小朋友通过展翼计划申请的义肢均为免费。</p>
-          </div>
-        </div>
-        <!--Q#!-->
-        <div class="row fontfamily">
-          <div class="padding-lr-3 margin-tb-2">
-            <h4 class="font-bold" data-i18n="faq.question5">5. 网上好多各种高级的脑电波之类的机械手啊，你们要不要试一下？</h4>
-            <p data-i18n="faq.answer5">项目不侧重研发高精尖科技，而侧重普及牲强的，为解决大多数人遇到的问题而设计的科技。</p>
-          </div>
-        </div>
-        <!--Q#!-->
-        <div class="row fontfamily">
-          <div class="padding-lr-3 margin-tb-2">
-            <h4 class="font-bold" data-i18n="faq.question6">6. 你们的产品都适用于什么残疾情况？</h4>
-            <p data-i18n="faq.answer6.line1">针对手部残疾情况，我们目前分为三种主要手型︰短指﹑保留腕骨﹑沒有腕骨。</p>
-            <p data-i18n="faq.answer6.line2">对应三种手型，我们会分别研发义肢﹑义手和义臂。目前所有义肢的其本摸型都會基于开源义肢社区 e-NABLE (http://enablingthefuture.org)上的模型進行改进设汁。</p>
-          </div>
-        </div>
-        <!--Q#!-->
-        <div class="row fontfamily">
-          <div class="padding-lr-3 margin-tb-2">
-            <h4 class="font-bold">
-              <span data-i18n="faq.question7.title">7. 我想学习制作这样的义肢帮助别人，具体如何做？</span>
-              <small class="color-ct-blue" data-i18n="faq.question7.tag">＃设计师</small>
-            </h4>
-            <p data-i18n="faq.answer7">
-              我们正在组建一个设计师志愿者网络，欢迎有3D打印经驗/3D建模經驗的朋友通过網站或者我们微信公众号（wow3dhand)报名。设计师报名之后需要参写到入门任务当中，完成入门任务并通过评定之後可以参考问题8选择适合您的工作。
-            </p>
-          </div>
-        </div>
-        <!--Q#!-->
-        <div class="row fontfamily">
-          <div class="padding-lr-3 margin-tb-2">
-            <h4 class="font-bold">
-              <span data-i18n="faq.question8.title">8. 设计师可以承担什麼工作？</span>
-              <small class="color-ct-blue" data-i18n="faq.question8.tag">＃设计师</small>
-            </h4>
-            <p data-i18n="faq.answer8.main">完成入门任务的前提下，有四类工作可以選擇，可以多選︰</P>
-            <p>
-              <span data-i18n="faq.answer8.list1.title">1.志愿者设计师</span><br/>
-              <span data-i18n="faq.answer8.list1.line1">能力較强且有打印资源的设计师，我们会直接配对一位受助者，协助數據采集和沟通等工作，设计师独立解决具体案例。</span><br/>
-              <span data-i18n="faq.answer8.list1.line2">＜设计师的工作＞︰与受助者沟通，基於数据來独立设计模型〔可以自行设计也可以参考其他人研发的模型，自行打印组装义肢井寄给受助者。</span>
-            </p>
-            <p>
-              <span data-i18n="faq.answer8.list2.title">2.模型研发设计师</span><br/>
-              <span data-i18n="faq.answer8.list2.line1">我们协助和组织设计师基于上面提到的三种情况进行模型研发与侧试，会由合作的3D打印企业提供打印服务支持。</span><br/>
-              <span data-i18n="faq.answer8.list2.line2">＜设计师的工作＞︰基于三种基本情況挑選自己感兴趣的种类进行模型研发工作，我們的核心技術成員也会跟大家一起協作，我们提供3D打印服务支持。</span>
-            </p>
-            <p>
-              <span data-i18n="faq.answer8.list3.title">3.工作坊支持设计师</span><br/>
-              <span data-i18n="faq.answer8.list3.line1">每次工作坊我们会从受助者中挑選多位残疾情况类似（适配同一种模型）的人，每位设计师视情况分配1-3个受助者，根据测量数据，测试模型匹配度并进行一定调整，保证工作坊上志願者组裝的机械手适合受助者使用，会由合作的3D打印企业提供仃印服务支持。</span><br/>
-              <span data-i18n="faq.answer8.list3.line2">＜设汁师的工作＞︰基於被分配的受助者數据和基礎模型尝试制作1-2只手井对模型做一定微调，调整打印比例保证适合受助者，確定无误后，由我们统一打印并配送到工作坊由志願者进行组裝。</span>
-            </p>
-            <p>
-              <span data-i18n="faq.answer8.list4.title">4. 教育产品支持设计师</span><br/>
-              <span data-i18n="faq.answer8.list4.line1">根据具体教育产品设計情况，主要工作会是向學生提供一定时间的线上指导，协助學生學习机械义肢的制作并帮助到特定的受助者。</span>
-            </p>
-            <p data-i18n="faq.answer8.list5">PS. 除了志愿者设计师外，另外三类设计师都会根据项目运营情况获得补助。</p>
-          </div>
-        </div>
-        <!--Q#!-->
-        <div class="row fontfamily">
-          <div class="padding-lr-3 margin-tb-2">
-            <h4 class="font-bold" data-i18n="faq.question9">9. 我想帮忙，但我不具备相关专业能力，我可以贡献什么？</h4>
-            <p data-i18n="faq.answer9">如果你身边有需要帮助的人，请在我们的网站或者微信公众号(wow3dhand)上提交帮助申请，我们会定明处理并提供免費帮助。 如果你有其他資源介绍(3D打印，需求方寻找渠道，媒體，义肢研发等），希望你可以关注我们微信公众号并在后台给我们留言。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--/FAQ list-->
-  </main>
-
-  <%- include src/pages/common/footer.html -%>
-  <%- include src/pages/common/scripts.html -%>
-</body>
+    <%- include src/pages/common/footer.html -%> <%- include
+    src/pages/common/scripts.html -%>
+  </body>
 </html>

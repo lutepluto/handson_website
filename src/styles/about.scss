@@ -9,7 +9,7 @@
   }
 
   &__end {
-    padding: .5em;
+    padding: 0.5em;
     color: #fff;
     font-size: 12px;
     text-align: center;
@@ -17,8 +17,8 @@
 
   &__item {
     position: relative;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     flex: 1;
 
     &:after {
@@ -55,39 +55,43 @@
       }
 
       &.color-bg-orangered:after {
-        background-color: #F26739;
+        background-color: #f26739;
       }
 
       &.color-bg-cadetblue:after {
-        background-color: #91BEAE;
+        background-color: #91beae;
       }
 
       &.color-bg-limegreen:after {
-        background-color: #9BCB3C;
+        background-color: #9bcb3c;
       }
 
       &.color-bg-darkslategrey:after {
-        background-color: #104A57;
+        background-color: #104a57;
       }
 
       &.color-bg-bluepurple:after {
-        background-color: #A86EAE;
+        background-color: #a86eae;
       }
     }
 
-    .item__up, .item__bottom {
+    .item__up,
+    .item__bottom {
       position: absolute;
       width: 100%;
       left: 0;
       font-size: 16px;
-      font-family: pingfang sc,microsoft yahei,helvatica;
+      font-family:
+        pingfang sc,
+        microsoft yahei,
+        helvatica;
     }
 
     .item__up {
       bottom: 100%;
 
       .item__icon {
-        transform: translateY(.5em);
+        transform: translateY(0.5em);
 
         &--margin-128 {
           margin-bottom: 128px;
@@ -115,7 +119,7 @@
       top: 100%;
 
       .item__icon {
-        transform: translateY(-.5em);
+        transform: translateY(-0.5em);
 
         &--margin-60 {
           margin-top: 60px;
