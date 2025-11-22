@@ -129,7 +129,7 @@ export default function Roadmap({
   );
 
   return (
-    <section className="mb-16">
+    <section className="mb-16 hidden md:block">
       <div className="text-center my-[4em] px-[2em] text-[var(--color-text-grey)]">
         <div className="border-b-[2px] border-[#4d8ab6] w-[70px] inline-block mb-[5px]"></div>
         <h2 className="inline-block px-[1em] text-[38px] mt-[50px]">{title}</h2>
