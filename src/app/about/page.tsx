@@ -9,22 +9,15 @@ import {
   ThumbsUp,
   Star
 } from 'lucide-react';
+import Banner from '../components/Banner';
 
 export default function AboutPage() {
   return (
     <div className="bg-[var(--color-brand-lightgrey)] min-h-screen font-sans">
       {/* Banner Section */}
-      <section className="font-sans max-w-[960px] mx-auto">
-        <div className="container mx-auto">
-          <div className="bg-[url('/images/img/about-banner.jpg')] bg-no-repeat bg-cover bg-center w-full py-[10em] max-md:px-[3em] md:px-[5em] lg:px-[20em]">
-            <div className="border-[8px] border-white/70 px-8 text-center text-white bannertext">
-              <h1 className="text-[48px] font-sans opacity-80 mb-4 mt-4">
-                展翼计划
-              </h1>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Banner backgroundImage="/images/img/about-banner.jpg">
+        <h1 className="text-[48px] font-sans opacity-80 mb-4 mt-4">展翼计划</h1>
+      </Banner>
 
       <div className="container mx-auto px-4 py-16 max-w-[960px]">
         {/* Mission */}

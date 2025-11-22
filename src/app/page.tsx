@@ -5,29 +5,22 @@ import Image from 'next/image';
 import { ArrowRight, Heart, Settings, Users, Activity } from 'lucide-react';
 import { useState } from 'react';
 import VideoModal from './components/VideoModal';
+import Banner from './components/Banner';
 
 export default function Home() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   return (
     <div className="bg-[var(--color-brand-lightgrey)]">
       {/* Hero Section */}
-      <section className="font-sans max-w-[960px] mx-auto">
-        <div className="container mx-auto">
-          <div className="row bg-[url('/images/img/handsnotext.jpg')] bg-no-repeat bg-cover bg-center w-full py-[10em] max-md:px-[3em] md:px-[5em] lg:px-[20em]">
-            <div className="border-[8px] border-white/70 px-8 text-center text-white bannertext">
-              <h3 className="text-[30px] font-sans opacity-80 mb-2 mt-4">
-                中国有2400万肢残人士
-              </h3>
-              <h3 className="text-[30px] font-sans opacity-80 mb-2">
-                其中4.6％是0-14岁的
-              </h3>
-              <h1 className="text-[48px] font-sans opacity-80 mb-4">
-                青少年儿童
-              </h1>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Banner backgroundImage="/images/img/handsnotext.jpg">
+        <h3 className="text-[30px] font-sans opacity-80 mb-2 mt-4">
+          中国有2400万肢残人士
+        </h3>
+        <h3 className="text-[30px] font-sans opacity-80 mb-2">
+          其中4.6％是0-14岁的
+        </h3>
+        <h1 className="text-[48px] font-sans opacity-80 mb-4">青少年儿童</h1>
+      </Banner>
 
       {/* What we do */}
       <section className="font-sans max-w-[960px] mx-auto">
