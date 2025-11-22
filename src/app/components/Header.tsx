@@ -11,33 +11,39 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-
-const menus = [
-  {
-    id: 'home',
-    title: '首页',
-    href: '/'
-  },
-  {
-    id: 'apply',
-    title: '申请义肢',
-    href: '/apply'
-  },
-  {
-    id: 'help',
-    title: '我想帮助',
-    href: '/help'
-  },
-  {
-    id: 'about',
-    title: '关于',
-    href: '/about'
-  }
-];
+import { useI18n } from '../contexts/I18nContext';
 
 export default function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useI18n();
+
+  const menus = [
+    {
+      id: 'home',
+      title: t('common', 'nav.home'),
+      href: '/'
+    },
+    {
+      id: 'apply',
+      title: t('common', 'nav.application'),
+      href: '/apply'
+    },
+    {
+      id: 'help',
+      title: t('common', 'nav.help'),
+      href: '/help'
+    },
+    {
+      id: 'about',
+      title: t('common', 'nav.vision'),
+      href: '/about'
+    }
+  ];
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'zh' ? 'en' : 'zh');
+  };
 
   return (
     <header className="bg-[var(--color-brand-lightgrey)] w-full flex justify-center pt-[20px] pb-[20px] relative z-50 font-sans">
@@ -72,12 +78,12 @@ export default function Header() {
               </NavigationMenuItem>
             ))}
             <NavigationMenuItem>
-              <Link
-                href="#"
-                className="text-[15px] text-[#999999] hover:text-[#4d8ab6] transition-colors ml-4"
+              <button
+                onClick={toggleLanguage}
+                className="text-[15px] text-[#999999] hover:text-[#4d8ab6] transition-colors ml-4 cursor-pointer"
               >
-                English
-              </Link>
+                {t('common', 'nav.language')}
+              </button>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
@@ -105,6 +111,15 @@ export default function Header() {
               {title}
             </Link>
           ))}
+          <button
+            onClick={() => {
+              toggleLanguage();
+              setIsMobileMenuOpen(false);
+            }}
+            className="text-sm font-medium text-[#747474]"
+          >
+            {t('common', 'nav.language')}
+          </button>
         </div>
       )}
     </header>

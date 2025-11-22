@@ -2,24 +2,30 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Heart, Settings, Users, Activity } from 'lucide-react';
 import { useState } from 'react';
 import VideoModal from './components/VideoModal';
 import Banner from './components/Banner';
+import { useI18n } from './contexts/I18nContext';
 
 export default function Home() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  const { t } = useI18n();
+
   return (
     <div className="bg-[var(--color-brand-lightgrey)]">
       {/* Hero Section */}
       <Banner backgroundImage="/images/img/handsnotext.jpg">
         <h3 className="text-[30px] font-sans opacity-80 mb-2 mt-4">
-          中国有2400万肢残人士
+          {t('home', 'banner.line1')}
         </h3>
-        <h3 className="text-[30px] font-sans opacity-80 mb-2">
-          其中4.6％是0-14岁的
-        </h3>
-        <h1 className="text-[48px] font-sans opacity-80 mb-4">青少年儿童</h1>
+        {t('home', 'banner.line2') && (
+          <h3 className="text-[30px] font-sans opacity-80 mb-2">
+            {t('home', 'banner.line2')}
+          </h3>
+        )}
+        <h1 className="text-[48px] font-sans opacity-80 mb-4">
+          {t('home', 'banner.line3')}
+        </h1>
       </Banner>
 
       {/* What we do */}
@@ -29,7 +35,7 @@ export default function Home() {
             <div className="text-center my-[4em] px-[2em] text-[var(--color-text-grey)]">
               <div className="border-b-[2px] border-[#4d8ab6] w-[70px] inline-block mb-[5px]"></div>
               <h2 className="inline-block px-[1em] text-[38px] mt-[50px]">
-                我们做什么?
+                {t('home', 'goal.title')}
               </h2>
               <div className="border-b-[2px] border-[#4d8ab6] w-[70px] inline-block mb-[5px]"></div>
               <h5 className="text-[20px] mb-[80px]">What we do?</h5>
@@ -49,15 +55,15 @@ export default function Home() {
               <h2 className="my-[0.5em] md:my-[1em] text-[2em]">
                 Hands On 展翼计划
               </h2>
-              <p className="my-[0.5em] md:my-[1em] text-[1.5em]">
-                通过设计，制作经济简易的3D打印机械义肢，并开源与传播这项技术，展翼计划希望能帮助中国上百万有肢体残疾问题的青少年儿童。
+              <p className="my-[1.5em] font-light text-[18px] leading-relaxed">
+                {t('home', 'goal.content')}
               </p>
               <div className="text-center mt-[2em] mb-[2em]">
                 <button
                   onClick={() => setIsVideoModalOpen(true)}
-                  className="inline-block border-[2px] border-white rounded-[2em] px-[2em] py-[10px] text-[22px] hover:bg-white hover:text-[var(--color-brand-purple)] transition-all duration-200 cursor-pointer"
+                  className="inline-block px-6 py-2 rounded-full border border-white hover:bg-white hover:text-[var(--color-brand-purple)] transition-colors cursor-pointer"
                 >
-                  了解南南的故事
+                  {t('home', 'goal.button')}
                 </button>
               </div>
             </div>
@@ -78,7 +84,7 @@ export default function Home() {
             <div className="text-center my-[4em] mx-[2em] text-[var(--color-text-grey)]">
               <div className="border-b-[2px] border-[#4d8ab6] w-[70px] inline-block mb-[5px]"></div>
               <h2 className="inline-block px-[1em] text-[38px] mt-[50px]">
-                我们怎么做?
+                {t('home', 'steps.title')}
               </h2>
               <div className="border-b-[2px] border-[#4d8ab6] w-[70px] inline-block mb-[5px]"></div>
               <h5 className="text-[20px] mb-[80px]">How we do it?</h5>
@@ -102,10 +108,10 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="mt-[30px] mb-[30px] text-[25px] font-bold">
-                  登记义肢需求信息
+                  {t('home', 'steps.step1.title')}
                 </h3>
                 <p className="mt-[1em] mb-[1em] px-[2em]">
-                  我们会配对可以帮忙设计与制作的志愿者
+                  {t('home', 'steps.step1.content')}
                 </p>
               </div>
               <Link
@@ -113,7 +119,7 @@ export default function Home() {
                 className="hidden group-hover:block absolute inset-0 bg-black/80 z-20"
               >
                 <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-[20px] font-bold whitespace-nowrap">
-                  - 立刻申请 -
+                  {t('home', 'steps.step1.button')}
                 </span>
               </Link>
             </div>
@@ -134,10 +140,10 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="mt-[30px] mb-[30px] text-[25px] font-bold">
-                  设计定制化的义肢
+                  {t('home', 'steps.step2.title')}
                 </h3>
                 <p className="mt-[1em] mb-[1em] px-[2em]">
-                  根据收集上来的数据，我们会设计适合的模型
+                  {t('home', 'steps.step2.content')}
                 </p>
               </div>
               <Link
@@ -145,7 +151,7 @@ export default function Home() {
                 className="hidden group-hover:block absolute inset-0 bg-black/80 z-20"
               >
                 <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-[20px] font-bold whitespace-nowrap">
-                  - 了解技术 -
+                  {t('home', 'steps.step2.button')}
                 </span>
               </Link>
             </div>
@@ -166,10 +172,10 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="mt-[30px] mb-[30px] text-[25px] font-bold">
-                  通过志愿者网络制作
+                  {t('home', 'steps.step3.title')}
                 </h3>
                 <p className="mt-[1em] mb-[1em] px-[2em]">
-                  我们通过我们遍布全国的志愿者网络为需求方制作义肢
+                  {t('home', 'steps.step3.content')}
                 </p>
               </div>
               <Link
@@ -177,7 +183,7 @@ export default function Home() {
                 className="hidden group-hover:block absolute inset-0 bg-black/80 z-20"
               >
                 <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-[20px] font-bold whitespace-nowrap">
-                  - 我想帮助 -
+                  {t('home', 'steps.step3.button')}
                 </span>
               </Link>
             </div>
@@ -198,10 +204,10 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="mt-[30px] mb-[30px] text-[25px] font-bold">
-                  跟踪改进义肢
+                  {t('home', 'steps.step4.title')}
                 </h3>
                 <p className="mt-[1em] mb-[1em] px-[2em]">
-                  我们会针对受助者进行定期的回访，不断更新和辅助义肢在生活中的使用情况
+                  {t('home', 'steps.step4.content')}
                 </p>
               </div>
               <Link
@@ -209,7 +215,7 @@ export default function Home() {
                 className="hidden group-hover:block absolute inset-0 bg-black/80 z-20"
               >
                 <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-[20px] font-bold whitespace-nowrap">
-                  - 立即加入 -
+                  {t('home', 'steps.step4.button')}
                 </span>
               </Link>
             </div>
@@ -223,17 +229,17 @@ export default function Home() {
           <div className="row">
             <div className="my-[5em] px-[5em] max-md:px-[1em]">
               <h3 className="text-[var(--color-text-grey)] text-[40px] font-medium mt-[80px]">
-                并且，我们承诺︰
+                {t('home', 'promise.title')}
               </h3>
               <h1 className="text-[#4d8ab6] mt-[40px] text-[50px] font-light mb-[40px]">
-                所有设计制作的义肢，都将免费捐赠给有需要的人。
+                {t('home', 'promise.content')}
               </h1>
               <div className="text-center my-[2em]">
                 <Link
                   href="/about"
                   className="inline-block text-[20px] text-[#4d8ab6] px-[3em] py-[10px] border-[2px] border-[#4d8ab6] rounded-[2em] hover:bg-[#4d8ab6] hover:text-white transition-all duration-200"
                 >
-                  了解更多
+                  {t('home', 'moreButton')}
                 </Link>
               </div>
             </div>
