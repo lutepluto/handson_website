@@ -4,12 +4,15 @@
   "description": "handson 3D-printing homesite",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "dev": "next dev",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "start": "next start",
     "build": "next build",
     "lint": "next lint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -34,9 +37,11 @@
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "tailwindcss": "^4.1.11",
-    "typescript": "5.8.3"
+    "typescript": "5.8.3",
+    "wrangler": "^4.50.0"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.13.1",
     "@radix-ui/react-navigation-menu": "^1.2.14",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
